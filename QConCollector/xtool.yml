@@ -1,0 +1,11 @@
+version: 1
+# Change the bundle ID once, before the first install, and never again:
+# the installed ID becomes XTL-<team prefix>.<bundleID>, and a new ID is a new app with empty data.
+bundleID: com.matt.qconcollector
+product: QConCollector
+# Partial plist, merged over xtool's defaults (keys here win).
+infoPath: Support/Info.plist
+# Copied to the root of the .app; read with Bundle.main.url(forResource: "schedule", withExtension: "json").
+resources:
+  - Resources/schedule.json
+iconPath: Resources/AppIcon.png

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Shown under Files > On My iPhone > Collector -->
+    <key>CFBundleDisplayName</key>
+    <string>Collector</string>
+    <!-- Bump CFBundleVersion on every install you want to tell apart; it is written into each manifest. -->
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Takes photos of slides for your talk notes.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Records your own voice reflections between talks.</string>
+    <!-- Files app and Apple Devices (USB) access to Documents/ -->
+    <key>UIFileSharingEnabled</key>
+    <true/>
+    <key>LSSupportsOpeningDocumentsInPlace</key>
+    <true/>
+    <!-- Session audio is not built (see SessionAudio.swift). If you build it, add:
+    <key>UIBackgroundModes</key>
+    <array><string>audio</string></array>
+    -->
+</dict>
+</plist>

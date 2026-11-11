@@ -1,0 +1,13 @@
+# vault/talks/<talk_id>/research/sources.yaml: one record per fetched source.
+# The extracted text of each source is cached at research/cache/<id>.md.
+# tier: 1 primary (the talk page, the project's own repo/docs, the speaker's own site)
+#       2 InfoQ and comparable editorial
+#       3 other
+# vendor: true when the publisher sells the thing described (its numbers are "the vendor's claim").
+- id: R1
+  url: https://qconsf.com/keynote/nov2026/harness-new-operating-system
+  title: The Harness Is the New Operating System
+  publisher: QCon San Francisco (C4Media)
+  fetched_utc: 2026-11-22T10:00:00Z
+  tier: 1
+  vendor: false

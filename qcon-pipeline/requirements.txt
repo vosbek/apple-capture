@@ -1,0 +1,9 @@
+# Required for the tests; the tools run on the standard library alone (Python 3.11+).
+PyYAML>=6
+pytest>=8
+# Optional: near-duplicate photo flags in ingest, and tools/downscale.py for /qcon-publish.
+pillow>=10
+# Optional, heavy: local transcription of voice reflections (tools/transcribe.py).
+# faster-whisper>=1.0
+# Windows Python only (WSL has the zone database): real America/Los_Angeles zone.
+tzdata; sys_platform == "win32"

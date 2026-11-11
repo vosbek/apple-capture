@@ -1,0 +1,20 @@
+# Build output
+.build/
+.swiftpm/
+QConCollector/xtool/
+*.ipa
+*.zip
+# Python
+__pycache__/
+.pytest_cache/
+.venv/
+# Secrets and local config: never commit
+.env
+.env.*
+*.p12
+*.mobileprovision
+*.pem
+*.key
+# OS
+.DS_Store
+Thumbs.db

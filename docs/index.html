@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>QCon Collector</title>
+<meta name="description" content="An offline iPhone and iPad app for capturing conference talks, plus a Claude Code pipeline that turns captures into sourced briefs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --page:#FFFFFF; --well:#F3F4F6; --ink:#0B0C0E; --ink2:#454C58; --ink3:#69717E;
+  --line:#DDE0E5; --blue:#1857B8; --blue-ink:#0F3F8A; --blue-soft:#EAF0FA;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{margin:0;background:var(--page);color:var(--ink);font-family:Inter,-apple-system,'Segoe UI',system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-size:16px;line-height:1.6}
+a{color:var(--blue);text-decoration:none}
+a:hover{color:var(--blue-ink);text-decoration:underline}
+code,pre{font-family:var(--mono);font-size:13.5px}
+code{background:var(--well);padding:1px 5px;border-radius:4px}
+pre{background:#0B0C0E;color:#E8EAEE;padding:16px 18px;border-radius:10px;overflow-x:auto;line-height:1.55;margin:12px 0 0}
+pre code{background:none;padding:0;color:inherit}
+pre .c{color:#8C95A3}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;gap:28px;height:56px}
+.brand{font-weight:700;color:var(--ink);letter-spacing:-.01em;white-space:nowrap}
+.brand:hover{text-decoration:none;color:var(--ink)}
+.bar nav{display:flex;gap:22px;font-size:14px;overflow-x:auto;scrollbar-width:none}
+.bar nav a{color:var(--ink2);white-space:nowrap}
+.bar nav a:hover{color:var(--ink);text-decoration:none}
+.bar .gh{margin-left:auto;font-size:14px;font-weight:600;white-space:nowrap}
+
+/* hero */
+.hero{padding:72px 0 56px;border-bottom:1px solid var(--line)}
+.hero .eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+.hero h1{font-size:56px;line-height:1.04;letter-spacing:-.03em;margin:14px 0 20px;max-width:16ch}
+.hero p.lead{font-size:20px;line-height:1.5;color:var(--ink2);max-width:58ch;margin:0}
+.hero .actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;height:46px;padding:0 20px;border-radius:10px;font-weight:600;font-size:15px}
+.btn.primary{background:var(--blue);color:#fff}
+.btn.primary:hover{background:var(--blue-ink);color:#fff;text-decoration:none}
+.btn.ghost{border:1px solid var(--line);color:var(--ink)}
+.btn.ghost:hover{border-color:var(--ink3);text-decoration:none}
+.hero .facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:40px;font-size:14px;color:var(--ink3)}
+.hero .facts b{color:var(--ink);font-weight:600}
+
+/* sections */
+section.s{padding:72px 0;border-bottom:1px solid var(--line)}
+.s-head{display:grid;grid-template-columns:220px 1fr;gap:32px;margin-bottom:36px}
+.s-head .k{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);padding-top:8px}
+.s-head h2{font-size:32px;line-height:1.15;letter-spacing:-.02em;margin:0 0 10px}
+.s-head p{margin:0;color:var(--ink2);max-width:62ch;font-size:17px}
+.body{margin-left:252px}
+
+/* does / doesn't */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:2px solid var(--ink)}
+.split > div{padding:20px 28px 4px 0}
+.split > div + div{padding-left:28px;border-left:1px solid var(--line)}
+.split h3{font-size:15px;margin:0 0 10px;letter-spacing:-.005em}
+.split ul{margin:0;padding:0;list-style:none}
+.split li{padding:10px 0;border-top:1px solid var(--line);font-size:15px;color:var(--ink2)}
+.split li:first-child{border-top:0}
+.split li b{color:var(--ink);font-weight:600}
+
+/* flow */
+figure.flow{margin:0}
+figure.flow svg{width:100%;height:auto;display:block}
+figure.flow figcaption{font-size:14px;color:var(--ink3);margin-top:12px}
+ol.stages{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:20px;counter-reset:st}
+ol.stages li{counter-increment:st;font-size:14px;color:var(--ink2)}
+ol.stages li::before{content:counter(st,decimal-leading-zero);display:block;font-family:var(--mono);font-size:12px;color:var(--blue);margin-bottom:6px}
+ol.stages b{display:block;color:var(--ink);font-size:15px;margin-bottom:2px}
+
+/* screens */
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.shot{margin:0}
+.shot img{width:100%;height:auto;display:block;border-radius:18px;border:1px solid var(--line);background:var(--well)}
+.shot figcaption{margin-top:10px;font-size:14px;color:var(--ink2)}
+.shot figcaption b{display:block;color:var(--ink);font-size:15px}
+.shot.wide{grid-column:1 / -1;margin-top:16px}
+.shot.wide img{border-radius:14px}
+.more{margin-top:28px;font-weight:600}
+
+/* steps */
+.phase{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:28px 0;border-top:1px solid var(--line)}
+.phase:first-of-type{border-top:2px solid var(--ink)}
+.phase > *, .s-head > *, .body{min-width:0}
+p code, li code, td code{overflow-wrap:anywhere}
+.phase .when{font-size:14px;color:var(--ink3)}
+.phase .when b{display:block;font-size:18px;color:var(--ink);letter-spacing:-.01em;margin-bottom:4px}
+ol.steps{margin:0;padding:0;list-style:none;counter-reset:n}
+ol.steps > li{counter-increment:n;position:relative;padding:0 0 18px 40px}
+ol.steps > li:last-child{padding-bottom:0}
+ol.steps > li::before{content:counter(n);position:absolute;left:0;top:1px;width:24px;height:24px;border-radius:50%;border:1.5px solid var(--ink);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+ol.steps b{font-weight:600}
+ol.steps p{margin:4px 0 0;color:var(--ink2);font-size:15px}
+.phase .note{grid-column:2}
+.note{margin-top:20px;padding:14px 18px;background:var(--blue-soft);border-radius:10px;font-size:15px;color:var(--ink)}
+
+/* rules */
+dl.rules{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:28px 40px}
+dl.rules div{border-top:2px solid var(--ink);padding-top:14px}
+dl.rules dt{font-weight:600;font-size:16px;margin-bottom:6px}
+dl.rules dd{margin:0;color:var(--ink2);font-size:15px}
+blockquote{margin:10px 0 0;padding:0 0 0 14px;border-left:2px solid var(--line);color:var(--ink);font-size:15px}
+
+/* repo map */
+table.map{width:100%;border-collapse:collapse;font-size:15px}
+table.map th{text-align:left;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);padding:0 16px 10px 0;border-bottom:2px solid var(--ink)}
+table.map td{padding:12px 16px 12px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink2)}
+table.map td:first-child{white-space:nowrap}
+table.map td:first-child a, table.map td:first-child code{font-family:var(--mono);font-size:13.5px}
+
+footer{padding:40px 0 64px;font-size:14px;color:var(--ink3)}
+footer .wrap{display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between}
+
+@media (max-width:900px){
+  .s-head,.phase{grid-template-columns:1fr;gap:10px}
+  .body{margin-left:0}
+  .phase .note{grid-column:auto}
+  ol.stages{grid-template-columns:1fr 1fr}
+  .shots{grid-template-columns:1fr 1fr}
+  dl.rules{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  .bar nav{display:none}
+  .hero{padding:44px 0 40px}
+  .hero h1{font-size:38px}
+  .hero p.lead{font-size:17px}
+  section.s{padding:48px 0}
+  .s-head h2{font-size:26px}
+  .split{grid-template-columns:1fr}
+  .split > div + div{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+  ol.stages{grid-template-columns:1fr}
+  table.map td:first-child{white-space:normal}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top">QCon Collector</a>
+    <nav aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#screens">Screens</a>
+      <a href="#setup">Setup</a>
+      <a href="#event">At the event</a>
+      <a href="#after">After</a>
+      <a href="#repo">Repo</a>
+    </nav>
+    <a class="gh" href="https://github.com/vosbek/apple-capture">GitHub</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">QCon San Francisco · Nov 16–20, 2026</div>
+    <h1>Capture the talk. Brief the team.</h1>
+    <p class="lead">An offline iPhone and iPad app that collects slide photos, moment markers, notes and your own voice reflections, plus a Claude Code pipeline that turns them into cited briefs your team can read and act on.</p>
+    <div class="actions">
+      <a class="btn primary" href="#setup">Start setup</a>
+      <a class="btn ghost" href="designs.html">See all screens</a>
+    </div>
+    <div class="facts">
+      <span><b>No Mac needed</b>, built with xtool in WSL</span>
+      <span><b>Free Apple ID</b>, 7-day signing</span>
+      <span><b>No session recording</b>, per QCon terms</span>
+    </div>
+  </div>
+</div>
+
+<section class="s">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="k">The idea</div>
+      <div>
+        <h2>The phone collects. Claude does the thinking later.</h2>
+        <p>During a talk you should be listening, not typing. The app takes one tap per capture and stamps everything with the time from the talk's start. Research, synthesis and writing happen afterwards on your PC, where every claim can be checked.</p>
+      </div>
+    </div>
+    <div class="body split">
+      <div>
+        <h3>What it does</h3>
+        <ul>
+          <li><b>Slide photos</b> in one tap, stamped with the time into the talk.</li>
+          <li><b>Moments</b> mark "this matters", with optional Idea, For us, Follow up or Question tags.</li>
+          <li><b>Notes</b> are stamped when you start typing, which is when the thought happened.</li>
+          <li><b>Reflections</b> record your own voice between talks, prompted by three short questions.</li>
+          <li><b>iPhone and iPad together</b>: captures from both merge by talk and time.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What it deliberately doesn't</h3>
+        <ul>
+          <li><b>Record sessions.</b> QCon's terms forbid it. Official recordings arrive for ticket holders from Dec 21.</li>
+          <li><b>Touch the network.</b> No accounts, no sync, no cloud transcription.</li>
+          <li><b>Transcribe or OCR on the device.</b> That happens later on the PC.</li>
+          <li><b>Rebuild the schedule app.</b> InfoQ's app already does ratings and bookmarks.</li>
+          <li><b>Publish anything you haven't reviewed.</b> Private stays private.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="how">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="k">How it works</div>
+      <div>
+        <h2>Captures stay private until you approve each brief.</h2>
+        <p>Three zones and one gate. Everything lands in a private vault on your PC. Only briefs you've reviewed cross into the shareable repo, and the official video later turns your moments into timestamps.</p>
+      </div>
+    </div>
+    <figure class="flow body">
+      <svg viewBox="0 0 760 520" role="img" aria-label="Flow from capture on iPhone and iPad, through a private vault on the PC, to a shareable repository behind a publish gate">
+        <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#69717E"/></marker></defs>
+        <g font-family="Inter, system-ui, sans-serif">
+          <rect x="1" y="1" width="758" height="112" rx="10" fill="#F3F4F6" stroke="#DDE0E5"/>
+          <text x="20" y="26" font-size="12" font-weight="600" fill="#69717E" letter-spacing=".06em">AT QCON · ON YOUR PHONE AND IPAD</text>
+          <g><rect x="20" y="40" width="226" height="56" rx="8" fill="#fff" stroke="#B9BEC7"/><text x="133" y="64" text-anchor="middle" font-size="14" font-weight="600" fill="#0B0C0E">iPhone</text><text x="133" y="82" text-anchor="middle" font-size="12" fill="#454C58">slide photos, moments</text></g>
+          <g><rect x="267" y="40" width="226" height="56" rx="8" fill="#fff" stroke="#B9BEC7"/><text x="380" y="64" text-anchor="middle" font-size="14" font-weight="600" fill="#0B0C0E">iPad</text><text x="380" y="82" text-anchor="middle" font-size="12" fill="#454C58">typed notes, moments</text></g>
+          <g><rect x="514" y="40" width="226" height="56" rx="8" fill="#fff" stroke="#B9BEC7"/><text x="627" y="64" text-anchor="middle" font-size="14" font-weight="600" fill="#0B0C0E">Reflections</text><text x="627" y="82" text-anchor="middle" font-size="12" fill="#454C58">your voice, between talks</text></g>
+          <path d="M80 113V178" stroke="#69717E" stroke-width="1.25" fill="none" marker-end="url(#ar)"/>
+          <text x="90" y="150" font-size="12" fill="#454C58">nightly zip export</text>
+          <rect x="1" y="180" width="758" height="112" rx="10" fill="#F3F4F6" stroke="#DDE0E5"/>
+          <text x="20" y="205" font-size="12" font-weight="600" fill="#69717E" letter-spacing=".06em">PRIVATE VAULT ON YOUR PC</text>
+          <g><rect x="20" y="219" width="128" height="56" rx="8" fill="#fff" stroke="#B9BEC7"/><text x="84" y="243" text-anchor="middle" font-size="14" font-weight="600" fill="#0B0C0E">Ingest</text><text x="84" y="261" text-anchor="middle" font-size="12" fill="#454C58">merge devices</text></g>
+          <g><rect x="168" y="219" width="128" height="56" rx="8" fill="#fff" stroke="#B9BEC7"/><text x="232" y="243" text-anchor="middle" font-size="14" font-weight="600" fill="#0B0C0E">Read</text><text x="232" y="261" text-anchor="middle" font-size="12" fill="#454C58">slides to text</text></g>
+          <g><rect x="316" y="219" width="128" height="56" rx="8" fill="#fff" stroke="#B9BEC7"/><text x="380" y="243" text-anchor="middle" font-size="14" font-weight="600" fill="#0B0C0E">Enrich</text><text x="380" y="261" text-anchor="middle" font-size="12" fill="#454C58">speakers, repos</text></g>
+          <g><rect x="464" y="219" width="128" height="56" rx="8" fill="#fff" stroke="#B9BEC7"/><text x="528" y="243" text-anchor="middle" font-size="14" font-weight="600" fill="#0B0C0E">Synthesize</text><text x="528" y="261" text-anchor="middle" font-size="12" fill="#454C58">brief per talk</text></g>
+          <g><rect x="612" y="219" width="128" height="56" rx="8" fill="#fff" stroke="#B9BEC7"/><text x="676" y="243" text-anchor="middle" font-size="14" font-weight="600" fill="#0B0C0E">Check</text><text x="676" y="261" text-anchor="middle" font-size="12" fill="#454C58">every claim cited</text></g>
+          <g stroke="#69717E" stroke-width="1.25" fill="none"><path d="M148 247H166" marker-end="url(#ar)"/><path d="M296 247H314" marker-end="url(#ar)"/><path d="M444 247H462" marker-end="url(#ar)"/><path d="M592 247H610" marker-end="url(#ar)"/><path d="M676 275V318H120V378" marker-end="url(#ar)"/></g>
+          <text x="128" y="352" font-size="12" fill="#454C58">drafts for your review</text>
+          <g><rect x="20" y="380" width="200" height="60" rx="8" fill="#EAF0FA" stroke="#1857B8" stroke-width="2"/><text x="120" y="405" text-anchor="middle" font-size="14" font-weight="700" fill="#0B0C0E">Publish gate</text><text x="120" y="424" text-anchor="middle" font-size="12" fill="#0B0C0E">you approve each talk</text></g>
+          <rect x="252" y="356" width="256" height="108" rx="10" fill="#F3F4F6" stroke="#DDE0E5"/>
+          <text x="268" y="376" font-size="12" font-weight="600" fill="#69717E" letter-spacing=".06em">SHAREABLE REPO</text>
+          <g><rect x="268" y="386" width="224" height="60" rx="8" fill="#fff" stroke="#0B0C0E"/><text x="380" y="411" text-anchor="middle" font-size="14" font-weight="600" fill="#0B0C0E">kb</text><text x="380" y="430" text-anchor="middle" font-size="12" fill="#454C58">briefs, themes, actions</text></g>
+          <g><rect x="540" y="386" width="200" height="60" rx="8" fill="#fff" stroke="#B9BEC7"/><text x="640" y="411" text-anchor="middle" font-size="14" font-weight="600" fill="#0B0C0E">Reconcile</text><text x="640" y="430" text-anchor="middle" font-size="12" fill="#454C58">moments to timestamps</text></g>
+          <g stroke="#69717E" stroke-width="1.25" fill="none"><path d="M220 410H266" marker-end="url(#ar)"/><path d="M540 416H494" marker-end="url(#ar)"/><path d="M640 482V448" marker-end="url(#ar)"/></g>
+          <text x="640" y="502" text-anchor="middle" font-size="12" font-weight="600" fill="#0B0C0E">Official video, from Dec 21</text>
+          <text x="640" y="518" text-anchor="middle" font-size="11.5" fill="#454C58">streaming only, for ticket holders</text>
+        </g>
+      </svg>
+      <figcaption>Raw captures, audio and unconference content never leave the vault.</figcaption>
+    </figure>
+    <ol class="stages body">
+      <li><b>Capture</b>One bundle per talk per device, saved as you go.</li>
+      <li><b>Ingest</b><code>ingest.py</code> merges devices into one timeline per talk.</li>
+      <li><b>Enrich</b>Speaker, company and repo research, cached and cited.</li>
+      <li><b>Brief</b>What it is, the evidence, and how your team could use it.</li>
+      <li><b>Publish</b>Reviewed briefs only, behind a gate that blocks private material.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="s" id="screens">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="k">Screens</div>
+      <div>
+        <h2>Built for one hand in a dark room.</h2>
+        <p>Big thumb targets, a dim capture screen, and nothing to type unless you want to. The iPad puts notes first, with the camera and Moment button beside them.</p>
+      </div>
+    </div>
+    <div class="shots">
+      <figure class="shot"><img src="img/now.png" alt="Now screen suggesting the next talk with a Start capture button" loading="lazy"><figcaption><b>Now</b>Suggests the talk for this slot.</figcaption></figure>
+      <figure class="shot"><img src="img/capture.png" alt="Capture screen with live camera, Moment and Slide buttons" loading="lazy"><figcaption><b>Capture</b>Slide and Moment, one tap each.</figcaption></figure>
+      <figure class="shot"><img src="img/review.png" alt="Talk review timeline in minutes from talk start" loading="lazy"><figcaption><b>Talk review</b>Everything on one timeline.</figcaption></figure>
+      <figure class="shot"><img src="img/export.png" alt="Export screen with share-as-zip button and signature expiry" loading="lazy"><figcaption><b>Export</b>A zip per day, plus expiry.</figcaption></figure>
+      <figure class="shot wide"><img src="img/ipad.png" alt="iPad capture screen with note log on the left and camera controls on the right" loading="lazy"><figcaption><b>Capture on iPad</b>Notes first, with keyboard shortcuts.</figcaption></figure>
+    </div>
+    <p class="more"><a href="designs.html">See all six screens with notes →</a></p>
+  </div>
+</section>
+
+<section class="s" id="setup">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="k">Setup</div>
+      <div>
+        <h2>From a Windows PC to the app on your phone.</h2>
+        <p>One-time toolchain, then build and install. Plan on an evening. Full detail, including likely compile errors, is in <a href="https://github.com/vosbek/apple-capture/blob/main/BUILD.md">BUILD.md</a>.</p>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="when"><b>1. Toolchain</b>Once · about 90 min</div>
+      <ol class="steps">
+        <li><b>Clone the repo</b> to <code>C:\devl\workspace\apple-capture</code> (or anywhere; adjust paths).</li>
+        <li><b>Install WSL and usbipd.</b> In an admin PowerShell in the repo folder:
+<pre><code>powershell -ExecutionPolicy Bypass -File .\setup\windows\1-windows-setup.ps1</code></pre>
+          <p>Reboot if asked, open Ubuntu once to create a user, then run it again.</p></li>
+        <li><b>Install Swift, xtool and the USB tools</b> in Ubuntu:
+<pre><code>cd /mnt/c/devl/workspace/apple-capture
+bash setup/windows/2-wsl-setup.sh</code></pre></li>
+        <li><b>Download Xcode 27.1 (.xip)</b> from <a href="https://developer.apple.com/download/all/?q=Xcode">developer.apple.com</a> with a free Apple ID. xtool only uses it as an SDK source.</li>
+        <li><b>Run <code>xtool setup</code></b>: choose Password mode, sign in with your Apple ID and 2FA, then give it the .xip path, e.g. <code>/mnt/c/Users/&lt;you&gt;/Downloads/Xcode_27.1.xip</code>.</li>
+        <li><b>Turn on Developer Mode</b> on the iPhone: Settings › Privacy &amp; Security. It restarts.</li>
+      </ol>
+    </div>
+
+    <div class="phase">
+      <div class="when"><b>2. Build and install</b>Per device · about 30 min</div>
+      <ol class="steps">
+        <li><b>Copy the app into Linux</b>, where builds are much faster:
+<pre><code>mkdir -p ~/ios
+rsync -a --exclude .build --exclude xtool \
+  /mnt/c/devl/workspace/apple-capture/QConCollector/ ~/ios/QConCollector/
+cd ~/ios/QConCollector</code></pre></li>
+        <li><b>Set your bundle ID once</b> in <code>xtool.yml</code>, e.g. <code>com.yourname.qconcollector</code>. Changing it later makes a new, empty app.</li>
+        <li><b>Compile without a device</b> until it builds: <code>xtool dev build</code>.</li>
+        <li><b>Attach the phone.</b> Plug in, unlock, and leave this running in an admin PowerShell: <code>.\setup\windows\3-attach-iphone.ps1</code>. In Ubuntu, <code>ideviceinfo</code> should print your device.</li>
+        <li><b>Install:</b> <code>xtool dev</code>. Tap Trust on the phone, then Settings › General › VPN &amp; Device Management › your Apple ID › Trust.</li>
+        <li><b>Rehearse</b> a fake 10-minute talk and check Files › On My iPhone › Collector. Repeat for the iPad.</li>
+      </ol>
+      <p class="note">Free Apple ID builds expire 7 days after install. Reinstall with <code>xtool dev</code> the morning you leave so the app lasts the whole event, and don't run <code>xtool setup</code> again while away.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="event">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="k">At the event</div>
+      <div>
+        <h2>A day with the collector.</h2>
+        <p>Star your plan in the Talks tab, then let the Now screen pick the right talk each slot.</p>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="when"><b>In a talk</b></div>
+      <ol class="steps">
+        <li><b>Start capture</b> from Now. Tap <b>Sync start</b> when the speaker actually begins.</li>
+        <li><b>Slide</b> for any slide worth keeping; <b>Moment</b> when something matters. Tag it in the next five seconds if you like.</li>
+        <li><b>Note</b> for a thought in your own words. It's stamped when you start typing.</li>
+      </ol>
+    </div>
+    <div class="phase">
+      <div class="when"><b>Between talks</b></div>
+      <ol class="steps">
+        <li><b>Reflect</b> on the talk that just ended: what was the claim, what would we do with it, who should hear it. Thirty seconds is enough.</li>
+      </ol>
+    </div>
+    <div class="phase">
+      <div class="when"><b>Each evening</b></div>
+      <ol class="steps">
+        <li><b>Export</b> the day as a zip and save it to OneDrive from the share sheet. That's your backup.</li>
+      </ol>
+      <p class="note">No app? The same pipeline accepts Camera photos, Voice Memos and an Action Button Shortcut that logs moments. See "Fallback" in BUILD.md.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="after">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="k">After the trip</div>
+      <div>
+        <h2>Turn captures into briefs with Claude Code.</h2>
+        <p>Open <code>qcon-pipeline/</code> in Claude Code. Each command has a narrow contract and writes only where it should.</p>
+      </div>
+    </div>
+    <div class="body">
+<pre><code><span class="c"># one-time, in WSL</span>
+cd qcon-pipeline &amp;&amp; pip install -r requirements.txt &amp;&amp; python3 -m pytest -q
+cp templates/lenses.example.yaml vault/lenses.yaml   <span class="c"># then make the lenses yours</span>
+
+<span class="c"># put the day zips in inbox/, then in Claude Code:</span>
+/qcon-ingest          <span class="c"># merge devices, number slides, transcribe reflections</span>
+/qcon-read all        <span class="c"># slides to text</span>
+/qcon-enrich all      <span class="c"># speakers, companies, repos, cached and cited</span>
+/qcon-brief all       <span class="c"># one brief per talk, then a fresh-context claim check</span>
+/qcon-themes          <span class="c"># cross-talk themes, actions, trip summary</span>
+/qcon-publish all-reviewed   <span class="c"># reviewed briefs only, into kb/, never pushed for you</span>
+
+<span class="c"># from Dec 21, when the official videos are up</span>
+/qcon-reconcile &lt;talk_id&gt;    <span class="c"># moments become video timestamps</span></code></pre>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="rules">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="k">Ground rules</div>
+      <div>
+        <h2>Built to respect the event and the speakers.</h2>
+      </div>
+    </div>
+    <dl class="rules body">
+      <div><dt>Photos yes, recordings no</dt><dd>QCon's <a href="https://qconsf.com/terms-conditions">terms</a> allow your own still photos and forbid recording sessions:
+        <blockquote>"You are not permitted to record or otherwise make your own video of any session."</blockquote>
+        Session audio is a stub in the app, for talks where a speaker or organizer explicitly says yes.</dd></div>
+      <div><dt>Every sentence is sourced</dt><dd>Briefs mark each claim as a slide, note, moment, reflection, a cached public source, or "Our read". A separate checker fails anything unsupported.</dd></div>
+      <div><dt>Private by default</dt><dd>Raw captures, audio and transcripts stay in the git-ignored vault. Unconference and hallway content never reaches the shared repo, per the Code of Conduct.</dd></div>
+      <div><dt>Link, don't copy</dt><dd>Official videos are streaming-only for ticket holders, so briefs link to them with timestamps. Only slide photos a brief cites are published, downscaled and credited.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="s" id="repo">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="k">Repo</div>
+      <div>
+        <h2>What's where.</h2>
+      </div>
+    </div>
+    <table class="map">
+      <thead><tr><th>Path</th><th>What it is</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://github.com/vosbek/apple-capture/tree/main/QConCollector">QConCollector/</a></td><td>The iPhone and iPad app: an xtool SwiftPM project, SwiftUI, iOS 17+.</td></tr>
+        <tr><td><a href="https://github.com/vosbek/apple-capture/tree/main/qcon-pipeline">qcon-pipeline/</a></td><td>Ingest, publish gate, schedule builder, Claude Code commands and agents, tests.</td></tr>
+        <tr><td><a href="https://github.com/vosbek/apple-capture/tree/main/setup/windows">setup/windows/</a></td><td>WSL, Swift, xtool and USB passthrough scripts for a Windows PC.</td></tr>
+        <tr><td><a href="https://github.com/vosbek/apple-capture/blob/main/BUILD.md">BUILD.md</a></td><td>Evening-by-evening build plan, exact commands, likely compile errors, the no-app fallback.</td></tr>
+        <tr><td><a href="https://github.com/vosbek/apple-capture/blob/main/qcon-pipeline/docs/architecture.md">architecture.md</a></td><td>The full design: bundle format, synthesis rules, knowledge repo, risks.</td></tr>
+        <tr><td><a href="https://github.com/vosbek/apple-capture/blob/main/qcon-pipeline/docs/design-spec.md">design-spec.md</a></td><td>Screen-by-screen UI specification.</td></tr>
+        <tr><td><a href="https://github.com/vosbek/apple-capture/tree/main/qcon-pipeline/docs/research">docs/research/</a></td><td>The QCon logistics and iOS feasibility research behind the design.</td></tr>
+        <tr><td><a href="designs.html">designs.html</a></td><td>All six screens in one page.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>QCon Collector · a personal tool, not affiliated with QCon or InfoQ.</span>
+    <span>Schedule data paraphrased from <a href="https://qconsf.com/schedule/nov2026">qconsf.com</a>.</span>
+  </div>
+</footer>
+</body>
+</html>

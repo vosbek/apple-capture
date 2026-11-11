@@ -1,0 +1,17 @@
+# Private capture data. Never commit anything from inbox/ or vault/ except the skeleton
+# and the public schedule dataset. kb/ is its own git repository (see /qcon-publish).
+inbox/**
+!inbox/**/
+!inbox/**/.gitkeep
+vault/**
+!vault/**/
+!vault/**/.gitkeep
+!vault/schedule/qconsf-2026-schedule.json
+!vault/schedule/qconsf-2026-schedule-notes.md
+!vault/schedule/schedule.json
+kb/**
+!kb/**/
+!kb/**/.gitkeep
+.venv/
+__pycache__/
+.pytest_cache/

@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>QCon Collector Designs</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--page:#FFFFFF;--ink:#0C0D0F;--ink2:#4A5260;--ink3:#5F6877;--line:#DADDE2;--blue:#1857B8;--well:#F2F3F5}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--page);color:var(--ink);font-family:Inter,-apple-system,'Segoe UI',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:1280px;margin:0 auto;padding:48px 32px 80px}
+header.top{display:grid;grid-template-columns:1fr auto;gap:8px 32px;align-items:end;border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:40px}
+header.top h1{margin:0;font-size:40px;line-height:44px;font-weight:700;letter-spacing:-0.02em}
+header.top p{margin:0;font-size:15px;line-height:22px;color:var(--ink2);max-width:62ch}
+header.top .meta{font-size:13px;color:var(--ink3);text-align:right;line-height:20px}
+h2{font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink3);margin:0 0 20px}
+main>section+section{margin-top:64px}
+.row{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:48px 32px}
+.board{margin:0;min-width:0}
+.board figcaption{display:flex;align-items:baseline;gap:10px;margin-bottom:6px}
+.board .num{font-size:13px;font-weight:700;color:var(--blue);font-variant-numeric:tabular-nums;min-width:20px}
+.board .t{font-size:17px;font-weight:600}
+.board .size{margin-left:auto;font-size:12px;color:var(--ink3);font-variant-numeric:tabular-nums}
+.board .desc{margin:0 0 14px;font-size:13px;line-height:19px;color:var(--ink2);min-height:57px}
+.fit{position:relative;width:100%;overflow:hidden;border-radius:22px;outline:1px solid var(--line);background:var(--well)}
+.art{position:absolute;left:0;top:0;transform-origin:0 0}
+.art a{color:#1857B8;text-decoration:none}
+.art.dim a{color:#8AB4F8}
+.art button{font-family:inherit;cursor:default}
+.ipad .board .desc{min-height:0}
+.ipad .fit{border-radius:18px}
+footer{margin-top:64px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3);line-height:20px}
+@media (max-width:640px){main{padding:28px 16px 56px}header.top{grid-template-columns:1fr}header.top .meta{text-align:left}header.top h1{font-size:30px;line-height:34px}.board .desc{min-height:0}}
+.back{margin:0 0 24px;font-size:14px}.back a{color:#1857B8;text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<p class="back"><a href="index.html">&larr; QCon Collector overview</a></p>
+<header class="top">
+  <div>
+    <h1>QCon Collector</h1>
+    <p>Screen designs for the offline iPhone and iPad capture app: slide photos, moment markers, notes and between-talk reflections, with session audio off by default.</p>
+  </div>
+  <div class="meta">QCon San Francisco 2026<br>Designs as of Nov 10, 2026</div>
+</header>
+<section>
+  <h2>iPhone</h2>
+  <div class="row">
+<figure class="board" id="now">
+  <figcaption><span class="num">1</span><span class="t">Now</span><span class="size">390×844</span></figcaption>
+  <p class="desc">Suggests the talk for the current slot from your starred plan and the room you were last in. One tap starts capture; Reflect is offered on the talk that just ended.</p>
+  <div class="fit" data-w="390" data-h="844" style="max-width:390px">
+    <div class="art" style="width:390px;height:844px"><div data-dc-tpl="3" style="--bg: #F2F3F5; --surface: #FFFFFF; --ink: #0C0D0F; --ink2: #4A5260; --ink3: #5F6877; --line: #DADDE2; --blue: #1857B8; --blue-soft: #E7EEF9; --fill: #E6E8EC; width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); font-family: -apple-system, &quot;SF Pro Text&quot;, Inter, system-ui, sans-serif; padding: 56px 16px 0px; display: flex; flex-direction: column; gap: 13px;">
+
+  <header data-dc-tpl="4" style="display: flex; align-items: flex-end; justify-content: space-between; padding: 0px 4px;">
+    <div data-dc-tpl="5" style="display: flex; flex-direction: column; gap: 2px;">
+      <div data-dc-tpl="6" style="font-size: 13px; font-weight: 600; color: var(--ink3); letter-spacing: 0.02em; font-variant-numeric: tabular-nums;">MON NOV 16 · 10:28 AM</div>
+      <h1 data-dc-tpl="7" style="margin: 0px; font-size: 34px; line-height: 41px; font-weight: 700; letter-spacing: -0.01em;">Now</h1>
+    </div>
+    <button data-dc-tpl="8" aria-label="Start an ad hoc session, kept private" style="height: 44px; padding: 0px 2px; border: 0px; background: transparent; color: var(--blue); font-size: 17px; display: flex; align-items: center; gap: 6px;">
+      <svg data-dc-tpl="9" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path data-dc-tpl="10" d="M8 2v12M2 8h12"></path></svg>
+      Ad hoc
+    </button>
+  </header>
+
+  <section data-dc-tpl="11" style="display: flex; flex-direction: column; gap: 6px;">
+    <div data-dc-tpl="12" style="font-size: 13px; color: var(--ink3); padding: 0px 4px; font-weight: 500;">JUST ENDED</div>
+    <div data-dc-tpl="13" style="background: var(--surface); border-radius: 14px; padding: 12px 12px 12px 16px; display: flex; align-items: center; gap: 12px;">
+      <a data-dc-tpl="14" href="#review" style="flex: 1 1 0%; min-width: 0px; display: flex; flex-direction: column; gap: 3px; color: var(--ink);">
+        <div data-dc-tpl="15" style="font-size: 16px; font-weight: 600; line-height: 21px;">The Harness Is the New Operating System</div>
+        <div data-dc-tpl="16" style="font-size: 13px; color: var(--ink2); line-height: 18px;">Keynote · 14 slides · 6 moments · 2 notes</div>
+      </a>
+      <button data-dc-tpl="17" aria-label="Record a voice reflection on this talk" style="flex: 0 0 auto; height: 56px; padding: 0px 16px; border: 0px; border-radius: 12px; background: var(--blue-soft); color: var(--blue); font-size: 15px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+        <svg data-dc-tpl="18" aria-hidden="true" width="18" height="22" viewBox="0 0 18 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect data-dc-tpl="19" x="5.5" y="1" width="7" height="12" rx="3.5"></rect><path data-dc-tpl="20" d="M1.5 10.5a7.5 7.5 0 0 0 15 0M9 18v3"></path></svg>
+        Reflect
+      </button>
+    </div>
+  </section>
+
+  <section data-dc-tpl="21" style="display: flex; flex-direction: column; gap: 6px;">
+    <div data-dc-tpl="22" style="display: flex; justify-content: space-between; align-items: baseline; padding: 0px 4px;">
+      <div data-dc-tpl="23" style="font-size: 13px; color: var(--ink3); font-weight: 500; font-variant-numeric: tabular-nums;">NEXT · 10:35–11:25</div>
+      <div data-dc-tpl="24" style="font-size: 13px; color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums;">starts in 7 min</div>
+    </div>
+    <div data-dc-tpl="25" style="background: var(--surface); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 12px;">
+      <div data-dc-tpl="26" style="display: flex; flex-direction: column; gap: 4px;">
+        <div data-dc-tpl="27" style="font-size: 12px; font-weight: 600; color: var(--blue); line-height: 16px;">Guardrails &amp; Safety Nets (Evals) for the New Landscape</div>
+        <div data-dc-tpl="28" style="font-size: 19px; font-weight: 700; line-height: 24px; letter-spacing: -0.01em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Running Software Factory Efficiently at Uber Scale: Holding Agent Spend Steady While Requests Grew 9X</div>
+        <div data-dc-tpl="29" style="font-size: 14px; color: var(--ink2); line-height: 19px;">Uday Kiran Medisetty, Uber · Ballroom A</div>
+      </div>
+      <div data-dc-tpl="30" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--ink2);">
+        <svg data-dc-tpl="31" aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path data-dc-tpl="32" d="M7 .8l1.9 3.9 4.3.6-3.1 3 .7 4.3L7 10.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z"></path></svg>
+        Suggested because it is on your plan
+      </div>
+      <a data-dc-tpl="33" href="#capture" style="height: 56px; border-radius: 14px; background: var(--blue); color: rgb(255, 255, 255); font-size: 17px; font-weight: 600; display: flex; align-items: center; justify-content: center;">Start capture</a>
+    </div>
+  </section>
+
+  <section data-dc-tpl="34" style="display: flex; flex-direction: column; gap: 6px;">
+    <div data-dc-tpl="35" style="font-size: 13px; color: var(--ink3); padding: 0px 4px; font-weight: 500;">ALSO IN THIS SLOT</div>
+    <div data-dc-tpl="36" style="background: var(--surface); border-radius: 14px; display: flex; flex-direction: column; padding-left: 16px;">
+      
+        <a data-dc-tpl="38" href="#capture" style="min-height: 54px; display: flex; align-items: center; gap: 8px; padding: 7px 14px 7px 0px; box-sizing: border-box; border-bottom: 1px solid var(--line); color: var(--ink);">
+          <div data-dc-tpl="39" style="flex: 1 1 0%; min-width: 0px; display: flex; flex-direction: column; gap: 1px;">
+            <div data-dc-tpl="40" style="font-size: 15px; font-weight: 500; line-height: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><span class="sc-interp">Live Resharding Without Regret: Lessons from Building Valkey’s Atomic Slot Migration</span></div>
+            <div data-dc-tpl="41" style="font-size: 12px; color: var(--ink2); line-height: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><span class="sc-interp">Jacob Murphy, Google Cloud · Ballroom BC</span></div>
+          </div>
+          <svg data-dc-tpl="42" aria-hidden="true" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="#8A919C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="43" d="M1 1l6 6-6 6"></path></svg>
+        </a>
+      
+        <a data-dc-tpl="38" href="#capture" style="min-height: 54px; display: flex; align-items: center; gap: 8px; padding: 7px 14px 7px 0px; box-sizing: border-box; border-bottom: 1px solid var(--line); color: var(--ink);">
+          <div data-dc-tpl="39" style="flex: 1 1 0%; min-width: 0px; display: flex; flex-direction: column; gap: 1px;">
+            <div data-dc-tpl="40" style="font-size: 15px; font-weight: 500; line-height: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><span class="sc-interp">APIs That Can’t Afford to Be Wrong: Lessons from Moving Money</span></div>
+            <div data-dc-tpl="41" style="font-size: 12px; color: var(--ink2); line-height: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><span class="sc-interp">Fawziyah Alebiosu, Imprint · Pacific DEKJ</span></div>
+          </div>
+          <svg data-dc-tpl="42" aria-hidden="true" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="#8A919C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="43" d="M1 1l6 6-6 6"></path></svg>
+        </a>
+      
+        <a data-dc-tpl="38" href="#capture" style="min-height: 54px; display: flex; align-items: center; gap: 8px; padding: 7px 14px 7px 0px; box-sizing: border-box; border-bottom: 1px solid var(--line); color: var(--ink);">
+          <div data-dc-tpl="39" style="flex: 1 1 0%; min-width: 0px; display: flex; flex-direction: column; gap: 1px;">
+            <div data-dc-tpl="40" style="font-size: 15px; font-weight: 500; line-height: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><span class="sc-interp">The Freeze Paradox: Why Stopping Deployments Doesn’t Stop Failures</span></div>
+            <div data-dc-tpl="41" style="font-size: 12px; color: var(--ink2); line-height: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><span class="sc-interp">Prachi Jain, Sandhya Narayan · Seacliff ABC</span></div>
+          </div>
+          <svg data-dc-tpl="42" aria-hidden="true" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="#8A919C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="43" d="M1 1l6 6-6 6"></path></svg>
+        </a>
+      
+      <button data-dc-tpl="44" style="min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0px 14px 0px 0px; border: 0px; background: transparent; color: var(--ink); font-size: 15px; font-weight: 500; text-align: left;">
+        <span data-dc-tpl="45">2 sponsored talks <span data-dc-tpl="46" style="color: var(--ink2); font-weight: 400;">· Pacific LM, Marina</span></span>
+        <svg data-dc-tpl="47" aria-hidden="true" width="14" height="8" viewBox="0 0 14 8" fill="none" stroke="#8A919C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="48" d="M1 1l6 6 6-6"></path></svg>
+      </button>
+    </div>
+  </section>
+
+  <nav data-dc-tpl="49" aria-label="Tabs" style="position: absolute; left: 0px; right: 0px; bottom: 0px; height: 83px; box-sizing: border-box; padding: 8px 24px 0px; background: var(--surface); border-top: 1px solid var(--line); display: flex; justify-content: space-around; align-items: flex-start;">
+    <a data-dc-tpl="50" href="#now" aria-current="page" style="width: 88px; height: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--blue); font-size: 11px; font-weight: 600;">
+      <svg data-dc-tpl="51" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle data-dc-tpl="52" cx="12" cy="12" r="9"></circle><path data-dc-tpl="53" d="M12 7v5l3 2"></path></svg>
+      Now
+    </a>
+    <a data-dc-tpl="54" href="#review" style="width: 88px; height: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--ink3); font-size: 11px; font-weight: 500;">
+      <svg data-dc-tpl="55" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path data-dc-tpl="56" d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"></path></svg>
+      Talks
+    </a>
+    <a data-dc-tpl="57" href="#export" style="width: 88px; height: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--ink3); font-size: 11px; font-weight: 500;">
+      <svg data-dc-tpl="58" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="59" d="M12 15V3M8 7l4-4 4 4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"></path></svg>
+      Export
+    </a>
+  </nav></div></div>
+  </div>
+</figure>
+<figure class="board" id="capture">
+  <figcaption><span class="num">2</span><span class="t">Capture</span><span class="size">390×844</span></figcaption>
+  <p class="desc">Slide and Moment are the two big thumb targets. Tag chips show for five seconds after a capture; Note opens a half sheet; the timer counts from the speaker’s start.</p>
+  <div class="fit" data-w="390" data-h="844" style="max-width:390px">
+    <div class="art" style="width:390px;height:844px"><div data-dc-tpl="3" style="--bg: #F2F3F5; --surface: #FFFFFF; --ink: #0C0D0F; --ink2: #4A5260; --ink3: #5F6877; --line: #DADDE2; --accent: #1857B8; --slide-bg: #1857B8; --slide-ink: #FFFFFF; --moment-bg: #0C0D0F; --moment-ink: #FFFFFF; --chip-bg: #FFFFFF; width: 390px; height: 844px; box-sizing: border-box; background: var(--bg); color: var(--ink); font-family: -apple-system, &quot;SF Pro Text&quot;, Inter, system-ui, sans-serif; padding: 54px 16px 34px; display: flex; flex-direction: column; gap: 10px;">
+
+  <header data-dc-tpl="4" style="display: flex; flex-direction: column; gap: 4px;">
+    <div data-dc-tpl="5" style="display: flex; align-items: center; justify-content: space-between; height: 44px;">
+      <a data-dc-tpl="6" href="#review" style="min-width: 60px; height: 44px; display: flex; align-items: center; font-size: 17px; color: var(--accent);">End</a>
+      <div data-dc-tpl="7" style="display: flex; align-items: baseline; gap: 8px;">
+        <div data-dc-tpl="8" style="font-size: 30px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.01em;"><span class="sc-interp">23:41</span></div>
+        <div data-dc-tpl="9" style="font-size: 14px; color: var(--ink2); font-variant-numeric: tabular-nums;">46 min left</div>
+      </div>
+      <button data-dc-tpl="10" aria-label="More: session audio, sync start, switch talk" style="width: 60px; height: 44px; border: 0px; background: transparent; color: var(--accent); display: flex; align-items: center; justify-content: flex-end; padding: 0px;">
+        <svg data-dc-tpl="11" aria-hidden="true" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2"><circle data-dc-tpl="12" cx="13" cy="13" r="11"></circle><path data-dc-tpl="13" d="M7.5 13h.01M13 13h.01M18.5 13h.01" stroke-width="3" stroke-linecap="round"></path></svg>
+      </button>
+    </div>
+    <div data-dc-tpl="14" style="display: flex; flex-direction: column; gap: 1px; padding: 0px 2px;">
+      <div data-dc-tpl="15" style="font-size: 16px; font-weight: 600; line-height: 21px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">The Harness Is the New Operating System</div>
+      <div data-dc-tpl="16" style="font-size: 13px; color: var(--ink2); line-height: 18px;">Manju Rajashekhar · Keynote · Grand Ballroom</div>
+    </div>
+  </header>
+
+  <div data-dc-tpl="17" role="img" aria-label="Live camera preview, placeholder" style="flex: 1 1 0%; min-height: 0px; position: relative; border-radius: 16px; background: rgb(23, 25, 29); overflow: hidden; display: flex; align-items: center; justify-content: center;">
+    <div data-dc-tpl="18" style="width: 250px; height: 141px; border-radius: 3px; background: rgb(201, 206, 214); display: flex; align-items: center; justify-content: center; font-size: 13px; color: rgb(43, 48, 56); text-align: center; line-height: 18px;">Live camera preview<br data-dc-tpl="19">(projected slide)</div>
+    <div data-dc-tpl="20" style="position: absolute; left: 12px; top: 12px; height: 28px; padding: 0px 10px; border-radius: 14px; background: rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); font-size: 13px; font-weight: 600; display: flex; align-items: center; font-variant-numeric: tabular-nums;"><span class="sc-interp">14 slides</span></div>
+    <div data-dc-tpl="21" style="position: absolute; left: 12px; bottom: 12px; width: 52px; height: 52px; border-radius: 8px; border: 2px solid rgb(255, 255, 255); background: rgb(141, 149, 161); box-sizing: border-box;"></div>
+    <div data-dc-tpl="22" style="position: absolute; left: 0px; right: 0px; bottom: 12px; display: flex; justify-content: center; gap: 6px;">
+      <button data-dc-tpl="23" aria-label="Zoom 1x" style="width: 44px; height: 44px; border-radius: 22px; border: 0px; background: rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); font-size: 14px; font-weight: 600;">1×</button>
+      <button data-dc-tpl="24" aria-label="Zoom 2x, selected" style="width: 44px; height: 44px; border-radius: 22px; border: 0px; background: rgb(255, 255, 255); color: rgb(12, 13, 15); font-size: 14px; font-weight: 700;">2×</button>
+      <button data-dc-tpl="25" aria-label="Zoom 5x" style="width: 44px; height: 44px; border-radius: 22px; border: 0px; background: rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); font-size: 14px; font-weight: 600;">5×</button>
+    </div>
+  </div>
+
+  <div data-dc-tpl="26" style="display: flex; flex-direction: column; gap: 6px;">
+    <div data-dc-tpl="27" style="display: flex; justify-content: space-between; align-items: center; padding: 0px 2px; font-size: 13px; line-height: 18px;">
+      <div data-dc-tpl="28" style="color: var(--ink2); font-variant-numeric: tabular-nums;"><strong data-dc-tpl="29" style="color: var(--ink); font-weight: 600;"><span class="sc-interp">Moment</span></strong> saved at +<span class="sc-interp">22:58</span>. Tag it?</div>
+      <button data-dc-tpl="30" style="height: 28px; border: 0px; background: transparent; color: var(--accent); font-size: 13px; font-weight: 600; padding: 0px 2px;">Undo</button>
+    </div>
+    <div data-dc-tpl="31" style="display: grid; grid-template-columns: repeat(4, minmax(0px, 1fr)); gap: 6px;">
+      
+        <button data-dc-tpl="33" style="height: 44px; border-radius: 12px; font-size: 14px; font-weight: 600; padding: 0px; border: 1px solid var(--line); background: var(--chip-bg); color: var(--ink);"><span class="sc-interp">Idea</span></button>
+      
+        <button data-dc-tpl="33" style="height: 44px; border-radius: 12px; font-size: 14px; font-weight: 600; padding: 0px; border: 1px solid var(--line); background: var(--chip-bg); color: var(--ink);"><span class="sc-interp">For us</span></button>
+      
+        <button data-dc-tpl="33" style="height: 44px; border-radius: 12px; font-size: 14px; font-weight: 600; padding: 0px; border: 1px solid var(--line); background: var(--chip-bg); color: var(--ink);"><span class="sc-interp">Follow up</span></button>
+      
+        <button data-dc-tpl="33" style="height: 44px; border-radius: 12px; font-size: 14px; font-weight: 600; padding: 0px; border: 1px solid var(--line); background: var(--chip-bg); color: var(--ink);"><span class="sc-interp">Question</span></button>
+      
+    </div>
+  </div>
+
+  <button data-dc-tpl="34" style="height: 54px; border-radius: 14px; border: 1px solid var(--line); background: var(--chip-bg); color: var(--ink); font-size: 17px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <svg data-dc-tpl="35" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="36" d="M3 17l1-4L14.5 2.5a1.8 1.8 0 0 1 2.6 0l.4.4a1.8 1.8 0 0 1 0 2.6L7 16z"></path></svg>
+    Note
+  </button>
+
+  <div data-dc-tpl="37" style="display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 10px; height: 172px;">
+    <button data-dc-tpl="38" style="border: 0px; border-radius: 20px; background: var(--moment-bg); color: var(--moment-ink); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
+      <svg data-dc-tpl="39" aria-hidden="true" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="40" d="M8 31V4M8 5h17l-4 6.5 4 6.5H8"></path></svg>
+      <span data-dc-tpl="41" style="font-size: 20px; font-weight: 700;">Moment</span>
+      <span data-dc-tpl="42" style="font-size: 13px; opacity: 0.8; font-variant-numeric: tabular-nums;"><span class="sc-interp">6 marked</span></span>
+    </button>
+    <button data-dc-tpl="43" style="border: 0px; border-radius: 20px; background: var(--slide-bg); color: var(--slide-ink); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
+      <svg data-dc-tpl="44" aria-hidden="true" width="36" height="34" viewBox="0 0 36 34" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="45" d="M3 10h6l3-5h12l3 5h6v19H3z"></path><circle data-dc-tpl="46" cx="18" cy="19" r="6"></circle></svg>
+      <span data-dc-tpl="47" style="font-size: 20px; font-weight: 700;">Slide</span>
+      <span data-dc-tpl="48" style="font-size: 13px; opacity: 0.85;">or press a volume button</span>
+    </button>
+  </div></div></div>
+  </div>
+</figure>
+<figure class="board" id="capture-dim">
+  <figcaption><span class="num">2b</span><span class="t">Capture, dim room</span><span class="size">390×844</span></figcaption>
+  <p class="desc">The default appearance during sessions. Shown here with session audio on, which only appears after a recorded grant from the speaker or QCon staff.</p>
+  <div class="fit" data-w="390" data-h="844" style="max-width:390px">
+    <div class="art dim" style="width:390px;height:844px"><div data-dc-tpl="3" style="--bg: #000000; --surface: #15171A; --ink: #E6E8EC; --ink2: #A9B0BB; --ink3: #9AA2AE; --line: #2C3037; --accent: #8AB4F8; --slide-bg: #12305F; --slide-ink: #D5E4FC; --moment-bg: #24272C; --moment-ink: #E6E8EC; --chip-bg: #15171A; width: 390px; height: 844px; box-sizing: border-box; background: var(--bg); color: var(--ink); font-family: -apple-system, &quot;SF Pro Text&quot;, Inter, system-ui, sans-serif; padding: 54px 16px 34px; display: flex; flex-direction: column; gap: 10px;">
+
+  <header data-dc-tpl="4" style="display: flex; flex-direction: column; gap: 4px;">
+    <div data-dc-tpl="5" style="display: flex; align-items: center; justify-content: space-between; height: 44px;">
+      <a data-dc-tpl="6" href="#review" style="min-width: 60px; height: 44px; display: flex; align-items: center; font-size: 17px; color: var(--accent);">End</a>
+      <div data-dc-tpl="7" style="display: flex; align-items: baseline; gap: 8px;">
+        <div data-dc-tpl="8" style="font-size: 30px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.01em;"><span class="sc-interp">23:41</span></div>
+        <div data-dc-tpl="9" style="font-size: 14px; color: var(--ink2); font-variant-numeric: tabular-nums;">46 min left</div>
+      </div>
+      <button data-dc-tpl="10" aria-label="More: session audio, sync start, switch talk" style="width: 60px; height: 44px; border: 0px; background: transparent; color: var(--accent); display: flex; align-items: center; justify-content: flex-end; padding: 0px;">
+        <svg data-dc-tpl="11" aria-hidden="true" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2"><circle data-dc-tpl="12" cx="13" cy="13" r="11"></circle><path data-dc-tpl="13" d="M7.5 13h.01M13 13h.01M18.5 13h.01" stroke-width="3" stroke-linecap="round"></path></svg>
+      </button>
+    </div>
+    <div data-dc-tpl="14" style="display: flex; flex-direction: column; gap: 1px; padding: 0px 2px;">
+      <div data-dc-tpl="15" style="font-size: 16px; font-weight: 600; line-height: 21px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">The Harness Is the New Operating System</div>
+      <div data-dc-tpl="16" style="font-size: 13px; color: var(--ink2); line-height: 18px;">Manju Rajashekhar · Keynote · Grand Ballroom</div>
+    </div>
+    <div data-dc-tpl="17" style="display: flex; align-items: center; gap: 8px; height: 32px; padding: 0px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); font-size: 13px; line-height: 18px; margin-top: 4px;">
+      <span data-dc-tpl="18" aria-hidden="true" style="width: 9px; height: 9px; border-radius: 5px; background: rgb(255, 255, 255); flex: 0 0 auto;"></span>
+      <span data-dc-tpl="19" style="font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; flex: 1 1 0%;">Audio on · 23:39</span>
+      <span data-dc-tpl="20" style="color: var(--ink2); white-space: nowrap; flex: 0 0 auto;">Speaker said yes</span>
+    </div>
+  </header>
+
+  <div data-dc-tpl="21" role="img" aria-label="Live camera preview, placeholder" style="flex: 1 1 0%; min-height: 0px; position: relative; border-radius: 16px; background: rgb(16, 17, 20); border: 1px solid var(--line); overflow: hidden; display: flex; align-items: center; justify-content: center;">
+    <div data-dc-tpl="22" style="width: 250px; height: 141px; border-radius: 3px; background: rgb(185, 191, 200); display: flex; align-items: center; justify-content: center; font-size: 13px; color: rgb(43, 48, 56); text-align: center; line-height: 18px;">Live camera preview<br data-dc-tpl="23">(projected slide)</div>
+    <div data-dc-tpl="24" style="position: absolute; left: 12px; top: 12px; height: 28px; padding: 0px 10px; border-radius: 14px; background: rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); font-size: 13px; font-weight: 600; display: flex; align-items: center; font-variant-numeric: tabular-nums;"><span class="sc-interp">14 slides</span></div>
+    <div data-dc-tpl="25" style="position: absolute; left: 12px; bottom: 12px; width: 52px; height: 52px; border-radius: 8px; border: 2px solid rgb(230, 232, 236); background: rgb(111, 119, 131); box-sizing: border-box;"></div>
+    <div data-dc-tpl="26" style="position: absolute; left: 0px; right: 0px; bottom: 12px; display: flex; justify-content: center; gap: 6px;">
+      <button data-dc-tpl="27" aria-label="Zoom 1x" style="width: 44px; height: 44px; border-radius: 22px; border: 0px; background: rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); font-size: 14px; font-weight: 600;">1×</button>
+      <button data-dc-tpl="28" aria-label="Zoom 2x, selected" style="width: 44px; height: 44px; border-radius: 22px; border: 0px; background: rgb(230, 232, 236); color: rgb(12, 13, 15); font-size: 14px; font-weight: 700;">2×</button>
+      <button data-dc-tpl="29" aria-label="Zoom 5x" style="width: 44px; height: 44px; border-radius: 22px; border: 0px; background: rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); font-size: 14px; font-weight: 600;">5×</button>
+    </div>
+  </div>
+
+  <div data-dc-tpl="30" style="display: flex; flex-direction: column; gap: 6px;">
+    <div data-dc-tpl="31" style="display: flex; justify-content: space-between; align-items: center; padding: 0px 2px; font-size: 13px; line-height: 18px;">
+      <div data-dc-tpl="32" style="color: var(--ink2); font-variant-numeric: tabular-nums;"><strong data-dc-tpl="33" style="color: var(--ink); font-weight: 600;"><span class="sc-interp">Slide</span></strong> saved at +<span class="sc-interp">23:10</span>. Tag it?</div>
+      <button data-dc-tpl="34" style="height: 28px; border: 0px; background: transparent; color: var(--accent); font-size: 13px; font-weight: 600; padding: 0px 2px;">Undo</button>
+    </div>
+    <div data-dc-tpl="35" style="display: grid; grid-template-columns: repeat(4, minmax(0px, 1fr)); gap: 6px;">
+      
+        <button data-dc-tpl="37" style="height: 44px; border-radius: 12px; font-size: 14px; font-weight: 600; padding: 0px; border: 1px solid var(--line); background: var(--chip-bg); color: var(--ink);"><span class="sc-interp">Idea</span></button>
+      
+        <button data-dc-tpl="37" style="height: 44px; border-radius: 12px; font-size: 14px; font-weight: 600; padding: 0px; border: 1px solid var(--line); background: var(--chip-bg); color: var(--ink);"><span class="sc-interp">For us</span></button>
+      
+        <button data-dc-tpl="37" style="height: 44px; border-radius: 12px; font-size: 14px; font-weight: 600; padding: 0px; border: 1px solid var(--line); background: var(--chip-bg); color: var(--ink);"><span class="sc-interp">Follow up</span></button>
+      
+        <button data-dc-tpl="37" style="height: 44px; border-radius: 12px; font-size: 14px; font-weight: 600; padding: 0px; border: 1px solid var(--line); background: var(--chip-bg); color: var(--ink);"><span class="sc-interp">Question</span></button>
+      
+    </div>
+  </div>
+
+  <button data-dc-tpl="38" style="height: 54px; border-radius: 14px; border: 1px solid var(--line); background: var(--chip-bg); color: var(--ink); font-size: 17px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <svg data-dc-tpl="39" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="40" d="M3 17l1-4L14.5 2.5a1.8 1.8 0 0 1 2.6 0l.4.4a1.8 1.8 0 0 1 0 2.6L7 16z"></path></svg>
+    Note
+  </button>
+
+  <div data-dc-tpl="41" style="display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 10px; height: 172px;">
+    <button data-dc-tpl="42" style="border: 1px solid var(--line); border-radius: 20px; background: var(--moment-bg); color: var(--moment-ink); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
+      <svg data-dc-tpl="43" aria-hidden="true" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="44" d="M8 31V4M8 5h17l-4 6.5 4 6.5H8"></path></svg>
+      <span data-dc-tpl="45" style="font-size: 20px; font-weight: 700;">Moment</span>
+      <span data-dc-tpl="46" style="font-size: 13px; opacity: 0.8; font-variant-numeric: tabular-nums;"><span class="sc-interp">6 marked</span></span>
+    </button>
+    <button data-dc-tpl="47" style="border: 0px; border-radius: 20px; background: var(--slide-bg); color: var(--slide-ink); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
+      <svg data-dc-tpl="48" aria-hidden="true" width="36" height="34" viewBox="0 0 36 34" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="49" d="M3 10h6l3-5h12l3 5h6v19H3z"></path><circle data-dc-tpl="50" cx="18" cy="19" r="6"></circle></svg>
+      <span data-dc-tpl="51" style="font-size: 20px; font-weight: 700;">Slide</span>
+      <span data-dc-tpl="52" style="font-size: 13px; opacity: 0.85;">or press a volume button</span>
+    </button>
+  </div></div></div>
+  </div>
+</figure>
+<figure class="board" id="review">
+  <figcaption><span class="num">3</span><span class="t">Talk review</span><span class="size">390×844</span></figcaption>
+  <p class="desc">Every capture on a timeline in minutes from the talk’s start, plus session-audio and official-video status. Resume capture or add a reflection.</p>
+  <div class="fit" data-w="390" data-h="844" style="max-width:390px">
+    <div class="art" style="width:390px;height:844px"><div data-dc-tpl="3" style="--bg: #F2F3F5; --surface: #FFFFFF; --ink: #0C0D0F; --ink2: #4A5260; --ink3: #5F6877; --line: #DADDE2; --blue: #1857B8; --blue-soft: #E7EEF9; --fill: #E6E8EC; width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); font-family: -apple-system, &quot;SF Pro Text&quot;, Inter, system-ui, sans-serif; padding: 54px 16px 93px; display: flex; flex-direction: column; gap: 12px;">
+
+  <div data-dc-tpl="4" style="display: flex; align-items: center; justify-content: space-between; height: 44px; margin: 0px -4px;">
+    <a data-dc-tpl="5" href="#now" style="height: 44px; display: flex; align-items: center; gap: 6px; font-size: 17px; padding: 0px 4px;">
+      <svg data-dc-tpl="6" aria-hidden="true" width="10" height="18" viewBox="0 0 10 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="7" d="M8.5 1.5L1.5 9l7 7.5"></path></svg>
+      Talks
+    </a>
+    <a data-dc-tpl="8" href="https://qconsf.com/keynote/nov2026/harness-new-operating-system" style="height: 44px; display: flex; align-items: center; font-size: 17px; padding: 0px 4px;">Talk page</a>
+  </div>
+
+  <header data-dc-tpl="9" style="display: flex; flex-direction: column; gap: 4px; padding: 0px 4px;">
+    <h1 data-dc-tpl="10" style="margin: 0px; font-size: 22px; line-height: 27px; font-weight: 700; letter-spacing: -0.01em;">The Harness Is the New Operating System</h1>
+    <div data-dc-tpl="11" style="font-size: 15px; line-height: 20px; color: var(--ink);">Manju Rajashekhar</div>
+    <div data-dc-tpl="12" style="font-size: 13px; line-height: 18px; color: var(--ink2); font-variant-numeric: tabular-nums;">Keynote · Mon Nov 16 · 9:00–10:10 AM · Grand Ballroom<br data-dc-tpl="13">Speaker started 9:03 AM (synced) · 14 slides · 6 moments · 2 notes</div>
+  </header>
+
+  <div data-dc-tpl="14" style="background: var(--surface); border-radius: 14px; padding-left: 16px; display: flex; flex-direction: column;">
+    <div data-dc-tpl="15" style="min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-right: 14px; border-bottom: 1px solid var(--line); font-size: 15px;">
+      <span data-dc-tpl="16">Session audio</span><span data-dc-tpl="17" style="color: var(--ink2);">Off, no permission</span>
+    </div>
+    <div data-dc-tpl="18" style="min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-right: 14px; font-size: 15px;">
+      <span data-dc-tpl="19">Official video</span><span data-dc-tpl="20" style="color: var(--ink2);">Expected Dec 21</span>
+    </div>
+  </div>
+
+  <section data-dc-tpl="21" style="flex: 1 1 0%; min-height: 0px; overflow: hidden; display: flex; flex-direction: column; gap: 6px;">
+    <div data-dc-tpl="22" style="font-size: 13px; color: var(--ink3); padding: 0px 4px; font-weight: 500;">TIMELINE · MINUTES FROM TALK START</div>
+    <div data-dc-tpl="23" style="background: var(--surface); border-radius: 14px; display: flex; flex-direction: column; padding-left: 14px;">
+
+      <div data-dc-tpl="24" style="min-height: 60px; display: flex; align-items: center; gap: 12px; padding: 6px 14px 6px 0px; box-sizing: border-box; border-bottom: 1px solid var(--line);">
+        <div data-dc-tpl="25" style="width: 50px; flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink2); font-variant-numeric: tabular-nums;">+04:12</div>
+        <div data-dc-tpl="26" style="width: 64px; height: 44px; flex: 0 0 auto; border-radius: 6px; background: var(--fill); border: 1px solid var(--line); box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--ink2);">photo</div>
+        <div data-dc-tpl="27" style="font-size: 15px; line-height: 20px;">Slide</div>
+      </div>
+
+      <div data-dc-tpl="28" style="min-height: 44px; display: flex; align-items: center; gap: 12px; padding: 6px 14px 6px 0px; box-sizing: border-box; border-bottom: 1px solid var(--line);">
+        <div data-dc-tpl="29" style="width: 50px; flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink2); font-variant-numeric: tabular-nums;">+11:40</div>
+        <svg data-dc-tpl="30" aria-hidden="true" width="18" height="18" viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto;"><path data-dc-tpl="31" d="M8 31V4M8 5h17l-4 6.5 4 6.5H8"></path></svg>
+        <div data-dc-tpl="32" style="font-size: 15px; line-height: 20px;">Moment <span data-dc-tpl="33" style="color: var(--ink2);">· Idea</span></div>
+      </div>
+
+      <div data-dc-tpl="34" style="min-height: 44px; display: flex; align-items: flex-start; gap: 12px; padding: 10px 14px 10px 0px; box-sizing: border-box; border-bottom: 1px solid var(--line);">
+        <div data-dc-tpl="35" style="width: 50px; flex: 0 0 auto; font-size: 13px; line-height: 20px; font-weight: 600; color: var(--ink2); font-variant-numeric: tabular-nums;">+12:05</div>
+        <div data-dc-tpl="36" style="font-size: 15px; line-height: 20px;">Check this against our harness architecture doc.</div>
+      </div>
+
+      <div data-dc-tpl="37" style="min-height: 60px; display: flex; align-items: center; gap: 8px; padding: 6px 14px 6px 0px; box-sizing: border-box; border-bottom: 1px solid var(--line);">
+        <div data-dc-tpl="38" style="width: 50px; flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink2); font-variant-numeric: tabular-nums;">+23:10</div>
+        <div data-dc-tpl="39" style="width: 64px; height: 44px; flex: 0 0 auto; border-radius: 6px; background: var(--fill); border: 1px solid var(--line); box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--ink2);">photo</div>
+        <div data-dc-tpl="40" style="width: 64px; height: 44px; flex: 0 0 auto; border-radius: 6px; background: var(--fill); border: 1px solid var(--line); box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--ink2);">photo</div>
+        <div data-dc-tpl="41" style="width: 64px; height: 44px; flex: 0 0 auto; border-radius: 6px; background: var(--fill); border: 1px solid var(--line); box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--ink2);">photo</div>
+      </div>
+
+      <div data-dc-tpl="42" style="min-height: 44px; display: flex; align-items: flex-start; gap: 12px; padding: 10px 14px 10px 0px; box-sizing: border-box; border-bottom: 1px solid var(--line);">
+        <div data-dc-tpl="43" style="width: 50px; flex: 0 0 auto; font-size: 13px; line-height: 20px; font-weight: 600; color: var(--ink2); font-variant-numeric: tabular-nums;">+41:30</div>
+        <div data-dc-tpl="44" style="font-size: 15px; line-height: 20px;">Follow up: find the repo shown on this slide.</div>
+      </div>
+
+      <div data-dc-tpl="45" style="min-height: 48px; display: flex; align-items: center; gap: 12px; padding: 6px 14px 6px 0px; box-sizing: border-box;">
+        <div data-dc-tpl="46" style="width: 50px; flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink2);">After</div>
+        <svg data-dc-tpl="47" aria-hidden="true" width="14" height="18" viewBox="0 0 18 22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" style="flex: 0 0 auto;"><rect data-dc-tpl="48" x="5.5" y="1" width="7" height="12" rx="3.5"></rect><path data-dc-tpl="49" d="M1.5 10.5a7.5 7.5 0 0 0 15 0M9 18v3"></path></svg>
+        <div data-dc-tpl="50" style="flex: 1 1 0%; font-size: 15px; line-height: 20px; font-variant-numeric: tabular-nums;">Reflection <span data-dc-tpl="51" style="color: var(--ink2);">· 1:24 · 10:14 AM</span></div>
+        <button data-dc-tpl="52" aria-label="Play reflection" style="width: 44px; height: 44px; border: 0px; background: transparent; color: var(--blue); display: flex; align-items: center; justify-content: center; padding: 0px;">
+          <svg data-dc-tpl="53" aria-hidden="true" width="16" height="18" viewBox="0 0 16 18" fill="currentColor"><path data-dc-tpl="54" d="M1 1l14 8-14 8z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div data-dc-tpl="55" style="display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 10px;">
+    <a data-dc-tpl="56" href="#capture" style="height: 50px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); box-sizing: border-box; color: var(--blue); font-size: 16px; font-weight: 600; display: flex; align-items: center; justify-content: center;">Resume capture</a>
+    <button data-dc-tpl="57" style="height: 50px; border-radius: 12px; border: 0px; background: var(--blue); color: rgb(255, 255, 255); font-size: 16px; font-weight: 600;">Add reflection</button>
+  </div>
+
+  <nav data-dc-tpl="58" aria-label="Tabs" style="position: absolute; left: 0px; right: 0px; bottom: 0px; height: 83px; box-sizing: border-box; padding: 8px 24px 0px; background: var(--surface); border-top: 1px solid var(--line); display: flex; justify-content: space-around; align-items: flex-start;">
+    <a data-dc-tpl="59" href="#now" style="width: 88px; height: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--ink3); font-size: 11px; font-weight: 500;">
+      <svg data-dc-tpl="60" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle data-dc-tpl="61" cx="12" cy="12" r="9"></circle><path data-dc-tpl="62" d="M12 7v5l3 2"></path></svg>
+      Now
+    </a>
+    <a data-dc-tpl="63" href="#review" aria-current="page" style="width: 88px; height: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--blue); font-size: 11px; font-weight: 600;">
+      <svg data-dc-tpl="64" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path data-dc-tpl="65" d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"></path></svg>
+      Talks
+    </a>
+    <a data-dc-tpl="66" href="#export" style="width: 88px; height: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--ink3); font-size: 11px; font-weight: 500;">
+      <svg data-dc-tpl="67" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="68" d="M12 15V3M8 7l4-4 4 4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"></path></svg>
+      Export
+    </a>
+  </nav></div></div>
+  </div>
+</figure>
+<figure class="board" id="export">
+  <figcaption><span class="num">4</span><span class="t">Export</span><span class="size">390×844</span></figcaption>
+  <p class="desc">Share a day as a zip to OneDrive, see what hasn’t been exported, and check when the 7-day signature expires.</p>
+  <div class="fit" data-w="390" data-h="844" style="max-width:390px">
+    <div class="art" style="width:390px;height:844px"><div data-dc-tpl="3" style="--bg: #F2F3F5; --surface: #FFFFFF; --ink: #0C0D0F; --ink2: #4A5260; --ink3: #5F6877; --line: #DADDE2; --blue: #1857B8; --blue-soft: #E7EEF9; --fill: #E6E8EC; width: 390px; height: 844px; box-sizing: border-box; position: relative; overflow: hidden; background: var(--bg); color: var(--ink); font-family: -apple-system, &quot;SF Pro Text&quot;, Inter, system-ui, sans-serif; padding: 56px 16px 0px; display: flex; flex-direction: column; gap: 14px;">
+
+  <header data-dc-tpl="4" style="display: flex; flex-direction: column; gap: 2px; padding: 0px 4px;">
+    <div data-dc-tpl="5" style="font-size: 13px; font-weight: 600; color: var(--ink3); letter-spacing: 0.02em; font-variant-numeric: tabular-nums;">TUE NOV 17 · 9:12 PM</div>
+    <h1 data-dc-tpl="6" style="margin: 0px; font-size: 34px; line-height: 41px; font-weight: 700; letter-spacing: -0.01em;">Export</h1>
+  </header>
+
+  <section data-dc-tpl="7" style="display: flex; flex-direction: column; gap: 6px;">
+    <div data-dc-tpl="8" style="font-size: 13px; color: var(--ink3); padding: 0px 4px; font-weight: 500;">ONLY ON THIS PHONE</div>
+    <div data-dc-tpl="9" style="background: var(--surface); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 12px;">
+      <div data-dc-tpl="10" style="display: flex; flex-direction: column; gap: 3px;">
+        <div data-dc-tpl="11" style="font-size: 20px; font-weight: 700; line-height: 25px;">Tuesday, Nov 17</div>
+        <div data-dc-tpl="12" style="font-size: 14px; color: var(--ink2); line-height: 19px; font-variant-numeric: tabular-nums;">7 sessions · 168 slides · 5 reflections · 214 MB</div>
+        <div data-dc-tpl="13" style="font-size: 14px; color: var(--ink); font-weight: 600; line-height: 19px;">Not exported yet</div>
+      </div>
+      <button data-dc-tpl="14" style="height: 54px; border: 0px; border-radius: 14px; background: var(--blue); color: rgb(255, 255, 255); font-size: 17px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <svg data-dc-tpl="15" aria-hidden="true" width="20" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="16" d="M12 15V3M8 7l4-4 4 4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"></path></svg>
+        Share Tuesday as .zip
+      </button>
+    </div>
+    <div data-dc-tpl="17" style="font-size: 13px; line-height: 18px; color: var(--ink2); padding: 0px 4px;">Save it to OneDrive from the share sheet. The same folders are in Files under On My iPhone › Collector, and over USB in Apple Devices on Windows.</div>
+  </section>
+
+  <section data-dc-tpl="18" style="display: flex; flex-direction: column; gap: 6px;">
+    <div data-dc-tpl="19" style="font-size: 13px; color: var(--ink3); padding: 0px 4px; font-weight: 500;">EXPORTED</div>
+    <div data-dc-tpl="20" style="background: var(--surface); border-radius: 14px; padding: 0px 6px 0px 16px; min-height: 56px; display: flex; align-items: center; gap: 10px;">
+      <svg data-dc-tpl="21" role="img" aria-label="Exported" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#0C0D0F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto;"><circle data-dc-tpl="22" cx="10" cy="10" r="8.5"></circle><path data-dc-tpl="23" d="M6 10.5l2.7 2.7L14 7.5"></path></svg>
+      <div data-dc-tpl="24" style="flex: 1 1 0%; min-width: 0px; display: flex; flex-direction: column; gap: 1px;">
+        <div data-dc-tpl="25" style="font-size: 16px; font-weight: 500; line-height: 21px;">Monday, Nov 16</div>
+        <div data-dc-tpl="26" style="font-size: 13px; color: var(--ink2); line-height: 18px; font-variant-numeric: tabular-nums;">Exported Mon 9:14 PM · 231 MB · no changes since</div>
+      </div>
+      <button data-dc-tpl="27" style="height: 44px; padding: 0px 10px; border: 0px; background: transparent; color: var(--blue); font-size: 15px; font-weight: 500;">Again</button>
+    </div>
+  </section>
+
+  <section data-dc-tpl="28" style="display: flex; flex-direction: column; gap: 6px;">
+    <div data-dc-tpl="29" style="font-size: 13px; color: var(--ink3); padding: 0px 4px; font-weight: 500;">THIS DEVICE</div>
+    <div data-dc-tpl="30" style="background: var(--surface); border-radius: 14px; padding-left: 16px; display: flex; flex-direction: column;">
+      <div data-dc-tpl="31" style="min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-right: 16px; border-bottom: 1px solid var(--line); font-size: 16px;">
+        <span data-dc-tpl="32" style="white-space: nowrap; flex: 0 0 auto;">App expires</span><span data-dc-tpl="33" style="color: var(--ink2); font-variant-numeric: tabular-nums; text-align: right;">Sat Nov 21, 4:00 AM · 3 days</span>
+      </div>
+      <div data-dc-tpl="34" style="min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-right: 16px; border-bottom: 1px solid var(--line); font-size: 16px;">
+        <span data-dc-tpl="35">Free space</span><span data-dc-tpl="36" style="color: var(--ink2); font-variant-numeric: tabular-nums;">41 GB</span>
+      </div>
+      <div data-dc-tpl="37" style="min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-right: 16px; border-bottom: 1px solid var(--line); font-size: 16px;">
+        <span data-dc-tpl="38">Device label</span><span data-dc-tpl="39" style="color: var(--ink2);">iphone</span>
+      </div>
+      <div data-dc-tpl="40" style="min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-right: 16px; border-bottom: 1px solid var(--line); font-size: 16px;">
+        <label data-dc-tpl="41" for="opt-dim">Dim capture screen</label>
+        <button data-dc-tpl="42" id="opt-dim" role="switch" aria-checked="true" aria-label="Dim capture screen" style="width: 51px; height: 31px; border-radius: 16px; border: 0px; background: var(--blue); padding: 2px; display: flex; justify-content: flex-end; align-items: center;"><span data-dc-tpl="43" style="width: 27px; height: 27px; border-radius: 14px; background: rgb(255, 255, 255); display: block;"></span></button>
+      </div>
+      <div data-dc-tpl="44" style="min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-right: 16px; font-size: 16px;">
+        <label data-dc-tpl="45" for="opt-audio">Offer session audio (needs permission each talk)</label>
+        <button data-dc-tpl="46" id="opt-audio" role="switch" aria-checked="false" aria-label="Offer session audio" style="flex: 0 0 auto; width: 51px; height: 31px; border-radius: 16px; border: 0px; background: rgb(141, 149, 161); padding: 2px; display: flex; justify-content: flex-start; align-items: center;"><span data-dc-tpl="47" style="width: 27px; height: 27px; border-radius: 14px; background: rgb(255, 255, 255); display: block;"></span></button>
+      </div>
+    </div>
+  </section>
+
+  <nav data-dc-tpl="48" aria-label="Tabs" style="position: absolute; left: 0px; right: 0px; bottom: 0px; height: 83px; box-sizing: border-box; padding: 8px 24px 0px; background: var(--surface); border-top: 1px solid var(--line); display: flex; justify-content: space-around; align-items: flex-start;">
+    <a data-dc-tpl="49" href="#now" style="width: 88px; height: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--ink3); font-size: 11px; font-weight: 500;">
+      <svg data-dc-tpl="50" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle data-dc-tpl="51" cx="12" cy="12" r="9"></circle><path data-dc-tpl="52" d="M12 7v5l3 2"></path></svg>
+      Now
+    </a>
+    <a data-dc-tpl="53" href="#review" style="width: 88px; height: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--ink3); font-size: 11px; font-weight: 500;">
+      <svg data-dc-tpl="54" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path data-dc-tpl="55" d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"></path></svg>
+      Talks
+    </a>
+    <a data-dc-tpl="56" href="#export" aria-current="page" style="width: 88px; height: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--blue); font-size: 11px; font-weight: 600;">
+      <svg data-dc-tpl="57" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="58" d="M12 15V3M8 7l4-4 4 4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"></path></svg>
+      Export
+    </a>
+  </nav></div></div>
+  </div>
+</figure>
+  </div>
+</section>
+<section class="ipad">
+  <h2>iPad</h2>
+<figure class="board" id="ipad-capture">
+  <figcaption><span class="num">5</span><span class="t">Capture on iPad</span><span class="size">1194×834</span></figcaption>
+  <p class="desc">Notes first: a large note log on the left, camera, Slide and Moment on the right, with keyboard shortcuts for a hardware keyboard.</p>
+  <div class="fit" data-w="1194" data-h="834" style="max-width:1194px">
+    <div class="art" style="width:1194px;height:834px"><div data-dc-tpl="3" style="--bg: #F2F3F5; --surface: #FFFFFF; --ink: #0C0D0F; --ink2: #4A5260; --ink3: #5F6877; --line: #DADDE2; --blue: #1857B8; --blue-soft: #E7EEF9; --fill: #E6E8EC; width: 1194px; height: 834px; box-sizing: border-box; background: var(--bg); color: var(--ink); font-family: -apple-system, &quot;SF Pro Text&quot;, Inter, system-ui, sans-serif; padding: 32px 24px 24px; display: flex; gap: 20px;">
+
+  <main data-dc-tpl="4" style="flex: 1 1 0%; min-width: 0px; display: flex; flex-direction: column; gap: 14px;">
+    <header data-dc-tpl="5" style="display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; padding: 0px 4px;">
+      <div data-dc-tpl="6" style="display: flex; flex-direction: column; gap: 3px; min-width: 0px;">
+        <h1 data-dc-tpl="7" style="margin: 0px; font-size: 26px; line-height: 32px; font-weight: 700; letter-spacing: -0.01em;">The Harness Is the New Operating System</h1>
+        <div data-dc-tpl="8" style="font-size: 15px; line-height: 20px; color: var(--ink2);">Manju Rajashekhar · Keynote · Grand Ballroom · Mon Nov 16, 9:00–10:10 AM</div>
+      </div>
+      <a data-dc-tpl="9" href="#review" style="flex: 0 0 auto; height: 44px; padding: 0px 6px; display: flex; align-items: center; font-size: 17px;">End talk</a>
+    </header>
+
+    <div data-dc-tpl="10" style="flex: 1 1 0%; min-height: 0px; background: var(--surface); border-radius: 16px; display: flex; flex-direction: column; overflow: hidden;">
+      <div data-dc-tpl="11" style="flex: 1 1 0%; min-height: 0px; display: flex; flex-direction: column; justify-content: flex-end; padding: 8px 24px;">
+        
+          <div data-dc-tpl="13" style="display: flex; gap: 20px; padding: 13px 0px; border-bottom: 1px solid var(--line); align-items: baseline;">
+            <div data-dc-tpl="14" style="width: 60px; flex: 0 0 auto; font-size: 14px; font-weight: 600; color: var(--ink2); font-variant-numeric: tabular-nums;"><span class="sc-interp">+00:00</span></div>
+            <div data-dc-tpl="15" style="width: 78px; flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink3); letter-spacing: 0.02em;"><span class="sc-interp">START</span></div>
+            <div data-dc-tpl="16" style="flex: 1 1 0%; font-size: 18px; line-height: 26px; color: var(--ink);"><span class="sc-interp">Speaker started (synced at 9:03 AM)</span></div>
+          </div>
+        
+          <div data-dc-tpl="13" style="display: flex; gap: 20px; padding: 13px 0px; border-bottom: 1px solid var(--line); align-items: baseline;">
+            <div data-dc-tpl="14" style="width: 60px; flex: 0 0 auto; font-size: 14px; font-weight: 600; color: var(--ink2); font-variant-numeric: tabular-nums;"><span class="sc-interp">+06:20</span></div>
+            <div data-dc-tpl="15" style="width: 78px; flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink3); letter-spacing: 0.02em;"><span class="sc-interp">NOTE</span></div>
+            <div data-dc-tpl="16" style="flex: 1 1 0%; font-size: 18px; line-height: 26px; color: var(--ink);"><span class="sc-interp">Compare the layering on this slide with our harness architecture doc.</span></div>
+          </div>
+        
+          <div data-dc-tpl="13" style="display: flex; gap: 20px; padding: 13px 0px; border-bottom: 1px solid var(--line); align-items: baseline;">
+            <div data-dc-tpl="14" style="width: 60px; flex: 0 0 auto; font-size: 14px; font-weight: 600; color: var(--ink2); font-variant-numeric: tabular-nums;"><span class="sc-interp">+11:40</span></div>
+            <div data-dc-tpl="15" style="width: 78px; flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink3); letter-spacing: 0.02em;"><span class="sc-interp">MOMENT</span></div>
+            <div data-dc-tpl="16" style="flex: 1 1 0%; font-size: 18px; line-height: 26px; color: var(--ink);"><span class="sc-interp">Idea</span></div>
+          </div>
+        
+          <div data-dc-tpl="13" style="display: flex; gap: 20px; padding: 13px 0px; border-bottom: 1px solid var(--line); align-items: baseline;">
+            <div data-dc-tpl="14" style="width: 60px; flex: 0 0 auto; font-size: 14px; font-weight: 600; color: var(--ink2); font-variant-numeric: tabular-nums;"><span class="sc-interp">+12:05</span></div>
+            <div data-dc-tpl="15" style="width: 78px; flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink3); letter-spacing: 0.02em;"><span class="sc-interp">NOTE</span></div>
+            <div data-dc-tpl="16" style="flex: 1 1 0%; font-size: 18px; line-height: 26px; color: var(--ink);"><span class="sc-interp">Check this against our harness architecture doc.</span></div>
+          </div>
+        
+          <div data-dc-tpl="13" style="display: flex; gap: 20px; padding: 13px 0px; border-bottom: 1px solid var(--line); align-items: baseline;">
+            <div data-dc-tpl="14" style="width: 60px; flex: 0 0 auto; font-size: 14px; font-weight: 600; color: var(--ink2); font-variant-numeric: tabular-nums;"><span class="sc-interp">+19:30</span></div>
+            <div data-dc-tpl="15" style="width: 78px; flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink3); letter-spacing: 0.02em;"><span class="sc-interp">NOTE</span></div>
+            <div data-dc-tpl="16" style="flex: 1 1 0%; font-size: 18px; line-height: 26px; color: var(--ink);"><span class="sc-interp">Question for Q&amp;A: how do they measure this?</span></div>
+          </div>
+        
+          <div data-dc-tpl="13" style="display: flex; gap: 20px; padding: 13px 0px; border-bottom: 1px solid var(--line); align-items: baseline;">
+            <div data-dc-tpl="14" style="width: 60px; flex: 0 0 auto; font-size: 14px; font-weight: 600; color: var(--ink2); font-variant-numeric: tabular-nums;"><span class="sc-interp">+22:58</span></div>
+            <div data-dc-tpl="15" style="width: 78px; flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink3); letter-spacing: 0.02em;"><span class="sc-interp">MOMENT</span></div>
+            <div data-dc-tpl="16" style="flex: 1 1 0%; font-size: 18px; line-height: 26px; color: var(--ink);"><span class="sc-interp">For us</span></div>
+          </div>
+        
+      </div>
+      <div data-dc-tpl="17" style="display: flex; align-items: center; gap: 14px; padding: 14px 16px 14px 24px; border-top: 1px solid var(--line); background: var(--surface);">
+        <div data-dc-tpl="18" style="width: 60px; flex: 0 0 auto; font-size: 14px; font-weight: 700; color: var(--blue); font-variant-numeric: tabular-nums;">+23:41</div>
+        <label data-dc-tpl="19" for="note-line" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%);">Note</label>
+        <input data-dc-tpl="20" id="note-line" type="text" placeholder="Type a note. Return stamps it with the time you started typing." style="flex: 1 1 0%; min-width: 0px; height: 52px; border: 1px solid var(--line); border-radius: 12px; padding: 0px 16px; font-size: 18px; color: var(--ink); background: var(--bg); box-sizing: border-box;">
+      </div>
+      <div data-dc-tpl="21" style="padding: 0px 24px 12px 98px; font-size: 13px; line-height: 18px; color: var(--ink2);">Keyboard: Return saves the note · ⌘M marks a moment · ⌘P takes a slide photo · ⌘1–4 tags the last moment</div>
+    </div>
+  </main>
+
+  <aside data-dc-tpl="22" style="width: 360px; flex: 0 0 auto; display: flex; flex-direction: column; gap: 12px;">
+    <div data-dc-tpl="23" style="display: flex; align-items: baseline; justify-content: space-between; height: 56px; padding: 0px 4px;">
+      <div data-dc-tpl="24" style="font-size: 44px; line-height: 56px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.02em;">23:41</div>
+      <div data-dc-tpl="25" style="font-size: 15px; color: var(--ink2); font-variant-numeric: tabular-nums; text-align: right;">46 min left<br data-dc-tpl="26">started 9:03 AM</div>
+    </div>
+
+    <div data-dc-tpl="27" role="img" aria-label="Live camera preview, placeholder" style="height: 250px; position: relative; border-radius: 16px; background: rgb(23, 25, 29); overflow: hidden; display: flex; align-items: center; justify-content: center;">
+      <div data-dc-tpl="28" style="width: 240px; height: 135px; border-radius: 3px; background: rgb(201, 206, 214); display: flex; align-items: center; justify-content: center; font-size: 13px; color: rgb(43, 48, 56); text-align: center; line-height: 18px;">Live camera preview<br data-dc-tpl="29">(projected slide)</div>
+      <div data-dc-tpl="30" style="position: absolute; left: 12px; top: 12px; height: 28px; padding: 0px 10px; border-radius: 14px; background: rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); font-size: 13px; font-weight: 600; display: flex; align-items: center;">3 slides on this iPad</div>
+      <div data-dc-tpl="31" style="position: absolute; right: 12px; bottom: 12px; display: flex; gap: 6px;">
+        <button data-dc-tpl="32" aria-label="Zoom 1x, selected" style="width: 44px; height: 44px; border-radius: 22px; border: 0px; background: rgb(255, 255, 255); color: rgb(12, 13, 15); font-size: 14px; font-weight: 700;">1×</button>
+        <button data-dc-tpl="33" aria-label="Zoom 2x" style="width: 44px; height: 44px; border-radius: 22px; border: 0px; background: rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); font-size: 14px; font-weight: 600;">2×</button>
+      </div>
+    </div>
+
+    <button data-dc-tpl="34" style="height: 64px; border: 0px; border-radius: 16px; background: var(--blue); color: rgb(255, 255, 255); font-size: 19px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 12px;">
+      <svg data-dc-tpl="35" aria-hidden="true" width="28" height="26" viewBox="0 0 36 34" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="36" d="M3 10h6l3-5h12l3 5h6v19H3z"></path><circle data-dc-tpl="37" cx="18" cy="19" r="6"></circle></svg>
+      Slide
+    </button>
+
+    <button data-dc-tpl="38" style="flex: 1 1 0%; min-height: 120px; border: 0px; border-radius: 20px; background: var(--ink); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
+      <svg data-dc-tpl="39" aria-hidden="true" width="36" height="36" viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path data-dc-tpl="40" d="M8 31V4M8 5h17l-4 6.5 4 6.5H8"></path></svg>
+      <span data-dc-tpl="41" style="font-size: 22px; font-weight: 700;">Moment</span>
+      <span data-dc-tpl="42" style="font-size: 14px; opacity: 0.8;">2 marked on this iPad</span>
+    </button>
+
+    <div data-dc-tpl="43" style="display: flex; flex-direction: column; gap: 6px;">
+      <div data-dc-tpl="44" style="font-size: 13px; line-height: 18px; color: var(--ink2); padding: 0px 4px; font-variant-numeric: tabular-nums;"><strong data-dc-tpl="45" style="color: var(--ink); font-weight: 600;">Moment</strong> saved at +22:58. Tag it?</div>
+      <div data-dc-tpl="46" style="display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 6px;">
+        <button data-dc-tpl="47" style="height: 44px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 15px; font-weight: 600;">Idea</button>
+        <button data-dc-tpl="48" aria-pressed="true" style="height: 44px; border-radius: 12px; border: 1px solid var(--ink); background: var(--ink); color: rgb(255, 255, 255); font-size: 15px; font-weight: 600;">For us</button>
+        <button data-dc-tpl="49" style="height: 44px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 15px; font-weight: 600;">Follow up</button>
+        <button data-dc-tpl="50" style="height: 44px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 15px; font-weight: 600;">Question</button>
+      </div>
+    </div>
+  </aside></div></div>
+  </div>
+</figure>
+</section>
+<footer>Static export of the QCon Collector design canvas. Links between screens jump to that screen on this page. Sample data is from the real Nov 16 schedule.</footer>
+</main>
+<script>
+function fitAll(){document.querySelectorAll('.fit').forEach(function(f){var w=+f.dataset.w,h=+f.dataset.h,s=f.clientWidth/w;f.style.height=(h*s)+'px';f.firstElementChild.style.transform='scale('+s+')';});}
+window.addEventListener('resize',fitAll);document.addEventListener('DOMContentLoaded',fitAll);fitAll();
+</script>
+</body>
+</html>

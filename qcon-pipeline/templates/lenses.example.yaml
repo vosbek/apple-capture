@@ -1,0 +1,39 @@
+# Lenses: the initiatives each talk is read against (docs/architecture.md section 7.3).
+# Copy to vault/lenses.yaml (private, git-ignored) and replace these examples with your own.
+# Keep it at a level you are comfortable holding on a personal machine.
+#
+# Rules for the lens mapper (brief-writer):
+#  - Most talks fit zero to two lenses. A forced fit is a defect. "No clear fit" is a fine answer.
+#  - Constraints belong in "Risk or reason it may not transfer", not in the move itself.
+
+constraints:
+  - Example: regulated industry; changes need audit evidence.
+  - Example stack: Java, Python, TypeScript; one public cloud.
+  - Example AI tools in use: a coding agent, an IDE assistant.
+
+lenses:
+  - id: agent-harness
+    name: Agent harness and evaluation
+    description: >
+      How we make AI coding agents dependable: context, guardrails, verification and evidence.
+    questions:
+      - What evidence shows that an agent's change was correct and safe?
+      - Which verification steps beyond unit tests catch agent mistakes?
+    useful_if: A concrete practice, gate or evidence mechanism a team could adopt or measure.
+
+  - id: modernization
+    name: Legacy modernization
+    description: >
+      Using AI to understand and migrate older systems with less risk.
+    questions:
+      - How do others feed system context to agents during migrations?
+      - What deterministic checks make a migration repeatable?
+    useful_if: A technique that shortens or de-risks a migration.
+
+  - id: platform
+    name: Developer platform
+    description: >
+      The paved road: tooling, golden paths and developer experience at scale.
+    questions:
+      - What did they measure, and what moved?
+    useful_if: A pattern or metric we could pilot with one team.

@@ -1,0 +1,4599 @@
+{
+  "event": {
+    "name": "QCon San Francisco 2026",
+    "start_date": "2026-11-16",
+    "end_date": "2026-11-20",
+    "conference_dates": {
+      "start": "2026-11-16",
+      "end": "2026-11-18"
+    },
+    "training_dates": {
+      "start": "2026-11-19",
+      "end": "2026-11-20"
+    },
+    "venue": "Hyatt Regency San Francisco (Embarcadero)",
+    "timezone": "America/Los_Angeles",
+    "source_urls": [
+      "https://qconsf.com/",
+      "https://qconsf.com/schedule/nov2026",
+      "https://qconsf.com/speakers/nov2026",
+      "https://qconsf.com/training/nov2026",
+      "https://qconsf.com/llms/nov2026.md",
+      "https://qconsf.com/track/nov2026/<track-slug>",
+      "https://qconsf.com/presentation/nov2026/<slug>",
+      "https://qconsf.com/keynote/nov2026/<slug>",
+      "https://qconsf.com/training/nov2026/<slug>",
+      "https://qconsf.com/speakers/<id>",
+      "https://qconsf.com/track-hosts/<id>"
+    ],
+    "retrieved_at": "2026-11-10T09:23:16+00:00",
+    "notes": "video_expected: false = schedule shows 'No Video Available'; true = conference keynote/talk with no such label (inferred, not confirmed); null = training or unknown. Abstracts and bios are paraphrased summaries, not quotes."
+  },
+  "tracks": [
+    {
+      "id": "architectures-youve-always-wondered-about",
+      "name": "Architectures You've Always Wondered About",
+      "host": "danielamiao",
+      "day": "2026-11-16",
+      "description": "Real-world architectures from well-known systems, with the trade-offs and design decisions behind them.",
+      "url": "https://qconsf.com/track/nov2026/architectures-youve-always-wondered-about"
+    },
+    {
+      "id": "guardrails-safety-nets-evals-new-landscape",
+      "name": "Guardrails & Safety Nets (Evals) for the New Landscape",
+      "host": "tanyareilly",
+      "day": "2026-11-16",
+      "description": "How teams build evals, feedback loops and safety mechanisms that make AI-powered systems reliable and trustworthy.",
+      "url": "https://qconsf.com/track/nov2026/guardrails-safety-nets-evals-new-landscape"
+    },
+    {
+      "id": "modern-api-design-humans-and-agents",
+      "name": "Modern API Design for Humans and Agents",
+      "host": "krysflores",
+      "day": "2026-11-16",
+      "description": "Designing APIs that both human developers and AI agents can discover, use safely and recover with: contracts, protocols, retries, partial failure, evolving domain models.",
+      "url": "https://qconsf.com/track/nov2026/modern-api-design-humans-and-agents"
+    },
+    {
+      "id": "resilience-engineering-everything-fails-all-time",
+      "name": "Resilience Engineering: Everything Fails All the Time",
+      "host": "vanessahuertagranda",
+      "day": "2026-11-16",
+      "description": "Designing systems and organizations that expect failure, adapt to it and keep operating under stress.",
+      "url": "https://qconsf.com/track/nov2026/resilience-engineering-everything-fails-all-time"
+    },
+    {
+      "id": "distributed-systems-production",
+      "name": "Distributed Systems in Production",
+      "host": "vidhyaarvind",
+      "day": "2026-11-17",
+      "description": "Practitioner lessons on latency, consistency models, sharding, multi-region, incidents and observability; trade-offs over idealized designs.",
+      "url": "https://qconsf.com/track/nov2026/distributed-systems-production"
+    },
+    {
+      "id": "engineering-ai-systems",
+      "name": "Engineering AI Systems",
+      "host": "melaniezhao",
+      "day": "2026-11-17",
+      "description": "Taking AI past the prototype: reliability, evaluation, infrastructure, autonomous workflows, regulated domains and inference at scale.",
+      "url": "https://qconsf.com/track/nov2026/engineering-ai-systems"
+    },
+    {
+      "id": "staff-engineering-skills",
+      "name": "Staff+ Engineering Skills",
+      "host": "javierfernandezivern",
+      "day": "2026-11-17",
+      "description": "How Staff+ ICs lead orgs through technical transitions (cloud, monolith breakups, AI adoption): growing peers, cross-team leadership, owning ambiguity.",
+      "url": "https://qconsf.com/track/nov2026/staff-engineering-skills"
+    },
+    {
+      "id": "data-platforms-reimagined",
+      "name": "Data Platforms Reimagined",
+      "host": "adipolak",
+      "day": "2026-11-17",
+      "description": "How data platforms are changing for real-time, AI-driven and decentralized workloads, and how that reshapes data flow in organizations.",
+      "url": "https://qconsf.com/track/nov2026/data-platforms-reimagined"
+    },
+    {
+      "id": "architecting-agents-beneath-loop",
+      "name": "Architecting for Agents: Beneath the Loop",
+      "host": "julieamundson",
+      "day": "2026-11-18",
+      "description": "The layers under the agent loop: model portability, durable state, deployment, sandboxed execution and observability, from people running agents in production.",
+      "url": "https://qconsf.com/track/nov2026/architecting-agents-beneath-loop"
+    },
+    {
+      "id": "engineering-developer-experience",
+      "name": "Engineering the Developer Experience",
+      "host": "ankitjain",
+      "day": "2026-11-18",
+      "description": "DevEx as a deliberate discipline in the AI era: productivity measurement, build/tooling as architecture, agent workflows, platforms for humans and agents, culture and skills.",
+      "url": "https://qconsf.com/track/nov2026/engineering-developer-experience"
+    },
+    {
+      "id": "real-world-platform-engineering",
+      "name": "Real World Platform Engineering",
+      "host": "danielbryant",
+      "day": "2026-11-18",
+      "description": "How orgs build internal platforms for faster delivery, safer ops and lower cognitive load, balancing standardization and flexibility at scale.",
+      "url": "https://qconsf.com/track/nov2026/real-world-platform-engineering"
+    },
+    {
+      "id": "code-beyond-engineers-engineering-teams",
+      "name": "Code Beyond Engineers & Engineering Teams",
+      "host": "suhailpatel",
+      "day": "2026-11-18",
+      "description": "Coding is spreading beyond engineers into product, ops and AI-assisted roles; what that means for teams, ownership and systems.",
+      "url": "https://qconsf.com/track/nov2026/code-beyond-engineers-engineering-teams"
+    },
+    {
+      "id": "sponsored-solution-track-i",
+      "name": "Sponsored Solution Track I",
+      "host": null,
+      "day": "2026-11-16",
+      "description": "Vendor-sponsored sessions (Pacific LM).",
+      "url": "https://qconsf.com/track/nov2026/sponsored-solution-track-i"
+    },
+    {
+      "id": "sponsored-solution-track-ii",
+      "name": "Sponsored Solution Track II",
+      "host": null,
+      "day": "2026-11-16",
+      "description": "Vendor-sponsored sessions (Marina).",
+      "url": "https://qconsf.com/track/nov2026/sponsored-solution-track-ii"
+    },
+    {
+      "id": "sponsored-solution-track-iii",
+      "name": "Sponsored Solution Track III",
+      "host": null,
+      "day": "2026-11-17",
+      "description": "Vendor-sponsored sessions (Pacific LM / L-O).",
+      "url": "https://qconsf.com/track/nov2026/sponsored-solution-track-iii"
+    },
+    {
+      "id": "sponsored-solution-track-v",
+      "name": "Sponsored Solution Track V",
+      "host": null,
+      "day": "2026-11-17",
+      "description": "Vendor-sponsored sessions (Marina).",
+      "url": "https://qconsf.com/track/nov2026/sponsored-solution-track-v"
+    },
+    {
+      "id": "sponsored-solution-track-iv",
+      "name": "Sponsored Solution Track IV",
+      "host": null,
+      "day": "2026-11-18",
+      "description": "Vendor-sponsored sessions (Pacific LM).",
+      "url": "https://qconsf.com/track/nov2026/sponsored-solution-track-iv"
+    },
+    {
+      "id": "sponsored-solution-track-vi",
+      "name": "Sponsored Solution Track VI",
+      "host": null,
+      "day": "2026-11-18",
+      "description": "Vendor-sponsored sessions (Marina).",
+      "url": "https://qconsf.com/track/nov2026/sponsored-solution-track-vi"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "harness-new-operating-system",
+      "title": "The Harness Is the New Operating System",
+      "type": "keynote",
+      "day": "2026-11-16",
+      "start": "09:00",
+      "end": "10:10",
+      "room": "Grand Ballroom",
+      "track_id": null,
+      "abstract": "Agents generate behavior at runtime, so a 'harness' layer is needed to make it dependable, much as OSes abstracted hardware. Builds a first-principles model of harnesses using coding agents, mapping OS concerns (processes, memory, I/O, protection, observability) onto agents.",
+      "url": "https://qconsf.com/keynote/nov2026/harness-new-operating-system",
+      "speaker_ids": [
+        "manjurajashekhar"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "learning-out-loud-under-near-existential-pressure",
+      "title": "Learning Out Loud (Under Near-Existential Pressure)",
+      "type": "keynote",
+      "day": "2026-11-17",
+      "start": "09:00",
+      "end": "10:10",
+      "room": null,
+      "track_id": null,
+      "abstract": "Developers must master constantly shifting tools while shipping into old, bug-laden codebases. A former teacher turned Photoshop engineer uses research on how people learn to suggest lowering the stakes of failure and trading an expert identity for a learner one.",
+      "url": "https://qconsf.com/keynote/nov2026/learning-out-loud-under-near-existential-pressure",
+      "speaker_ids": [
+        "laurasavino"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "execution-muscle-why-great-teams-are-built-not-hired",
+      "title": "The Execution Muscle: Why Great Teams Are Built, Not Hired",
+      "type": "keynote",
+      "day": "2026-11-18",
+      "start": "09:00",
+      "end": "10:10",
+      "room": null,
+      "track_id": null,
+      "abstract": "Stalled teams usually suffer from daily habits, not talent, tools or process. Execution is a trainable skill; covers three habits: building trust, sharing ownership, and making expectations and feedback routine.",
+      "url": "https://qconsf.com/keynote/nov2026/execution-muscle-why-great-teams-are-built-not-hired",
+      "speaker_ids": [
+        "charlottemestwerdt"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "game-time-how-unsuccessfully-10x-week-successfully-10x-year",
+      "title": "Game Time: How to (Unsuccessfully) 10x in a Week & (Successfully) 10x in a Year",
+      "type": "keynote",
+      "day": "2026-11-18",
+      "start": "17:15",
+      "end": "18:00",
+      "room": null,
+      "track_id": null,
+      "abstract": "A telehealth team hit overnight demand it wasn't built for and fumbled a one-week scale-up. Lessons on scaling a live system: metrics, milestones, why more time alone doesn't help, and letting go of existing patterns.",
+      "url": "https://qconsf.com/keynote/nov2026/game-time-how-unsuccessfully-10x-week-successfully-10x-year",
+      "speaker_ids": [
+        "plumertz"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "live-resharding-without-regret-lessons-building-valkeys-atomic-slot-migration",
+      "title": "Live Resharding Without Regret: Lessons from Building Valkey's Atomic Slot Migration",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Ballroom BC",
+      "track_id": "architectures-youve-always-wondered-about",
+      "abstract": "Moving gigabytes of state between live nodes under heavy load without dropping keys, blocking the event loop or breaking client abstractions: lessons from building Valkey's atomic slot migration.",
+      "url": "https://qconsf.com/presentation/nov2026/live-resharding-without-regret-lessons-building-valkeys-atomic-slot-migration",
+      "speaker_ids": [
+        "jacobmurphy"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "architecting-nubanks-global-financial-infrastructure",
+      "title": "Architecting Nubank's Global Financial Infrastructure",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Ballroom BC",
+      "track_id": "architectures-youve-always-wondered-about",
+      "abstract": "Brazil's Pix instant payments (130M+ customers) demand no maintenance downtime, strong consistency and controlled cloud cost. Covers Nubank's runtimes, database design, zero-downtime techniques and the technical/organizational trade-offs behind rapid growth under regulation.",
+      "url": "https://qconsf.com/presentation/nov2026/architecting-nubanks-global-financial-infrastructure",
+      "speaker_ids": [
+        "cat-swetel"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "how-build-real-time-voice-agent",
+      "title": "How to Build a Real-Time Voice Agent",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Ballroom BC",
+      "track_id": "architectures-youve-always-wondered-about",
+      "abstract": "A voice agent is more than a chatbot with a microphone; walks through what it takes to build one that responds in real time (only a short teaser is published).",
+      "url": "https://qconsf.com/presentation/nov2026/how-build-real-time-voice-agent",
+      "speaker_ids": [
+        "rishabhbhargava"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "inside-disaggregated-architecture-serving-llm-inference",
+      "title": "Inside the Disaggregated Architecture Serving LLM Inference",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Ballroom BC",
+      "track_id": "architectures-youve-always-wondered-about",
+      "abstract": "LLM requests have a compute-bound prefill phase and a memory-bandwidth-bound decode phase. Explains serving them on separate, specialized hardware rather than one shared system.",
+      "url": "https://qconsf.com/presentation/nov2026/inside-disaggregated-architecture-serving-llm-inference",
+      "speaker_ids": [
+        "nancyzheng"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "generation-got-cheap-trust-didnt-scaling-agentic-changes-prompt-prod-roblox",
+      "title": "Generation Got Cheap, Trust Didn't: Scaling Agentic Changes from Prompt to Prod at Roblox",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Ballroom BC",
+      "track_id": "architectures-youve-always-wondered-about",
+      "abstract": "As agents write more of Roblox's production code, the bottleneck shifts from producing changes to deciding which to trust. How Roblox moves agent-generated changes from prompt to production at scale.",
+      "url": "https://qconsf.com/presentation/nov2026/generation-got-cheap-trust-didnt-scaling-agentic-changes-prompt-prod-roblox",
+      "speaker_ids": [
+        "kushanmehta",
+        "jaymoorthi"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "unconference-architectures-youve-always-wondered-about",
+      "title": "Unconference: Architectures You've Always Wondered About",
+      "type": "other",
+      "day": "2026-11-16",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Seacliff D",
+      "track_id": "architectures-youve-always-wondered-about",
+      "abstract": "Open-space discussion on the track theme.",
+      "url": "https://qconsf.com/presentation/nov2026/unconference-architectures-youve-always-wondered-about",
+      "speaker_ids": [],
+      "video_expected": false
+    },
+    {
+      "id": "running-software-factory-efficiently-uber-scale-holding-agent-spend-steady",
+      "title": "Running Software Factory Efficiently at Uber Scale: Holding Agent Spend Steady While Requests Grew 9X",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Ballroom A",
+      "track_id": "guardrails-safety-nets-evals-new-landscape",
+      "abstract": "Uber attributes 70%+ of PRs to coding agents, uses 5K+ agent skills and routes all MCP traffic through one gateway fronting 1,000+ servers. How it kept agent spend flat while requests grew 9x.",
+      "url": "https://qconsf.com/presentation/nov2026/running-software-factory-efficiently-uber-scale-holding-agent-spend-steady",
+      "speaker_ids": [
+        "udaykiranmedisetty"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "how-airbnb-guardrailed-its-ai-customer-support-agent",
+      "title": "How Airbnb Guardrailed Its AI Customer Support Agent",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Ballroom A",
+      "track_id": "guardrails-safety-nets-evals-new-landscape",
+      "abstract": "The less-publicized guardrail layer behind Airbnb's AI support assistant: keeping an agent safe when it serves millions, carries multi-turn context and can trigger account actions.",
+      "url": "https://qconsf.com/presentation/nov2026/how-airbnb-guardrailed-its-ai-customer-support-agent",
+      "speaker_ids": [
+        "weipingpeng"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "llm-flip-flops-reliability-risk-hill-climbing-signal",
+      "title": "LLM Flip-Flops: From Reliability Risk to a Hill-Climbing Signal",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Ballroom A",
+      "track_id": "guardrails-safety-nets-evals-new-landscape",
+      "abstract": "The same task run twice through the same LLM can give materially different answers. Treats that inconsistency as a real product risk, then shows how to use it as a signal for improving the system.",
+      "url": "https://qconsf.com/presentation/nov2026/llm-flip-flops-reliability-risk-hill-climbing-signal",
+      "speaker_ids": [
+        "dianhuanlin"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "unconference-guardrails-safety-nets",
+      "title": "Unconference: Guardrails & Safety Nets",
+      "type": "other",
+      "day": "2026-11-16",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Seacliff D",
+      "track_id": "guardrails-safety-nets-evals-new-landscape",
+      "abstract": "Open-space discussion on the track theme.",
+      "url": "https://qconsf.com/presentation/nov2026/unconference-guardrails-safety-nets",
+      "speaker_ids": [],
+      "video_expected": false
+    },
+    {
+      "id": "agentic-trust-securing-ai-agents-production",
+      "title": "Agentic Trust: Securing AI Agents in Production",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Ballroom A",
+      "track_id": "guardrails-safety-nets-evals-new-landscape",
+      "abstract": "Practical steps to run an existing AI agent more securely in production today; deliberately out of scope: model training and alignment.",
+      "url": "https://qconsf.com/presentation/nov2026/agentic-trust-securing-ai-agents-production",
+      "speaker_ids": [
+        "amandawalker"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "testing-verification-code-generating-agents",
+      "title": "Testing & Verification for Code-Generating Agents",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Ballroom A",
+      "track_id": "guardrails-safety-nets-evals-new-landscape",
+      "abstract": null,
+      "url": "https://qconsf.com/presentation/nov2026/testing-verification-code-generating-agents",
+      "speaker_ids": [],
+      "video_expected": true
+    },
+    {
+      "id": "apis-cant-afford-be-wrong-lessons-moving-money",
+      "title": "APIs That Can't Afford to Be Wrong: Lessons from Moving Money",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Pacific DEKJ",
+      "track_id": "modern-api-design-humans-and-agents",
+      "abstract": "Common API advice assumes cheap retries and a single source of truth; payments break both. Lessons from designing for card networks that demand an approve/decline in about three seconds.",
+      "url": "https://qconsf.com/presentation/nov2026/apis-cant-afford-be-wrong-lessons-moving-money",
+      "speaker_ids": [
+        "fawziyahalebiosu"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "everything-i-knew-about-developer-experience-wrong-agents",
+      "title": "Everything I Knew About Developer Experience Is Wrong for Agents",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Pacific DEKJ",
+      "track_id": "modern-api-design-humans-and-agents",
+      "abstract": "DX practices were learned from human users; agents are a different kind of consumer, and some accepted best practices actively work against them.",
+      "url": "https://qconsf.com/presentation/nov2026/everything-i-knew-about-developer-experience-wrong-agents",
+      "speaker_ids": [
+        "emmanuelparaskakis"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "schema-was-never-enough-world-protocols",
+      "title": "The Schema Was Never Enough: The World in Protocols",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Pacific DEKJ",
+      "track_id": "modern-api-design-humans-and-agents",
+      "abstract": "Auctions, double-entry bookkeeping and brokerage transfers are protocols, and so are APIs. Protocols reduce ambiguity, but the world stays messy; what that means for API design.",
+      "url": "https://qconsf.com/presentation/nov2026/schema-was-never-enough-world-protocols",
+      "speaker_ids": [
+        "ryanscottbrown"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "no-new-backend-api-layer-behind-800-agent-built-apps-duolingo",
+      "title": "No New Backend: The API Layer Behind 800+ Agent-Built Apps at Duolingo",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Pacific DEKJ",
+      "track_id": "modern-api-design-humans-and-agents",
+      "abstract": "Duolingo's BuildingHub lets any employee describe an internal tool and get a working app wired to company systems (350 employees have built one). The API layer that makes it work.",
+      "url": "https://qconsf.com/presentation/nov2026/no-new-backend-api-layer-behind-800-agent-built-apps-duolingo",
+      "speaker_ids": [
+        "sarahdeitke"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "unconference-modern-api-design",
+      "title": "Unconference: Modern API Design",
+      "type": "other",
+      "day": "2026-11-16",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Seacliff D",
+      "track_id": "modern-api-design-humans-and-agents",
+      "abstract": "Open-space discussion on the track theme.",
+      "url": "https://qconsf.com/presentation/nov2026/unconference-modern-api-design",
+      "speaker_ids": [],
+      "video_expected": false
+    },
+    {
+      "id": "stop-fighting-remodel-api-design-models-outgrew-their-boundaries",
+      "title": "Stop Fighting the Remodel: API Design for Models That Outgrew Their Boundaries",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Pacific DEKJ",
+      "track_id": "modern-api-design-humans-and-agents",
+      "abstract": "Netflix's core domain models strained as Ads, Games, Live and new content types pulled entities in different directions. How to design APIs for models that outgrew their original boundaries.",
+      "url": "https://qconsf.com/presentation/nov2026/stop-fighting-remodel-api-design-models-outgrew-their-boundaries",
+      "speaker_ids": [
+        "aartigupta2"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "freeze-paradox-why-stopping-deployments-doesnt-stop-failures",
+      "title": "The Freeze Paradox: Why Stopping Deployments Doesn't Stop Failures",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Seacliff ABC",
+      "track_id": "resilience-engineering-everything-fails-all-time",
+      "abstract": "Teams often react to failure by freezing deploys. Examines, from Netflix experience, why halting change doesn't actually stop failures in complex systems.",
+      "url": "https://qconsf.com/presentation/nov2026/freeze-paradox-why-stopping-deployments-doesnt-stop-failures",
+      "speaker_ids": [
+        "prachijain",
+        "sandhyanarayan"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "adapt-or-drift-resilience-engineering-when-ai-moves-operating-point",
+      "title": "Adapt or Drift: Resilience Engineering When AI Moves the Operating Point",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Seacliff ABC",
+      "track_id": "resilience-engineering-everything-fails-all-time",
+      "abstract": "Resilience requires adaptation, but adaptation is risky: under sustained (AI-driven) pressure, systems and orgs can drift toward failure while still looking healthy.",
+      "url": "https://qconsf.com/presentation/nov2026/adapt-or-drift-resilience-engineering-when-ai-moves-operating-point",
+      "speaker_ids": [
+        "andrewhatch"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "unconference-resilience-engineering",
+      "title": "Unconference: Resilience Engineering",
+      "type": "other",
+      "day": "2026-11-16",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Seacliff D",
+      "track_id": "resilience-engineering-everything-fails-all-time",
+      "abstract": "Open-space discussion on the track theme.",
+      "url": "https://qconsf.com/presentation/nov2026/unconference-resilience-engineering",
+      "speaker_ids": [],
+      "video_expected": false
+    },
+    {
+      "id": "saturation-how-your-software-will-fail-scale",
+      "title": "Saturation: How Your Software Will Fail at Scale",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Seacliff ABC",
+      "track_id": "resilience-engineering-everything-fails-all-time",
+      "abstract": "Every system has limits; what happens when it hits one. A look at saturation as a failure mode and how to reason about it.",
+      "url": "https://qconsf.com/presentation/nov2026/saturation-how-your-software-will-fail-scale",
+      "speaker_ids": [
+        "lorinhochstein"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "what-incident-severity-lie-agreed-upon",
+      "title": "What Is Incident Severity, but a Lie Agreed Upon?",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Seacliff ABC",
+      "track_id": "resilience-engineering-everything-fails-all-time",
+      "abstract": "Are severity levels clearly defined, argued over mid-incident, or even used? Questions how orgs pick and distinguish incident severities.",
+      "url": "https://qconsf.com/presentation/nov2026/what-incident-severity-lie-agreed-upon",
+      "speaker_ids": [
+        "emruppe"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "its-never-thing-broke-learning-incidents-ai-speed",
+      "title": "It's Never the Thing That Broke: Learning From Incidents at (AI) Speed",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Seacliff ABC",
+      "track_id": "resilience-engineering-everything-fails-all-time",
+      "abstract": "Incidents come from many normal changes interacting, not one broken part. How to keep learning from incidents when AI accelerates change.",
+      "url": "https://qconsf.com/presentation/nov2026/its-never-thing-broke-learning-incidents-ai-speed",
+      "speaker_ids": [
+        "vanessahuertagranda"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "legacy-vs-ai-native-wrong-question-architecting-modern-platform",
+      "title": "Legacy vs. AI-Native Is the Wrong Question: Architecting the Modern Platform",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-i",
+      "abstract": "Sponsored (Freshworks). Leaders modernizing operational platforms are told to choose stable enterprise software or fast AI-native tools; argues that's a false binary.",
+      "url": "https://qconsf.com/presentation/nov2026/legacy-vs-ai-native-wrong-question-architecting-modern-platform",
+      "speaker_ids": [
+        "payalpatelfreshworkscom",
+        "saiprasadmuralifreshworkscom"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "beyond-model-engineering-agent-harness-autonomous-software-delivery",
+      "title": "Beyond the Model: Engineering the Agent Harness for Autonomous Software Delivery",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-i",
+      "abstract": "Sponsored (IBM). Code generation is no longer the hard part; orchestrating agents so output is verifiable, governed and repeatable is, and the surrounding harness usually limits results more than the model.",
+      "url": "https://qconsf.com/presentation/nov2026/beyond-model-engineering-agent-harness-autonomous-software-delivery",
+      "speaker_ids": [
+        "swayam"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "your-agents-lack-context-heres-how-fix-youre-absolutely-right",
+      "title": "Your Agents Lack Context: Here's How to Fix 'You're absolutely right!'",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-i",
+      "abstract": "Sponsored (Unblocked). AI coding tools write code, but rarely code that fits your org, because they lack organizational context; how to supply it.",
+      "url": "https://qconsf.com/presentation/nov2026/your-agents-lack-context-heres-how-fix-youre-absolutely-right",
+      "speaker_ids": [
+        "brandongetunblockedcom"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "wait-youre-still-doing-prs",
+      "title": "Wait, You're Still Doing PRs?",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-i",
+      "abstract": "Sponsored (Atomic). PRs were built for outside contributors and maintainers to shape a change together; asks whether that model still fits agent-driven development.",
+      "url": "https://qconsf.com/presentation/nov2026/wait-youre-still-doing-prs",
+      "speaker_ids": [
+        "leeatomicdev"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "ai-amplifies-everything-including-your-mess-lessons-delivering-ai-global-scale",
+      "title": "AI Amplifies Everything, Including Your Mess: Lessons from Delivering with AI at Global Scale",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-i",
+      "abstract": "Sponsored (Nu). AI magnifies a team's existing habits. Lessons from rebuilding an SDLC around AI while shipping Nu Global, a crypto-rails financial platform.",
+      "url": "https://qconsf.com/presentation/nov2026/ai-amplifies-everything-including-your-mess-lessons-delivering-ai-global-scale",
+      "speaker_ids": [
+        "caiosousa"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "apache-spark-structured-streaming-real-time-mode",
+      "title": "Apache Spark: Structured Streaming Real-Time Mode",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-i",
+      "abstract": "Sponsored (Databricks). Structured Streaming suits seconds-to-minutes ETL but couldn't serve millisecond use cases; introduces its real-time mode.",
+      "url": "https://qconsf.com/presentation/nov2026/apache-spark-structured-streaming-real-time-mode",
+      "speaker_ids": [
+        "jerrypeng"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "model-harness-co-training-data-driven-optimization-toward-pareto-optimal",
+      "title": "Model-Harness Co-Training: Data-Driven Optimization Toward Pareto-Optimal Agents",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-ii",
+      "abstract": "Sponsored (Lucidic AI). Teams tune either the harness or the model, but the two are interdependent; argues for optimizing them jointly using data.",
+      "url": "https://qconsf.com/presentation/nov2026/model-harness-co-training-data-driven-optimization-toward-pareto-optimal",
+      "speaker_ids": [
+        "jeremy"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "why-optimized-application-infrastructure-not-just-gpus-and-llms-can-scale-your",
+      "title": "Why Optimized Application Infrastructure (not just GPUs and LLMs) Can Scale Your AI Investments",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-ii",
+      "abstract": "Sponsored (Azul). AI production costs outrun pilots while attention goes to GPUs and models; argues the Java/streaming/data runtime underneath is where cost and performance can be won without re-architecture.",
+      "url": "https://qconsf.com/presentation/nov2026/why-optimized-application-infrastructure-not-just-gpus-and-llms-can-scale-your",
+      "speaker_ids": [
+        "alexberkoff"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "building-safe-software-factory",
+      "title": "Building a Safe Software Factory",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-ii",
+      "abstract": "Sponsored (Sonar). Agents made code cheap, so change volume has outgrown human review; how to build an automated software factory that stays safe.",
+      "url": "https://qconsf.com/presentation/nov2026/building-safe-software-factory",
+      "speaker_ids": [
+        "andrewfinch"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "context-gap-why-correct-agents-fail",
+      "title": "The Context Gap: Why Correct Agents Fail",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-ii",
+      "abstract": "Sponsored (Tacnode). Agents can each make valid edits that merge cleanly yet break the program; collisions happen in meaning, not text, which matters for semantic business decisions.",
+      "url": "https://qconsf.com/presentation/nov2026/context-gap-why-correct-agents-fail",
+      "speaker_ids": [
+        "xiaoweitacnodeio"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "engineering-critical-path-nine-reliability-patterns-processing-350-million",
+      "title": "Engineering the Critical Path: Nine Reliability Patterns from Processing 350 Million Payments a Day",
+      "type": "talk",
+      "day": "2026-11-16",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-ii",
+      "abstract": "Sponsored (Juspay). A few core mechanisms (failover, routing, release gates) decide whether a local fault becomes an outage; nine patterns for protecting them, from a 350M-payments/day system.",
+      "url": "https://qconsf.com/presentation/nov2026/engineering-critical-path-nine-reliability-patterns-processing-350-million",
+      "speaker_ids": [
+        "vimalkumar"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "sponsored-session-4",
+      "title": "Sponsored session (details coming soon)",
+      "type": "other",
+      "day": "2026-11-16",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-ii",
+      "abstract": "Sponsored session; details not yet published.",
+      "url": "https://qconsf.com/presentation/nov2026/sponsored-session-4",
+      "speaker_ids": [],
+      "video_expected": false
+    },
+    {
+      "id": "orderly-keys-wild-values-adaptive-compression-distributed-key-value-storage",
+      "title": "Orderly Keys, Wild Values: Adaptive Compression for Distributed Key-Value Storage",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Ballroom BC",
+      "track_id": "distributed-systems-production",
+      "abstract": "At Netflix scale (billions of requests, petabytes of KV data) small storage/network inefficiencies get expensive; adaptive compression techniques for distributed key-value storage.",
+      "url": "https://qconsf.com/presentation/nov2026/orderly-keys-wild-values-adaptive-compression-distributed-key-value-storage",
+      "speaker_ids": [
+        "joeylynch",
+        "ayushisingh"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "how-build-online-systems-object-storage",
+      "title": "How to Build Online Systems with Object Storage",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Ballroom BC",
+      "track_id": "distributed-systems-production",
+      "abstract": "'Diskless' systems that delegate durability to object storage are now common; why, and how to build latency-sensitive online systems on top of it.",
+      "url": "https://qconsf.com/presentation/nov2026/how-build-online-systems-object-storage",
+      "speaker_ids": [
+        "almoggavra"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "autoscaling-800-valkey-clusters-distributed-systems-lessons-scaling-stateful",
+      "title": "Autoscaling 800 Valkey Clusters: Distributed Systems Lessons from Scaling Stateful Fleets",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Ballroom BC",
+      "track_id": "distributed-systems-production",
+      "abstract": "Resizing a sharded datastore means moving key-range ownership under live traffic, too slow to react to spikes. Lessons from autoscaling ~800 Valkey clusters at Snap.",
+      "url": "https://qconsf.com/presentation/nov2026/autoscaling-800-valkey-clusters-distributed-systems-lessons-scaling-stateful",
+      "speaker_ids": [
+        "kishoreyadav"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "unconference-distributed-systems-production",
+      "title": "Unconference: Distributed Systems in Production",
+      "type": "other",
+      "day": "2026-11-17",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Seacliff D",
+      "track_id": "distributed-systems-production",
+      "abstract": "Open-space discussion on the track theme.",
+      "url": "https://qconsf.com/presentation/nov2026/unconference-distributed-systems-production",
+      "speaker_ids": [],
+      "video_expected": false
+    },
+    {
+      "id": "when-your-users-are-agents-lessons-distributed-postgres-platform",
+      "title": "When Your Users Are Agents: Lessons from a Distributed Postgres Platform",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Ballroom BC",
+      "track_id": "distributed-systems-production",
+      "abstract": "Distributed systems assume sane connection lifetimes, retries that stop and predictable queries. What breaks when AI agents become the main users of a distributed Postgres platform.",
+      "url": "https://qconsf.com/presentation/nov2026/when-your-users-are-agents-lessons-distributed-postgres-platform",
+      "speaker_ids": [
+        "gwenshapira"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "adaptive-systems-production-what-recommendation-systems-can-teach-us-about",
+      "title": "Adaptive Systems in Production: What Recommendation Systems Can Teach Us About Agents",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Ballroom BC",
+      "track_id": "distributed-systems-production",
+      "abstract": "Agent problems like uncertain evaluation, feedback loops and behavioral drift are well known from recommender systems; applies those lessons to agents.",
+      "url": "https://qconsf.com/presentation/nov2026/adaptive-systems-production-what-recommendation-systems-can-teach-us-about",
+      "speaker_ids": [
+        "mallikarao"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "skills-memory-or-fine-tuning-engineering-loop-behind-production-agents",
+      "title": "Skills, Memory, or Fine-Tuning? The Engineering Loop Behind Production Agents",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Ballroom A",
+      "track_id": "engineering-ai-systems",
+      "abstract": "Patterns from improving hundreds of production agents serving millions of requests: when skills, memory or fine-tuning actually make an agent better after launch.",
+      "url": "https://qconsf.com/presentation/nov2026/skills-memory-or-fine-tuning-engineering-loop-behind-production-agents",
+      "speaker_ids": [
+        "abhinavsinha"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "inside-asimov-blackrocks-platform-architecture-applied-ai-scale",
+      "title": "Inside Asimov: BlackRock's Platform Architecture for Applied AI at Scale",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Ballroom A",
+      "track_id": "engineering-ai-systems",
+      "abstract": "BlackRock's Portfolio Management Group pairs investment expertise with shared AI capabilities to change research; the platform architecture (Asimov) behind it.",
+      "url": "https://qconsf.com/presentation/nov2026/inside-asimov-blackrocks-platform-architecture-applied-ai-scale",
+      "speaker_ids": [
+        "danwolf",
+        "sriannapurnabhupatiraju"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "revenge-data-scientist-why-reliable-ai-needs-evals-traces-and-metrics",
+      "title": "The Revenge of the Data Scientist: Why Reliable AI Needs Evals, Traces, and Metrics",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Ballroom A",
+      "track_id": "engineering-ai-systems",
+      "abstract": "Prototyping on foundation-model APIs is easy; knowing whether it works with real users and messy data is not. Argues reliability comes from data-science fundamentals: evals, traces, metrics.",
+      "url": "https://qconsf.com/presentation/nov2026/revenge-data-scientist-why-reliable-ai-needs-evals-traces-and-metrics",
+      "speaker_ids": [
+        "hamelhusain"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "lessons-building-100m-product-six-weeks-openai",
+      "title": "Lessons from Building a $100M Product in Six Weeks at OpenAI",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Ballroom A",
+      "track_id": "engineering-ai-systems",
+      "abstract": "Engineering is moving from line-by-line coding to an async model where agents execute, verify and retry while humans own intent, architecture, constraints and release calls; lessons from a fast OpenAI launch.",
+      "url": "https://qconsf.com/presentation/nov2026/lessons-building-100m-product-six-weeks-openai",
+      "speaker_ids": [
+        "brianyang"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "bridging-retrieval-and-ranking-llm-embeddings-and-graph-features-gpu-served",
+      "title": "Bridging Retrieval and Ranking: From LLM Embeddings and Graph Features to a GPU-Served DLRM",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Ballroom A",
+      "track_id": "engineering-ai-systems",
+      "abstract": "LinkedIn Feed retrieval picks posts from hundreds of millions of candidates in ~120 ms; the path from LLM embeddings and graph features to a GPU-served ranking model.",
+      "url": "https://qconsf.com/presentation/nov2026/bridging-retrieval-and-ranking-llm-embeddings-and-graph-features-gpu-served",
+      "speaker_ids": [
+        "sudarshansrinivasaramanujam"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "failing-layers-lessons-rebuilding-netflixs-ml-serving-platform",
+      "title": "Failing in Layers: Lessons from Rebuilding Netflix's ML Serving Platform",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Ballroom A",
+      "track_id": "engineering-ai-systems",
+      "abstract": "What goes wrong when a model must serve real traffic reliably, and why Netflix's rebuilt ML serving system ended up shaped the way it is.",
+      "url": "https://qconsf.com/presentation/nov2026/failing-layers-lessons-rebuilding-netflixs-ml-serving-platform",
+      "speaker_ids": [
+        "rajatshah",
+        "wenbingbai"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "nobody-knows-everything-and-thats-ok-building-alignment-complex-rapidly",
+      "title": "Nobody Knows Everything (and That's OK): Building Alignment in Complex, Rapidly Changing Environments",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Pacific DEKJ",
+      "track_id": "staff-engineering-skills",
+      "abstract": "How Staff+ engineers build alignment across org and technical boundaries, including in areas where they aren't the deepest expert.",
+      "url": "https://qconsf.com/presentation/nov2026/nobody-knows-everything-and-thats-ok-building-alignment-complex-rapidly",
+      "speaker_ids": [
+        "kayemason"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "use-ai-multiply-your-team-staff-engineer",
+      "title": "Use AI to Multiply Your Team as a Staff Engineer",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Pacific DEKJ",
+      "track_id": "staff-engineering-skills",
+      "abstract": "Most AI-for-engineers advice is about individual speed, which is IC work. What a staff engineer's job becomes when AI raises everyone's baseline, and where leverage now comes from.",
+      "url": "https://qconsf.com/presentation/nov2026/use-ai-multiply-your-team-staff-engineer",
+      "speaker_ids": [
+        "jordancutler"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "scaling-tech-aligning-humans",
+      "title": "Scaling Tech by Aligning Humans",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Pacific DEKJ",
+      "track_id": "staff-engineering-skills",
+      "abstract": "Without a north star and shared technical strategy, separate product strategies create disconnected solutions and tech debt; aligning people to scale technology.",
+      "url": "https://qconsf.com/presentation/nov2026/scaling-tech-aligning-humans",
+      "speaker_ids": [
+        "scottbehrens"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "transitioning-startup-mature-platform",
+      "title": "Transitioning From a Startup to a Mature Platform",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Ballroom BC",
+      "track_id": "staff-engineering-skills",
+      "abstract": "How needs shift from zero customers to thousands, and the resulting changes in code, architecture, organization and mindset.",
+      "url": "https://qconsf.com/presentation/nov2026/transitioning-startup-mature-platform",
+      "speaker_ids": [
+        "joyebertz"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "learning-whats-already-there-breadth-based-approach-onboarding",
+      "title": "Learning What's Already There: A Breadth-Based Approach To Onboarding",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Pacific DEKJ",
+      "track_id": "staff-engineering-skills",
+      "abstract": "A breadth-first way to quickly build your network and context when joining a new organization.",
+      "url": "https://qconsf.com/presentation/nov2026/learning-whats-already-there-breadth-based-approach-onboarding",
+      "speaker_ids": [
+        "lauradevesine"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "unconference-staff-engineering-skills",
+      "title": "Unconference: Staff+ Engineering Skills",
+      "type": "other",
+      "day": "2026-11-17",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Seacliff D",
+      "track_id": "staff-engineering-skills",
+      "abstract": "Open-space discussion on the track theme.",
+      "url": "https://qconsf.com/presentation/nov2026/unconference-staff-engineering-skills",
+      "speaker_ids": [],
+      "video_expected": false
+    },
+    {
+      "id": "breaking-down-walls-python-big-data-ai-performance-transpilation-and-llms",
+      "title": "Breaking Down the Walls to Python & Big Data + AI Performance with Transpilation and LLMs",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Seacliff ABC",
+      "track_id": "data-platforms-reimagined",
+      "abstract": "PySpark's slow Python UDFs frustrate many users; explores using transpilation and LLMs to close the performance gap.",
+      "url": "https://qconsf.com/presentation/nov2026/breaking-down-walls-python-big-data-ai-performance-transpilation-and-llms",
+      "speaker_ids": [
+        "holdenkarau"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "building-data-platform-ai",
+      "title": "Building a Data Platform with AI",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Seacliff ABC",
+      "track_id": "data-platforms-reimagined",
+      "abstract": "A data platform is where infrastructure, governance, operations and user experience meet; using AI to build and evolve one (OpenAI data infra perspective).",
+      "url": "https://qconsf.com/presentation/nov2026/building-data-platform-ai",
+      "speaker_ids": [
+        "moulimukherjee"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "one-does-not-simply-add-synchronous-writes-bridging-batch-and-real-time-apache",
+      "title": "One Does Not Simply Add Synchronous Writes - Bridging Batch and Real Time with Apache Iceberg",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Seacliff ABC",
+      "track_id": "data-platforms-reimagined",
+      "abstract": "Datadog Reference Tables were built for big async uploads; customers wanted synchronous row-level edits. How the team added them on Apache Iceberg without losing batch scale.",
+      "url": "https://qconsf.com/presentation/nov2026/one-does-not-simply-add-synchronous-writes-bridging-batch-and-real-time-apache",
+      "speaker_ids": [
+        "paigeelinson"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "building-streamhouse-turning-kafka-streams-millisecond-query-layer",
+      "title": "Building a StreamHouse: Turning Kafka Streams into a Millisecond Query Layer",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Seacliff ABC",
+      "track_id": "data-platforms-reimagined",
+      "abstract": "Pairing Kafka with Flink materialized views to build a low-latency serving layer (Lightning Tables): Kafka as source of truth, hot/warm/historical tiers, trade-offs and failure modes.",
+      "url": "https://qconsf.com/presentation/nov2026/building-streamhouse-turning-kafka-streams-millisecond-query-layer",
+      "speaker_ids": [
+        "rjatwal"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "datasets-data-products-powering-trusted-ai-social-impact",
+      "title": "From Datasets to Data Products: Powering Trusted AI for Social Impact",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Seacliff ABC",
+      "track_id": "data-platforms-reimagined",
+      "abstract": "An agent acting for a nonprofit is only as trustworthy as its data; how Blackbaud turns scattered datasets into data products for trusted AI.",
+      "url": "https://qconsf.com/presentation/nov2026/datasets-data-products-powering-trusted-ai-social-impact",
+      "speaker_ids": [
+        "shannonmckenzie"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "iceberg-v4-next-chapter-table-formats",
+      "title": "Iceberg V4: The Next Chapter in Table Formats",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Seacliff ABC",
+      "track_id": "data-platforms-reimagined",
+      "abstract": "With Iceberg V3 adoption growing, the planned scope and priorities of the V4 spec and the status of open proposals.",
+      "url": "https://qconsf.com/presentation/nov2026/iceberg-v4-next-chapter-table-formats",
+      "speaker_ids": [
+        "danielweeks"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "feeling-faster-isnt-metric-measuring-ais-real-engineering-impact",
+      "title": "Feeling Faster Isn't a Metric: Measuring AI's Real Engineering Impact",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Pacific L-O",
+      "track_id": "sponsored-solution-track-iii",
+      "abstract": "Sponsored (GitKraken). A 2026 survey of 554 developers and leaders: AI tools are near-universal and feel faster, but few teams can actually quantify the impact; how to measure it.",
+      "url": "https://qconsf.com/presentation/nov2026/feeling-faster-isnt-metric-measuring-ais-real-engineering-impact",
+      "speaker_ids": [
+        "jeremycastile"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "notes-300-installs-inside-someone-elses-cloud",
+      "title": "Notes From 300 Installs Inside Someone Else's Cloud",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-iii",
+      "abstract": "Sponsored (Groundcover). Running a storage/query backend inside customers' VPCs (they own infra, vendor runs ops): what went wrong across hundreds of Kubernetes installs.",
+      "url": "https://qconsf.com/presentation/nov2026/notes-300-installs-inside-someone-elses-cloud",
+      "speaker_ids": [
+        "adamhicksgroundcovercom"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "why-your-document-ai-fails-production-and-how-fix-infrastructure-underneath-it",
+      "title": "Why Your Document AI Fails in Production — And How to Fix the Infrastructure Underneath It",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-iii",
+      "abstract": "Sponsored (Nutrient). Document AI that demos well breaks in production: lost structure at ingestion, rendering edge cases, inconsistent extraction, plus governance when agents make decisions.",
+      "url": "https://qconsf.com/presentation/nov2026/why-your-document-ai-fails-production-and-how-fix-infrastructure-underneath-it",
+      "speaker_ids": [
+        "pavitterjosannutrientio"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "trust-verify-delivering-quality-agentic-workflows",
+      "title": "Trust, but Verify: Delivering Quality with Agentic Workflows",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-iii",
+      "abstract": "Sponsored (Antithesis). Agent unreliability and review overload aren't new: humans were always error-prone. Focus on verifying what ships rather than assuming correctness.",
+      "url": "https://qconsf.com/presentation/nov2026/trust-verify-delivering-quality-agentic-workflows",
+      "speaker_ids": [
+        "adrianhatchantithesiscom"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "your-agents-have-amnesia-lessons-building-memory-layer-multi-agent-systems",
+      "title": "Your Agents Have Amnesia: Lessons from Building a Memory Layer for Multi-Agent Systems",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-iii",
+      "abstract": "Sponsored (YugabyteDB). Agents pass only final outputs, so reasoning and failed attempts are lost; lessons from building a shared memory layer for multi-agent systems.",
+      "url": "https://qconsf.com/presentation/nov2026/your-agents-have-amnesia-lessons-building-memory-layer-multi-agent-systems",
+      "speaker_ids": [
+        "hsunder"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "sponsored-session-5",
+      "title": "Sponsored session (details coming soon)",
+      "type": "other",
+      "day": "2026-11-17",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-iii",
+      "abstract": "Sponsored session; details not yet published.",
+      "url": "https://qconsf.com/presentation/nov2026/sponsored-session-5",
+      "speaker_ids": [],
+      "video_expected": false
+    },
+    {
+      "id": "you-steer-agents-execute-developer-led-modernization-agentic-ai",
+      "title": "You Steer, Agents Execute: Developer-Led Modernization with Agentic AI",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-v",
+      "abstract": "Sponsored (IBM). Legacy modernization stalls on hidden dependencies and a false choice between leaving systems alone or rewriting; a developer-steered, agent-executed middle path.",
+      "url": "https://qconsf.com/presentation/nov2026/you-steer-agents-execute-developer-led-modernization-agentic-ai",
+      "speaker_ids": [
+        "sunilmurthy"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "architecting-security-agentic-sdlc",
+      "title": "Architecting Security into the Agentic SDLC",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-v",
+      "abstract": "Sponsored (Endor Labs). As agents write more code, securing it needs AI-driven security built into the SDLC by design.",
+      "url": "https://qconsf.com/presentation/nov2026/architecting-security-agentic-sdlc",
+      "speaker_ids": [
+        "apatil"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "drawing-rest-owl-blueprint-your-software-factory",
+      "title": "Drawing the Rest of the Owl: A Blueprint for Your Software Factory",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-v",
+      "abstract": "Sponsored (Harness). Between 'software factories mean slop and incidents' and 'they're the future', a practical blueprint for building one.",
+      "url": "https://qconsf.com/presentation/nov2026/drawing-rest-owl-blueprint-your-software-factory",
+      "speaker_ids": [
+        "chriskelly"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "sponsored-session-3",
+      "title": "Sponsored session (details coming soon)",
+      "type": "other",
+      "day": "2026-11-17",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-v",
+      "abstract": "Sponsored session; details not yet published.",
+      "url": "https://qconsf.com/presentation/nov2026/sponsored-session-3",
+      "speaker_ids": [],
+      "video_expected": null
+    },
+    {
+      "id": "code-abundant-confidence-scarce-what-1k-devs-say-about-coding-agents",
+      "title": "Code is abundant, Confidence is Scarce: What 1K Devs Say about Coding with Agents",
+      "type": "talk",
+      "day": "2026-11-17",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-v",
+      "abstract": "Sponsored (Sonar). Survey of ~1,000 developers: about two-thirds of committed code is now AI-generated or assisted, and many expect autonomous software factories soon; the confidence gap.",
+      "url": "https://qconsf.com/presentation/nov2026/code-abundant-confidence-scarce-what-1k-devs-say-about-coding-agents",
+      "speaker_ids": [
+        "anirbanchatterjee"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "sponsored-session-10",
+      "title": "Sponsored session (details coming soon)",
+      "type": "other",
+      "day": "2026-11-17",
+      "start": "17:05",
+      "end": "17:55",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-v",
+      "abstract": "Sponsored session; details not yet published.",
+      "url": "https://qconsf.com/presentation/nov2026/sponsored-session-10",
+      "speaker_ids": [],
+      "video_expected": null
+    },
+    {
+      "id": "how-netflix-retrofitted-its-sdlc-ai-coding-agents",
+      "title": "How Netflix Retrofitted Its SDLC for AI Coding Agents",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Ballroom BC",
+      "track_id": "architecting-agents-beneath-loop",
+      "abstract": "Coding agents mirror what a codebase already contains and guess at what isn't written down; how Netflix reshaped its SDLC so agents follow team standards by default.",
+      "url": "https://qconsf.com/presentation/nov2026/how-netflix-retrofitted-its-sdlc-ai-coding-agents",
+      "speaker_ids": [
+        "markkhuzam"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "making-production-legible-agents-lessons-building-observability-mcp",
+      "title": "Making Production Legible to Agents: Lessons From Building an Observability MCP",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Ballroom BC",
+      "track_id": "architecting-agents-beneath-loop",
+      "abstract": "Agents that can query production telemetry test hypotheses instead of guessing; 40%+ of Honeycomb weekly users query via its MCP. Why an MCP must be more than an API wrapper: token efficiency, tool descriptions, schemas, evals.",
+      "url": "https://qconsf.com/presentation/nov2026/making-production-legible-agents-lessons-building-observability-mcp",
+      "speaker_ids": [
+        "lizfong-jones"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "efficient-gpu-agents-infra-autonomous-llm-perf-optimization",
+      "title": "Efficient GPU Agents: Infra for Autonomous LLM Perf Optimization",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Ballroom BC",
+      "track_id": "architecting-agents-beneath-loop",
+      "abstract": "Parasail's agent platform for LLM serving performance work on Kubernetes GPU clusters: scheduling GPU experiments, mirroring production traffic for fair benchmarks, canary-gated rollouts with human oversight.",
+      "url": "https://qconsf.com/presentation/nov2026/efficient-gpu-agents-infra-autonomous-llm-perf-optimization",
+      "speaker_ids": [
+        "bensegal",
+        "meghanamadhyastha"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "dreams-paper-how-agents-learn-experience",
+      "title": "Dreams on Paper: How Agents Learn from Experience",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Ballroom BC",
+      "track_id": "architecting-agents-beneath-loop",
+      "abstract": "Agents leave detailed traces, but traces aren't memory; three primitives for turning session history into knowledge an agent can act on.",
+      "url": "https://qconsf.com/presentation/nov2026/dreams-paper-how-agents-learn-experience",
+      "speaker_ids": [
+        "briandouglas"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "avoiding-prompt-debt-other-context-failures",
+      "title": "Avoiding Prompt Debt & Other Context Failures",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Ballroom BC",
+      "track_id": "architecting-agents-beneath-loop",
+      "abstract": "Agent prompts accrete one-line hotfixes and escalating instructions until they're brittle and overfit to aging models; how to avoid prompt debt and related context failures.",
+      "url": "https://qconsf.com/presentation/nov2026/avoiding-prompt-debt-other-context-failures",
+      "speaker_ids": [
+        "drewbreunig"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "features-futures",
+      "title": "Features With Futures",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Ballroom A",
+      "track_id": "engineering-developer-experience",
+      "abstract": "Software is worth what it does now plus the options it keeps open. What if AI-assisted development invested in both, and what happens when teams measure only shipped features?",
+      "url": "https://qconsf.com/presentation/nov2026/features-futures",
+      "speaker_ids": [
+        "kentbeck"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "no-more-small-systems-how-ai-may-bring-large-system-problems-everyone",
+      "title": "No More Small Systems, How AI May Bring Large System Problems to Everyone",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Ballroom A",
+      "track_id": "engineering-developer-experience",
+      "abstract": "AI-boosted productivity brings new problems, some LLM-specific but many simply from producing far more stuff; large-system problems arriving at every organization.",
+      "url": "https://qconsf.com/presentation/nov2026/no-more-small-systems-how-ai-may-bring-large-system-problems-everyone",
+      "speaker_ids": [
+        "adambender"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "growing-engineers-era-agentic-coding",
+      "title": "Growing Engineers in the Era of Agentic Coding",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Ballroom A",
+      "track_id": "engineering-developer-experience",
+      "abstract": "Early-career engineers now work through an agent rather than directly in a codebase; this changes how they learn but doesn't fundamentally break how they grow.",
+      "url": "https://qconsf.com/presentation/nov2026/growing-engineers-era-agentic-coding",
+      "speaker_ids": [
+        "adamberry"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "shipping-faster-understanding-less",
+      "title": "Shipping Faster, Understanding Less",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Ballroom A",
+      "track_id": "engineering-developer-experience",
+      "abstract": "AI speeds development faster than practices adapt; three linked threats to software health: technical debt, cognitive debt and intent debt.",
+      "url": "https://qconsf.com/presentation/nov2026/shipping-faster-understanding-less",
+      "speaker_ids": [
+        "margaret-annestorey"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "diary-ai-adopter-how-i-went-skeptical-enthusiastic-our-organizations-ai",
+      "title": "The Diary of an AI Adopter: How I Went From Skeptical to Enthusiastic in Our Organization's AI Migration Efforts",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Ballroom A",
+      "track_id": "engineering-developer-experience",
+      "abstract": "Amid mixed market results, AI-linked layoffs and rollbacks over cost, one leader's path from skeptic to enthusiast and what successful enterprise AI adoption looks like.",
+      "url": "https://qconsf.com/presentation/nov2026/diary-ai-adopter-how-i-went-skeptical-enthusiastic-our-organizations-ai",
+      "speaker_ids": [
+        "tarahernandez"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "platform-engineerings-second-act-vending-machine-passport-control",
+      "title": "Platform Engineering's Second Act: From Vending Machine to Passport Control",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Pacific DEKJ",
+      "track_id": "real-world-platform-engineering",
+      "abstract": "Revisits a QCon SF talk from three years ago on acceleration, autonomy and accountability as platform pillars; how AI changes what each requires and the platform team's job.",
+      "url": "https://qconsf.com/presentation/nov2026/platform-engineerings-second-act-vending-machine-passport-control",
+      "speaker_ids": [
+        "smrutipatel",
+        "alexmann"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "beyond-kubernetes-api-building-linkedins-compute-platform",
+      "title": "Beyond the Kubernetes API: Building LinkedIn's Compute Platform",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Pacific DEKJ",
+      "track_id": "real-world-platform-engineering",
+      "abstract": "LinkedIn runs Kubernetes on 500K+ bare-metal machines and 5M pods with 110K+ deploys a week, exposing curated platform offerings instead of raw Kubernetes.",
+      "url": "https://qconsf.com/presentation/nov2026/beyond-kubernetes-api-building-linkedins-compute-platform",
+      "speaker_ids": [
+        "ronaknathani"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "observability-missing-control-plane-agentic-engineering",
+      "title": "Observability: The Missing Control Plane for Agentic Engineering",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Pacific DEKJ",
+      "track_id": "real-world-platform-engineering",
+      "abstract": "As agents test, deploy and operate software, the key question is what they may decide without a human; observability as the control plane that answers it.",
+      "url": "https://qconsf.com/presentation/nov2026/observability-missing-control-plane-agentic-engineering",
+      "speaker_ids": [
+        "rachaelwonnacott"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "why-most-platform-teams-fail-adoption-problem-nobody-wants-own",
+      "title": "Why Most Platform Teams Fail: The Adoption Problem Nobody Wants to Own",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Pacific DEKJ",
+      "track_id": "real-world-platform-engineering",
+      "abstract": "Polished platforms launch and teams keep working the old way because adoption was assumed, not owned; who should own driving adoption.",
+      "url": "https://qconsf.com/presentation/nov2026/why-most-platform-teams-fail-adoption-problem-nobody-wants-own",
+      "speaker_ids": [
+        "shwetavohra"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "building-migration-platform-moving-100-netflix-rdbms-workloads-aurora",
+      "title": "Building a Migration Platform: Moving 100+ Netflix RDBMS Workloads to Aurora PostgreSQL",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Pacific DEKJ",
+      "track_id": "real-world-platform-engineering",
+      "abstract": "After Netflix chose (late 2024) to consolidate most relational use cases on Aurora PostgreSQL, the migration platform built to move 100+ workloads.",
+      "url": "https://qconsf.com/presentation/nov2026/building-migration-platform-moving-100-netflix-rdbms-workloads-aurora",
+      "speaker_ids": [
+        "ammarkhaku",
+        "kshitijgupta"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "builder-driven-development-rebuilding-organization-around-builder",
+      "title": "Builder-Driven Development: Rebuilding the Organization Around the Builder",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Seacliff ABC",
+      "track_id": "code-beyond-engineers-engineering-teams",
+      "abstract": "Managing agent development like classic projects (upfront requirements, closing demo) fails because the best insights emerge outside planning docs; reorganizing around the builder.",
+      "url": "https://qconsf.com/presentation/nov2026/builder-driven-development-rebuilding-organization-around-builder",
+      "speaker_ids": [
+        "jyothinookula"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "legacy-leverage-how-brownfield-work-builds-technical-judgment",
+      "title": "Legacy as Leverage: How Brownfield Work Builds Technical Judgment",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Seacliff ABC",
+      "track_id": "code-beyond-engineers-engineering-teams",
+      "abstract": "Legacy work is often treated as a chore before 'real' projects; reframes brownfield work as a primary source of technical judgment.",
+      "url": "https://qconsf.com/presentation/nov2026/legacy-leverage-how-brownfield-work-builds-technical-judgment",
+      "speaker_ids": [
+        "shinegarg"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "product-engineering-when-code-costs-nothing-whats-next",
+      "title": "Product Engineering: When code costs nothing, what's next?",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Seacliff ABC",
+      "track_id": "code-beyond-engineers-engineering-teams",
+      "abstract": "Agents produce far more code but only a little more ships, because human review is the bottleneck; guidance for engineering leaders on that gap.",
+      "url": "https://qconsf.com/presentation/nov2026/product-engineering-when-code-costs-nothing-whats-next",
+      "speaker_ids": [
+        "laurievoss"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "you-cant-read-code-anymore-verifying-software-age-ai",
+      "title": "You Can't Read the Code Anymore - Verifying Software in the Age of AI",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Seacliff ABC",
+      "track_id": "code-beyond-engineers-engineering-teams",
+      "abstract": "With AI writing most code, the hard part becomes verification, a weaker team skill; ship pressure pushes toward skimmed diffs and light QA instead of rigorous checks.",
+      "url": "https://qconsf.com/presentation/nov2026/you-cant-read-code-anymore-verifying-software-age-ai",
+      "speaker_ids": [
+        "omervankloeten"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "when-everyone-can-code-who-owns-production",
+      "title": "When Everyone Can Code, Who Owns Production?",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Seacliff ABC",
+      "track_id": "code-beyond-engineers-engineering-teams",
+      "abstract": "AI makes writing code easy, but every change must still be deployed, observed, operated, debugged and kept reliable; who owns production when everyone codes.",
+      "url": "https://qconsf.com/presentation/nov2026/when-everyone-can-code-who-owns-production",
+      "speaker_ids": [
+        "sanjaysingh"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "simulating-universe-100-times-over-engineering-highly-concurrent-agent-testing",
+      "title": "Simulating the Universe, 100 Times Over: Engineering Highly-Concurrent Agent Testing",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-iv",
+      "abstract": "Sponsored (Lucidic AI). Agent testing is hard: live data shifts, static datasets go stale and testing on real systems is risky and irreproducible; simulating environments at high concurrency.",
+      "url": "https://qconsf.com/presentation/nov2026/simulating-universe-100-times-over-engineering-highly-concurrent-agent-testing",
+      "speaker_ids": [
+        "andyliang",
+        "anvit"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "men-black-know-whats-your-javascript-and-how-fix-it",
+      "title": "The Men in Black Know What's in Your JavaScript and How to Fix it!",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-iv",
+      "abstract": "Sponsored (TuxCare). What's really hiding in node_modules, and why knowing exactly what you ship matters as supply-chain attacks rise.",
+      "url": "https://qconsf.com/presentation/nov2026/men-black-know-whats-your-javascript-and-how-fix-it",
+      "speaker_ids": [
+        "cdemars86gmailcom"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "fast-furious-and-fatigued",
+      "title": "The Fast, The Furious and The Fatigued",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-iv",
+      "abstract": "Sponsored (Harness). Survey of 700+ engineering leaders: high deploy frequency can mask off-hours firefighting, instability and burnout; automated governance, verification and progressive delivery as the fix.",
+      "url": "https://qconsf.com/presentation/nov2026/fast-furious-and-fatigued",
+      "speaker_ids": [
+        "christianweber"
+      ],
+      "video_expected": false
+    },
+    {
+      "id": "sponsored-session-7",
+      "title": "Sponsored session (details coming soon)",
+      "type": "other",
+      "day": "2026-11-18",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-iv",
+      "abstract": "Sponsored session; details not yet published.",
+      "url": "https://qconsf.com/presentation/nov2026/sponsored-session-7",
+      "speaker_ids": [],
+      "video_expected": false
+    },
+    {
+      "id": "sponsored-session-8",
+      "title": "Sponsored session (details coming soon)",
+      "type": "other",
+      "day": "2026-11-18",
+      "start": "15:55",
+      "end": "16:45",
+      "room": "Pacific LM",
+      "track_id": "sponsored-solution-track-iv",
+      "abstract": "Sponsored session; details not yet published.",
+      "url": "https://qconsf.com/presentation/nov2026/sponsored-session-8",
+      "speaker_ids": [],
+      "video_expected": false
+    },
+    {
+      "id": "sponsored-session-9",
+      "title": "Sponsored session (details coming soon)",
+      "type": "other",
+      "day": "2026-11-18",
+      "start": "10:35",
+      "end": "11:25",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-vi",
+      "abstract": "Sponsored session; details not yet published.",
+      "url": "https://qconsf.com/presentation/nov2026/sponsored-session-9",
+      "speaker_ids": [],
+      "video_expected": null
+    },
+    {
+      "id": "multi-agent-coding-omnigent",
+      "title": "Multi-Agent Coding with Omnigent",
+      "type": "talk",
+      "day": "2026-11-18",
+      "start": "11:45",
+      "end": "12:35",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-vi",
+      "abstract": "Sponsored (Databricks). Developers juggle several coding agents in separate tools with no shared context; Omnigent as a meta-harness that coordinates them.",
+      "url": "https://qconsf.com/presentation/nov2026/multi-agent-coding-omnigent",
+      "speaker_ids": [
+        "evelynhur",
+        "dennylee"
+      ],
+      "video_expected": true
+    },
+    {
+      "id": "sponsored-session-11",
+      "title": "Sponsored session (details coming soon)",
+      "type": "other",
+      "day": "2026-11-18",
+      "start": "13:35",
+      "end": "14:25",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-vi",
+      "abstract": "Sponsored session; details not yet published.",
+      "url": "https://qconsf.com/presentation/nov2026/sponsored-session-11",
+      "speaker_ids": [],
+      "video_expected": null
+    },
+    {
+      "id": "sponsored-session-12",
+      "title": "Sponsored session (details coming soon)",
+      "type": "other",
+      "day": "2026-11-18",
+      "start": "14:45",
+      "end": "15:35",
+      "room": "Marina",
+      "track_id": "sponsored-solution-track-vi",
+      "abstract": "Sponsored session; details not yet published.",
+      "url": "https://qconsf.com/presentation/nov2026/sponsored-session-12",
+      "speaker_ids": [],
+      "video_expected": null
+    },
+    {
+      "id": "infoq-certified-architect-program-qcon-san-francisco",
+      "title": "The InfoQ Certified Architect Program at QCon San Francisco",
+      "type": "training",
+      "day": "2026-11-19",
+      "start": "09:00",
+      "end": "12:00",
+      "room": "Garden A",
+      "track_id": null,
+      "abstract": "Cohort program for senior engineers/architects spanning the conference (reflection sessions, cohort lunch, networking), capped by a half-day workshop on participants' own challenges; leads to the ICSAET credential.",
+      "url": "https://qconsf.com/training/nov2026/infoq-certified-architect-program-qcon-san-francisco",
+      "speaker_ids": [
+        "lucamezzalira"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "building-ai-agents-practical-framework-choosing-right-sdk",
+      "title": "Building AI Agents: A Practical Framework for Choosing the Right SDK",
+      "type": "training",
+      "day": "2026-11-19",
+      "start": "09:00",
+      "end": "12:00",
+      "room": "Seacliff B",
+      "track_id": null,
+      "abstract": "Half-day. The agent SDK landscape is crowded; a framework for evaluating and choosing an SDK against your requirements.",
+      "url": "https://qconsf.com/training/nov2026/building-ai-agents-practical-framework-choosing-right-sdk",
+      "speaker_ids": [
+        "hienluu"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "sold-out-human-architecture-problem-designing-teams-scale-ai-half-day-version",
+      "title": "[SOLD OUT] The Human Architecture Problem: Designing Teams That Scale With AI [Half-day version]",
+      "type": "training",
+      "day": "2026-11-19",
+      "start": "09:00",
+      "end": "12:00",
+      "room": "Seacliff D",
+      "track_id": null,
+      "abstract": "Half-day (sold out). AI-driven orgs are limited more by team structure, decision rights and trust than by tools; designing teams where humans and AI work well together.",
+      "url": "https://qconsf.com/training/nov2026/sold-out-human-architecture-problem-designing-teams-scale-ai-half-day-version",
+      "speaker_ids": [
+        "charlottemestwerdt"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "ai-java-developers",
+      "title": "AI for Java Developers",
+      "type": "training",
+      "day": "2026-11-19",
+      "start": "09:00",
+      "end": "12:00",
+      "room": "Marina",
+      "track_id": null,
+      "abstract": "Half-day, beginner-intermediate. Java developers don't need to switch to Python to build with AI; hands-on AI development from the Java/Spring side.",
+      "url": "https://qconsf.com/training/nov2026/ai-java-developers",
+      "speaker_ids": [
+        "danvega",
+        "nateschutta"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "measuring-what-matters-building-developer-productivity-program-engineers-can-trust",
+      "title": "Measuring What Matters: Building a Developer Productivity Program Engineers Can Trust",
+      "type": "training",
+      "day": "2026-11-19",
+      "start": "09:00",
+      "end": "12:00",
+      "room": "Seacliff A",
+      "track_id": null,
+      "abstract": "Half-day workshop. Build a dev productivity program on meaningful signals: pairing metrics with tension metrics, mixing quantitative and qualitative data, tying results to outcomes including AI ROI.",
+      "url": "https://qconsf.com/training/nov2026/measuring-what-matters-building-developer-productivity-program-engineers-can-trust",
+      "speaker_ids": [
+        "greynewell"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "supercharge-your-work-claude-code-and-codex",
+      "title": "Supercharge Your Work With Claude Code and Codex",
+      "type": "training",
+      "day": "2026-11-19",
+      "start": "09:00",
+      "end": "12:00",
+      "room": "Seacliff C",
+      "track_id": null,
+      "abstract": "Half-day for developers already using coding agents: getting more from Claude Code and Codex for Q&A, docs, debugging, small changes and code review.",
+      "url": "https://qconsf.com/training/nov2026/supercharge-your-work-claude-code-and-codex",
+      "speaker_ids": [
+        "khawajashams"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "how-write-skills-actually-work",
+      "title": "How To Write Skills That Actually Work",
+      "type": "training",
+      "day": "2026-11-19",
+      "start": "13:00",
+      "end": "16:00",
+      "room": "Seacliff C",
+      "track_id": null,
+      "abstract": "Half-day. Why some agent skills work and others silently fail or get misfired, and how to measure what each skill adds before improving it.",
+      "url": "https://qconsf.com/training/nov2026/how-write-skills-actually-work",
+      "speaker_ids": [
+        "baruchsadogursky"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "psychological-safety-infrastructure-building-teams-fail-fast-ai",
+      "title": "Psychological Safety as Infrastructure: Building Teams That Fail Fast With AI",
+      "type": "training",
+      "day": "2026-11-19",
+      "start": "13:00",
+      "end": "16:00",
+      "room": "Seacliff D",
+      "track_id": null,
+      "abstract": "Half-day. AI adoption stalls when people don't feel safe to experiment, report errors or voice distrust of AI output; building that safety into how teams operate.",
+      "url": "https://qconsf.com/training/nov2026/psychological-safety-infrastructure-building-teams-fail-fast-ai",
+      "speaker_ids": [
+        "charlottemestwerdt"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "ai-assisted-coding-master-class-build-your-mission-control",
+      "title": "AI-Assisted Coding Master Class: Build Your Mission Control",
+      "type": "training",
+      "day": "2026-11-19",
+      "start": "13:00",
+      "end": "16:00",
+      "room": "Seacliff AB",
+      "track_id": null,
+      "abstract": "Half-day. Most engineers under-invest in their environment setup; configuring a 'mission control' to get much more out of AI coding agents.",
+      "url": "https://qconsf.com/training/nov2026/ai-assisted-coding-master-class-build-your-mission-control",
+      "speaker_ids": [
+        "sepehrkhosravi",
+        "devbali"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "fundamentals-software-engineering-age-ai",
+      "title": "The Fundamentals of Software Engineering in the Age of AI",
+      "type": "training",
+      "day": "2026-11-19",
+      "start": "13:00",
+      "end": "16:00",
+      "room": "Marina",
+      "track_id": null,
+      "abstract": "Half-day. Every tooling wave (codegen, low-code, no-code) was said to end software engineering; the role adapts, fundamentals persist, and engineers who know the craft benefit most.",
+      "url": "https://qconsf.com/training/nov2026/fundamentals-software-engineering-age-ai",
+      "speaker_ids": [
+        "nateschutta",
+        "danvega"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "incident-lab-responding-and-learning-production-failures",
+      "title": "The Incident Lab: Responding to and Learning From Production Failures",
+      "type": "training",
+      "day": "2026-11-20",
+      "start": "09:00",
+      "end": "16:00",
+      "room": "Seacliff A",
+      "track_id": null,
+      "abstract": "Full-day, hands-on. For orgs that have alerting, runbooks, on-call and reviews yet repeat the same failures: practicing incident response and extracting real learning.",
+      "url": "https://qconsf.com/training/nov2026/incident-lab-responding-and-learning-production-failures",
+      "speaker_ids": [
+        "courtneynash",
+        "ericdobbs",
+        "alexelman",
+        "stuartrimell"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "human-architecture-problem-designing-teams-scale-ai-full-day-version",
+      "title": "The Human Architecture Problem: Designing Teams That Scale With AI [Full-Day Version]",
+      "type": "training",
+      "day": "2026-11-20",
+      "start": "09:00",
+      "end": "16:00",
+      "room": "Seacliff B",
+      "track_id": null,
+      "abstract": "Full-day version: team structures, decision rights and trust determine whether humans and AI collaborate well; deeper work on designing for it.",
+      "url": "https://qconsf.com/training/nov2026/human-architecture-problem-designing-teams-scale-ai-full-day-version",
+      "speaker_ids": [
+        "charlottemestwerdt"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "effective-ai-native-development-harness-engineering",
+      "title": "Effective AI-Native Development with Harness Engineering",
+      "type": "training",
+      "day": "2026-11-20",
+      "start": "09:00",
+      "end": "16:00",
+      "room": "Seacliff C",
+      "track_id": null,
+      "abstract": "Full-day. AI coding demos use greenfield repos; real work is long-lived code with thin tests and legacy frameworks. Applying harness engineering to AI-native development there.",
+      "url": "https://qconsf.com/training/nov2026/effective-ai-native-development-harness-engineering",
+      "speaker_ids": [
+        "zichuanxiong",
+        "premanandchandrasekaran"
+      ],
+      "video_expected": null
+    },
+    {
+      "id": "agent-mcp-workshop-building-your-own-java-based-mcp-server",
+      "title": "Agent MCP Workshop: Building Your Own Java-Based MCP Server",
+      "type": "training",
+      "day": "2026-11-20",
+      "start": "09:00",
+      "end": "16:00",
+      "room": "Seacliff D",
+      "track_id": null,
+      "abstract": "Full-day, intermediate, instructor-led: build a Model Context Protocol server in Java from scratch.",
+      "url": "https://qconsf.com/training/nov2026/agent-mcp-workshop-building-your-own-java-based-mcp-server",
+      "speaker_ids": [
+        "davidparry"
+      ],
+      "video_expected": null
+    }
+  ],
+  "speakers": [
+    {
+      "id": "manjurajashekhar",
+      "name": "Manju Rajashekhar",
+      "title": "Founder & CEO",
+      "company": "Mad Labs",
+      "bio_short": "Built Twitter's caching systems, co-founded Blackbird AI (acquired by Etsy), then ran search, ads, personalization and ML infra at Etsy for eight years. Now building AI agent infrastructure.",
+      "profile_url": "https://qconsf.com/speakers/manjurajashekhar",
+      "links": {
+        "github": "https://github.com/manjuraj",
+        "linkedin": "https://www.linkedin.com/in/manjurajashekhar/",
+        "x": "https://x.com/manju",
+        "website": null
+      },
+      "session_ids": [
+        "harness-new-operating-system"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "laurasavino",
+      "name": "Laura Savino",
+      "title": "Software Engineer",
+      "company": "Adobe (Photoshop)",
+      "bio_short": "Photoshop engineer with a background in teaching and the humanities; has keynoted CppCon and Qt World Summit, known for talks that keep conversations going.",
+      "profile_url": "https://qconsf.com/speakers/laurasavino",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "learning-out-loud-under-near-existential-pressure"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "charlottemestwerdt",
+      "name": "Charlotte Mestwerdt",
+      "title": "Co-founder; Business Psychologist & Executive Coach",
+      "company": "Bravely",
+      "bio_short": "Business psychologist and coach with 16+ years helping tech leaders and teams; co-founded Bravely (training/coaching for tech) and has worked with 50+ startups and scaleups.",
+      "profile_url": "https://qconsf.com/speakers/charlottemestwerdt",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/charlotteschouwenburg",
+        "x": null,
+        "website": "https://www.meetbravely.co"
+      },
+      "session_ids": [
+        "execution-muscle-why-great-teams-are-built-not-hired",
+        "sold-out-human-architecture-problem-designing-teams-scale-ai-half-day-version",
+        "psychological-safety-infrastructure-building-teams-fail-fast-ai",
+        "human-architecture-problem-designing-teams-scale-ai-full-day-version"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "plumertz",
+      "name": "Plum Ertz",
+      "title": "Senior Director, Engineering",
+      "company": "Ro",
+      "bio_short": "Engineering leader focused on accessibility, UI development and scaling systems and teams; background in marketing, media and fintech, now leading engineering for accessible direct-to-patient care at Ro.",
+      "profile_url": "https://qconsf.com/speakers/plumertz",
+      "links": {
+        "github": "https://github.com/s-plum",
+        "linkedin": "https://www.linkedin.com/in/plumertzi/",
+        "x": null,
+        "website": "https://plumertzi.com/"
+      },
+      "session_ids": [
+        "game-time-how-unsuccessfully-10x-week-successfully-10x-year"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "jacobmurphy",
+      "name": "Jacob Murphy",
+      "title": "Staff Software Engineer; Valkey maintainer & TSC member",
+      "company": "Google Cloud (Memorystore)",
+      "bio_short": "Valkey maintainer and Technical Steering Committee member who sets technical direction for Google's managed Redis/Valkey/Memcached; focuses on distributed systems, HA and cache scaling.",
+      "profile_url": "https://qconsf.com/speakers/jacobmurphy",
+      "links": {
+        "github": "https://github.com/murphyjacob4",
+        "linkedin": "https://www.linkedin.com/in/jacob-murphy-801078127/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "live-resharding-without-regret-lessons-building-valkeys-atomic-slot-migration"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "cat-swetel",
+      "name": "Cat Swetel",
+      "title": null,
+      "company": null,
+      "bio_short": "Listed on the Nubank session page only; no title, company or bio shown, and not on the speakers index.",
+      "profile_url": "https://qconsf.com/speakers/cat-swetel",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "architecting-nubanks-global-financial-infrastructure"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "rishabhbhargava",
+      "name": "Rishabh Bhargava",
+      "title": "Director of ML",
+      "company": "Together AI",
+      "bio_short": "Leads Together AI's Voice AI team (fast speech models, real-time inference). Co-founded Refuel.ai (acquired by Together AI in 2025); 10+ years of ML infra at Primer.ai and Datacoral.",
+      "profile_url": "https://qconsf.com/speakers/rishabhbhargava",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "how-build-real-time-voice-agent"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "nancyzheng",
+      "name": "Nancy Zheng",
+      "title": "VP of Engineering, AI Inference",
+      "company": "Cerebras",
+      "bio_short": "Leads inference-serving engineering at Cerebras, building a disaggregated inference cloud mixing GPUs and Cerebras hardware; previously a founder and engineering leader at Google and Stripe.",
+      "profile_url": "https://qconsf.com/speakers/nancyzheng",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "inside-disaggregated-architecture-serving-llm-inference"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "kushanmehta",
+      "name": "Kushan Mehta",
+      "title": "Principal Software Engineer; Tech Lead for AI-Native Engineering",
+      "company": "Roblox",
+      "bio_short": "Leads Roblox's shift to AI-native engineering: agentic systems, grounding models in internal knowledge, guardrails for autonomous agents and running that infra efficiently.",
+      "profile_url": "https://qconsf.com/speakers/kushanmehta",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "generation-got-cheap-trust-didnt-scaling-agentic-changes-prompt-prod-roblox"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "jaymoorthi",
+      "name": "Jay Moorthi",
+      "title": "Senior Engineering Manager, Diagnostics",
+      "company": "Roblox",
+      "bio_short": "Leads observability/diagnostics at Roblox (tracing, AI observability). Two decades in dev infra and distributed systems; founded Solano Labs (acquired by GE Digital), led engineering at Domino Data Lab and Qumulo.",
+      "profile_url": "https://qconsf.com/speakers/jaymoorthi",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "generation-got-cheap-trust-didnt-scaling-agentic-changes-prompt-prod-roblox"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "udaykiranmedisetty",
+      "name": "Uday Kiran Medisetty",
+      "title": "VP, Distinguished Engineer",
+      "company": "Uber",
+      "bio_short": "11+ years at Uber on transportation APIs, the Trip Fulfillment Platform, enterprise products and core infra; now leads agentic AI for employee productivity and user-facing agents.",
+      "profile_url": "https://qconsf.com/speakers/udaykiranmedisetty",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "running-software-factory-efficiently-uber-scale-holding-agent-spend-steady"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "weipingpeng",
+      "name": "Weiping Peng",
+      "title": "Distinguished Engineer",
+      "company": "Airbnb",
+      "bio_short": "Leads AI engineering/architecture for Airbnb's generative AI products, including the support assistant's guardrail layer. 24 years in applied AI and large-scale systems; ex-Salesforce AI platform architect; 9 US patents.",
+      "profile_url": "https://qconsf.com/speakers/weipingpeng",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/weipingpeng",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "how-airbnb-guardrailed-its-ai-customer-support-agent"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "dianhuanlin",
+      "name": "Diane Lin",
+      "title": "Staff Engineer",
+      "company": "Datadog",
+      "bio_short": "Leads self-evolving AI agents for security operations at Datadog after co-founding Culminate (acquired by Datadog). Previously Zscaler, Amazon Alexa QA, Vicarious; PhD in ML from Imperial College London.",
+      "profile_url": "https://qconsf.com/speakers/dianhuanlin",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "llm-flip-flops-reliability-risk-hill-climbing-signal"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "amandawalker",
+      "name": "Amanda Walker",
+      "title": "Sr. Director, Engineering - Privacy, Safety and Security",
+      "company": "Google",
+      "bio_short": "Early Google security/privacy leader (joined 2006); later VP Eng at a healthcare startup, returned in 2022 to unify Google's privacy, security and safety research.",
+      "profile_url": "https://qconsf.com/speakers/amandawalker",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "agentic-trust-securing-ai-agents-production"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "fawziyahalebiosu",
+      "name": "Fawziyah Alebiosu",
+      "title": "Software Engineer",
+      "company": "Imprint",
+      "bio_short": "Payments engineer at Imprint in San Francisco; previously built merchant payments infrastructure on GoDaddy's Payments Facilitation team.",
+      "profile_url": "https://qconsf.com/speakers/fawziyahalebiosu",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "apis-cant-afford-be-wrong-lessons-moving-money"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "emmanuelparaskakis",
+      "name": "Emmanuel Paraskakis",
+      "title": "Founder & CEO",
+      "company": "Level 250",
+      "bio_short": "API product veteran (Apiary, Swagger, Oracle's first cloud-native API gateway; API programs at Verisk, Moody's, Precisely). Advises on API strategy, DX, MCP products and agent readiness; teaches on Maven.",
+      "profile_url": "https://qconsf.com/speakers/emmanuelparaskakis",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/emmanuelparaskakis/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "everything-i-knew-about-developer-experience-wrong-agents"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "ryanscottbrown",
+      "name": "Ryan Brown",
+      "title": "Infrastructure engineer (sandboxes for agents)",
+      "company": "Render",
+      "bio_short": "Builds agent sandboxes at Render; earlier principal roles at Crunchyroll, Red Hat, Trek10 and Vendia, plus API design work in the OpenStack API WG and Vendia schema tooling.",
+      "profile_url": "https://qconsf.com/speakers/ryanscottbrown",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "schema-was-never-enough-world-protocols"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "sarahdeitke",
+      "name": "Sarah Deitke",
+      "title": "Senior Software Engineer",
+      "company": "Duolingo",
+      "bio_short": "Works on AI tooling and adoption at Duolingo, from automated code review to internal app-building platforms.",
+      "profile_url": "https://qconsf.com/speakers/sarahdeitke",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sarahdeitke/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "no-new-backend-api-layer-behind-800-agent-built-apps-duolingo"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "aartigupta2",
+      "name": "Aarti Gupta",
+      "title": "Staff Engineer",
+      "company": "Netflix",
+      "bio_short": "16+ years in distributed systems and platform architecture; at Netflix turns large internal systems into extensible domain platforms for new business areas.",
+      "profile_url": "https://qconsf.com/speakers/aartigupta2",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "stop-fighting-remodel-api-design-models-outgrew-their-boundaries"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "prachijain",
+      "name": "Prachi Jain",
+      "title": "Senior Site Reliability Engineer",
+      "company": "Netflix",
+      "bio_short": "SRE for PKI, cryptography, secrets management and security services at Netflix; previously Fastly and Cisco; contributes to IETF security standards.",
+      "profile_url": "https://qconsf.com/speakers/prachijain",
+      "links": {
+        "github": "https://github.com/PJ1288",
+        "linkedin": "https://www.linkedin.com/in/prachi-jain1288/",
+        "x": "https://x.com/japrachi",
+        "website": null
+      },
+      "session_ids": [
+        "freeze-paradox-why-stopping-deployments-doesnt-stop-failures"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "sandhyanarayan",
+      "name": "Sandhya Narayan",
+      "title": "Technical Program Manager (security, compliance & risk)",
+      "company": null,
+      "bio_short": "TPM who led global security programs; recent Netflix work on securing GenAI and agentic identity/access. Earlier security roles at Adobe, SAP, eBay and SRI. Current employer not stated.",
+      "profile_url": "https://qconsf.com/speakers/sandhyanarayan",
+      "links": {
+        "github": null,
+        "linkedin": "http://www.linkedin.com/in/sandhya-n-57606619",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "freeze-paradox-why-stopping-deployments-doesnt-stop-failures"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "andrewhatch",
+      "name": "Andrew Hatch",
+      "title": "Engineering Leader and SRE Manager",
+      "company": "Cisco ThousandEyes",
+      "bio_short": "25+ years in tech across Australia, India and the US; joined LinkedIn as SRE manager in 2020, now leads SRE at ThousandEyes; SREcon speaker on complex systems.",
+      "profile_url": "https://qconsf.com/speakers/andrewhatch",
+      "links": {
+        "github": "https://github.com/hatchman1976",
+        "linkedin": "https://www.linkedin.com/in/hatchman76/",
+        "x": null,
+        "website": "https://medium.com/@Hatchman76"
+      },
+      "session_ids": [
+        "adapt-or-drift-resilience-engineering-when-ai-moves-operating-point"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "lorinhochstein",
+      "name": "Lorin Hochstein",
+      "title": "Staff Software Engineer, Reliability",
+      "company": "Airbnb",
+      "bio_short": "Reliability engineer at Airbnb; previously Netflix, Coupang and SendGrid Labs plus academic research roles. Writes on resilience engineering (Surfing Complexity).",
+      "profile_url": "https://qconsf.com/speakers/lorinhochstein",
+      "links": {
+        "github": "https://github.com/lorin",
+        "linkedin": "https://www.linkedin.com/in/lhochstein/",
+        "x": "https://x.com/norootcause",
+        "website": "https://lorinhochstein.org"
+      },
+      "session_ids": [
+        "saturation-how-your-software-will-fail-scale"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "emruppe",
+      "name": "Em Ruppe",
+      "title": "Technical Incident Commander",
+      "company": "Chime",
+      "bio_short": "Incident commander and Resilience in Software Foundation member; incident work at SendGrid, Twilio and Chime, plus product/training at Jeli.io. Focus: learning from incidents, protecting responders from burnout.",
+      "profile_url": "https://qconsf.com/speakers/emruppe",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "what-incident-severity-lie-agreed-upon"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "vanessahuertagranda",
+      "name": "Vanessa Huerta Granda",
+      "title": "Resilience Engineering Manager",
+      "company": "Enova",
+      "bio_short": "Leads Enova's Resilience Engineering team (incident process, learning from incidents, IC rotation). Ex-Jeli; co-author of the Howie post-incident guide; RISF board member. Also hosts the Resilience track.",
+      "profile_url": "https://qconsf.com/track-hosts/vanessahuertagranda",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/vanessa-huerta-granda-6b3a5320/",
+        "x": "https://twitter.com/v_hue_g",
+        "website": null
+      },
+      "session_ids": [
+        "its-never-thing-broke-learning-incidents-ai-speed"
+      ],
+      "roles": [
+        "speaker",
+        "track_host"
+      ]
+    },
+    {
+      "id": "payalpatelfreshworkscom",
+      "name": "Payal Patel",
+      "title": "Senior Director, Solution Engineering",
+      "company": "Freshworks",
+      "bio_short": "Leads Freshworks' Americas solutions engineering team; co-founded Freshworks WISE, a community for women in solution engineering.",
+      "profile_url": "https://qconsf.com/speakers/payalpatelfreshworkscom",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "legacy-vs-ai-native-wrong-question-architecting-modern-platform"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "saiprasadmuralifreshworkscom",
+      "name": "Saiprasad Murali",
+      "title": "Principal Solution Engineer, Strategic Enterprise",
+      "company": "Freshworks",
+      "bio_short": "Advises large enterprises on modernizing ITSM, employee experience and customer ops; leads Freshworks' AI Advisory Board.",
+      "profile_url": "https://qconsf.com/speakers/saiprasadmuralifreshworkscom",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "legacy-vs-ai-native-wrong-question-architecting-modern-platform"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "swayam",
+      "name": "Swayam Barik",
+      "title": "AI Forward Deployed Engineer",
+      "company": "IBM",
+      "bio_short": "Takes client AI work from idea to pilot to production at IBM; ~5 years of engineering spanning a startup and companies like LinkedIn.",
+      "profile_url": "https://qconsf.com/speakers/swayam",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "beyond-model-engineering-agent-harness-autonomous-software-delivery"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "brandongetunblockedcom",
+      "name": "Brandon Waselnuk",
+      "title": "Developer Relations",
+      "company": "Unblocked",
+      "bio_short": "Leads DevRel at Unblocked (context for developers and AI tools). Previously led product at Mintlify, co-founded Squire AI (YC S21), venture partner at Pioneer Fund, product roles at IBM.",
+      "profile_url": "https://qconsf.com/speakers/brandongetunblockedcom",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "your-agents-lack-context-heres-how-fix-youre-absolutely-right"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "leeatomicdev",
+      "name": "Lee Faus",
+      "title": "Founder & CEO",
+      "company": "Atomic",
+      "bio_short": "Building Atomic, a Git successor based on a semantic change graph. Career spans Borland, Compuware, Red Hat, GitHub and GitLab.",
+      "profile_url": "https://qconsf.com/speakers/leeatomicdev",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "wait-youre-still-doing-prs"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "caiosousa",
+      "name": "Caio Sousa",
+      "title": "Engineering Manager",
+      "company": "Nu",
+      "bio_short": "14+ years leading large teams in financial services; at Nu led cloud infra for its IPO and the in-house observability platform; now leads Digital Assets.",
+      "profile_url": "https://qconsf.com/speakers/caiosousa",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "ai-amplifies-everything-including-your-mess-lessons-delivering-ai-global-scale"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "jerrypeng",
+      "name": "Jerry Peng",
+      "title": "Senior Staff Software Engineer",
+      "company": "Databricks",
+      "bio_short": "Works on Spark Structured Streaming at Databricks; ex-Splunk principal engineer; committer/PMC on Apache Pulsar, Storm and Heron.",
+      "profile_url": "https://qconsf.com/speakers/jerrypeng",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "apache-spark-structured-streaming-real-time-mode"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "jeremy",
+      "name": "Jeremy Tian",
+      "title": "Founder & CPO",
+      "company": "Lucidic AI",
+      "bio_short": "Stanford-trained co-founder working on optimizing agentic systems and joint model-harness training; previously deep learning research at Stanford and ML trading at DRW.",
+      "profile_url": "https://qconsf.com/speakers/jeremy",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "model-harness-co-training-data-driven-optimization-toward-pareto-optimal"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "alexberkoff",
+      "name": "Alex Berkoff",
+      "title": "Senior Solutions Engineer",
+      "company": "Azul Systems",
+      "bio_short": "No bio published on the QCon session page.",
+      "profile_url": "https://qconsf.com/user/19678",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "why-optimized-application-infrastructure-not-just-gpus-and-llms-can-scale-your"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "andrewfinch",
+      "name": "Andrew Finch",
+      "title": "Staff Software Engineer",
+      "company": "Sonar",
+      "bio_short": "No bio published on the QCon page.",
+      "profile_url": "https://qconsf.com/speakers/andrewfinch",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "building-safe-software-factory"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "xiaoweitacnodeio",
+      "name": "Xiaowei Jiang",
+      "title": "CEO and Chief Architect",
+      "company": "Tacnode",
+      "bio_short": "Leads Tacnode (fresh, consistent context for agents in milliseconds). Built large data systems at Microsoft and Meta; his team introduced FlinkSQL to Apache Flink.",
+      "profile_url": "https://qconsf.com/speakers/xiaoweitacnodeio",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "context-gap-why-correct-agents-fail"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "vimalkumar",
+      "name": "Vimal Kumar",
+      "title": "Founder and CEO",
+      "company": "Juspay",
+      "bio_short": "Founded Juspay (350M+ transactions/day, core work on India's UPI); helped create open-source Hyperswitch and the Namma Yatri mobility platform.",
+      "profile_url": "https://qconsf.com/speakers/vimalkumar",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "engineering-critical-path-nine-reliability-patterns-processing-350-million"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "joeylynch",
+      "name": "Joseph Lynch",
+      "title": "Principal Software Engineer",
+      "company": "Netflix",
+      "bio_short": "Builds high-leverage infra for stateless and stateful services at Netflix; led the data tier's move to a Data Gateway abstraction; now on automated verification and fast deploys.",
+      "profile_url": "https://qconsf.com/speakers/joeylynch",
+      "links": {
+        "github": "https://github.com/jolynch",
+        "linkedin": "https://www.linkedin.com/in/joseph-lynch-9976a431/",
+        "x": null,
+        "website": "https://jolynch.github.io/"
+      },
+      "session_ids": [
+        "orderly-keys-wild-values-adaptive-compression-distributed-key-value-storage"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "ayushisingh",
+      "name": "Ayushi Singh",
+      "title": "Senior Software Engineer",
+      "company": "Netflix",
+      "bio_short": "Builds secure-by-default infra for large distributed data systems (KV stores, Cassandra) at Netflix: capacity planning, hardening, data repair, zero-downtime migrations.",
+      "profile_url": "https://qconsf.com/speakers/ayushisingh",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "orderly-keys-wild-values-adaptive-compression-distributed-key-value-storage"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "almoggavra",
+      "name": "Almog Gavra",
+      "title": "Co-Founder",
+      "company": "Responsive (responsive.dev)",
+      "bio_short": "Co-founded responsive.dev and is a major SlateDB contributor (LSM engine on object storage); previously stream processing at Confluent and search infra at LinkedIn.",
+      "profile_url": "https://qconsf.com/speakers/almoggavra",
+      "links": {
+        "github": "https://github.com/agavra",
+        "linkedin": "https://www.linkedin.com/in/agavra/",
+        "x": "https://x.com/almoggavra",
+        "website": null
+      },
+      "session_ids": [
+        "how-build-online-systems-object-storage"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "kishoreyadav",
+      "name": "Kishor Yadav Kommanaboina",
+      "title": "Staff Software Engineer",
+      "company": "Snap Inc.",
+      "bio_short": "Leads caching/storage infra at Snap: moved the fleet from KeyDB to Valkey and built autoscaling for ~800 clusters; built Snap's telemetry ingestion; ex-Amazon and Twitter.",
+      "profile_url": "https://qconsf.com/speakers/kishoreyadav",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "autoscaling-800-valkey-clusters-distributed-systems-lessons-scaling-stateful"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "gwenshapira",
+      "name": "Gwen Shapira",
+      "title": "Co-Founder and CPO",
+      "company": "Nile",
+      "bio_short": "Co-founded Nile (Postgres platform); previously led Confluent's cloud-native Kafka engineering. Kafka committer; co-author of Kafka: The Definitive Guide and Hadoop Application Architectures.",
+      "profile_url": "https://qconsf.com/speakers/gwenshapira",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/gwenshapira",
+        "x": "https://twitter.com/gwenshap",
+        "website": null
+      },
+      "session_ids": [
+        "when-your-users-are-agents-lessons-distributed-postgres-platform"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "mallikarao",
+      "name": "Mallika Rao",
+      "title": "Senior Engineering Manager",
+      "company": "Zocdoc",
+      "bio_short": "Led engineering at Netflix, Twitter and Walmart on search, recommendations and personalization; focuses on applying AI with resilience and transparency; mentors senior engineers.",
+      "profile_url": "https://qconsf.com/speakers/mallikarao",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/mallikarao",
+        "x": null,
+        "website": "https://mallikarao.medium.com"
+      },
+      "session_ids": [
+        "adaptive-systems-production-what-recommendation-systems-can-teach-us-about"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "abhinavsinha",
+      "name": "Abhinav Sinha",
+      "title": "CEO",
+      "company": "Lucidic AI",
+      "bio_short": "Stanford BS/MS CS (AI); RL work since the GPT-2 era. Background: Stanford AI Lab research, quant trading at Citadel and Susquehanna, distributed systems on Apple's Find My.",
+      "profile_url": "https://qconsf.com/speakers/abhinavsinha",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "skills-memory-or-fine-tuning-engineering-loop-behind-production-agents"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "danwolf",
+      "name": "Dan Wolf",
+      "title": "Head of Platform Engineering, PMG Tech",
+      "company": "BlackRock",
+      "bio_short": "Leads strategy and delivery of shared data and AI platforms for BlackRock's investment teams; Duke BSE (ECE) and Master of Engineering Management.",
+      "profile_url": "https://qconsf.com/speakers/danwolf",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "inside-asimov-blackrocks-platform-architecture-applied-ai-scale"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "sriannapurnabhupatiraju",
+      "name": "Sri Annapurna Bhupatiraju",
+      "title": "Director and Principal Engineer",
+      "company": "BlackRock",
+      "bio_short": "Founding member of BlackRock AI Labs, turning research into production AI platforms; previously lead AI architect for Asimov, BlackRock's investment research platform.",
+      "profile_url": "https://qconsf.com/speakers/sriannapurnabhupatiraju",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "inside-asimov-blackrocks-platform-architecture-applied-ai-scale"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "hamelhusain",
+      "name": "Hamel Husain",
+      "title": "Machine Learning Engineer",
+      "company": null,
+      "bio_short": "20+ years in applied AI/ML and data science (ex-Airbnb, GitHub; early LLM research). Helps teams debug and measure production AI via evals through teaching, consulting and writing.",
+      "profile_url": "https://qconsf.com/speakers/hamelhusain",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "revenge-data-scientist-why-reliable-ai-needs-evals-traces-and-metrics"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "brianyang",
+      "name": "Brian Yang",
+      "title": "Member of Technical Staff",
+      "company": "OpenAI",
+      "bio_short": "Works on Ads at OpenAI (previously Search). 10+ years across OpenAI, Google, Meta, LinkedIn and startups on monetization, search, ranking and infra; former founding engineer.",
+      "profile_url": "https://qconsf.com/speakers/brianyang",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/brianyang14/",
+        "x": "https://x.com/ThinkingTokens",
+        "website": null
+      },
+      "session_ids": [
+        "lessons-building-100m-product-six-weeks-openai"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "sudarshansrinivasaramanujam",
+      "name": "Sudarshan Srinivasa Ramanujam",
+      "title": "Lead Engineer, Feed Ranking & Retrieval",
+      "company": "LinkedIn",
+      "bio_short": "Builds and scales LinkedIn Feed ranking and retrieval models; focuses on applying LLMs to recommendation and improving retrievers serving 1B+ members.",
+      "profile_url": "https://qconsf.com/speakers/sudarshansrinivasaramanujam",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "bridging-retrieval-and-ranking-llm-embeddings-and-graph-features-gpu-served"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "rajatshah",
+      "name": "Rajat Shah",
+      "title": "Staff Software Engineer",
+      "company": "Netflix",
+      "bio_short": "Leads technical architecture for Netflix ML model serving; ~10 years at Netflix and Amazon on distributed systems and ML platforms (recs, search, payments); MS CS, NC State.",
+      "profile_url": "https://qconsf.com/speakers/rajatshah",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "failing-layers-lessons-rebuilding-netflixs-ml-serving-platform"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "wenbingbai",
+      "name": "Wenbing Bai",
+      "title": "Senior Software Engineer, AI Platform",
+      "company": "Netflix",
+      "bio_short": "Builds async inference infra so Netflix Studio teams can run multimodal models at scale; previously CV training/serving infra on Cruise's ML platform.",
+      "profile_url": "https://qconsf.com/speakers/wenbingbai",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "failing-layers-lessons-rebuilding-netflixs-ml-serving-platform"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "kayemason",
+      "name": "Kaye Mason",
+      "title": "Senior Staff Software Engineer",
+      "company": "Meta",
+      "bio_short": "Graphics engineer with 20+ years in real-time rendering, spatial computing and dev platforms; shipped games at EA, worked on Google Stadia graphics, now shaping XR at Meta.",
+      "profile_url": "https://qconsf.com/speakers/kayemason",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "nobody-knows-everything-and-thats-ok-building-alignment-complex-rapidly"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "jordancutler",
+      "name": "Jordan Cutler",
+      "title": "Senior Staff Engineer & Web Tech Lead",
+      "company": "Pinterest",
+      "bio_short": "Leads web infra, DevEx, performance and reliability for 200+ web engineers at Pinterest; writes the High Growth Engineer newsletter (~100K subscribers).",
+      "profile_url": "https://qconsf.com/speakers/jordancutler",
+      "links": {
+        "github": "https://github.com/jordan-cutler",
+        "linkedin": "https://www.linkedin.com/in/jordancutler1/",
+        "x": null,
+        "website": "https://read.highgrowthengineer.com/"
+      },
+      "session_ids": [
+        "use-ai-multiply-your-team-staff-engineer"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "scottbehrens",
+      "name": "Scott Behrens",
+      "title": "Principal Security Engineer",
+      "company": "Netflix",
+      "bio_short": "Leads GenAI technical work across product, security, privacy and assurance at Netflix; previously built its red team, led DDoS research and consumer data protection.",
+      "profile_url": "https://qconsf.com/speakers/scottbehrens",
+      "links": {
+        "github": "http://github.com/sbehrens",
+        "linkedin": "https://www.linkedin.com/in/scott-behrens-6bb8611/",
+        "x": null,
+        "website": "https://scottbehrens.com/"
+      },
+      "session_ids": [
+        "scaling-tech-aligning-humans"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "joyebertz",
+      "name": "Joy Ebertz",
+      "title": "Principal Software Engineer",
+      "company": "Imprint",
+      "bio_short": "Backend engineer (config, microservices, authz, API standards, audit logging); Staff+ roles at Harness, Split and Box; blogs on career and technical topics.",
+      "profile_url": "https://qconsf.com/speakers/joyebertz",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/joyebertz",
+        "x": "https://twitter.com/jkebertz",
+        "website": "https://jkebertz.medium.com/"
+      },
+      "session_ids": [
+        "transitioning-startup-mature-platform"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "lauradevesine",
+      "name": "Laura de Vesine",
+      "title": "Senior Staff Engineer",
+      "company": "Reddit",
+      "bio_short": "25+ years in software including 11 in SRE (incident analysis, chaos engineering, tech-culture interplay); 5 years in Staff+ roles; PhD in computer science.",
+      "profile_url": "https://qconsf.com/speakers/lauradevesine",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "learning-whats-already-there-breadth-based-approach-onboarding"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "holdenkarau",
+      "name": "Holden Karau",
+      "title": "Data Engineer",
+      "company": "Snowflake",
+      "bio_short": "Distributed-systems data engineer; co-author of books on Spark, Dask and Ray; ex-Netflix, Apple, Google; co-founder of Fight Health Insurance.",
+      "profile_url": "https://qconsf.com/speakers/holdenkarau",
+      "links": {
+        "github": "https://github.com/holdenk",
+        "linkedin": "https://www.linkedin.com/in/holdenkarau",
+        "x": "https://x.com/holdenkarau",
+        "website": "http://www.holdenkarau.com"
+      },
+      "session_ids": [
+        "breaking-down-walls-python-big-data-ai-performance-transpilation-and-llms"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "moulimukherjee",
+      "name": "Mouli Mukherjee",
+      "title": "Engineering Manager, Data Infrastructure",
+      "company": "OpenAI",
+      "bio_short": "Leads OpenAI's team building the large-scale data backbone for pipelines, queries and insights; interested in using AI to build and evolve reliable, secure data systems.",
+      "profile_url": "https://qconsf.com/speakers/moulimukherjee",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "building-data-platform-ai"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "paigeelinson",
+      "name": "Paige Elinson",
+      "title": "Staff Software Engineer",
+      "company": "Datadog",
+      "bio_short": "Leads Datadog Reference Tables (customer business context on observability data); builds large distributed data platforms; ex-Cruise and Google Street View.",
+      "profile_url": "https://qconsf.com/speakers/paigeelinson",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "one-does-not-simply-add-synchronous-writes-bridging-batch-and-real-time-apache"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "rjatwal",
+      "name": "RJ Atwal",
+      "title": "Principal Engineer, Internal Databases",
+      "company": "Confluent",
+      "bio_short": "Query planning/optimization and runtime specialist; founding engineer on MotherDuck, Aurora DSQL and Lightning Tables; earlier led data teams at Samsung and OpenX. Not on the speakers index.",
+      "profile_url": "https://qconsf.com/speakers/rjatwal",
+      "links": {
+        "github": "https://github.com/orgs/rj-playground",
+        "linkedin": "https://www.linkedin.com/in/rj-atwal-b332452a/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "building-streamhouse-turning-kafka-streams-millisecond-query-layer"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "shannonmckenzie",
+      "name": "Shannon McKenzie",
+      "title": "Senior Principal Engineer",
+      "company": "Blackbaud",
+      "bio_short": "Leads technical work on Blackbaud's core data platform, unifying scattered datasets for analytics and AI in the social-good sector.",
+      "profile_url": "https://qconsf.com/speakers/shannonmckenzie",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/shannon-mckenzie/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "datasets-data-products-powering-trusted-ai-social-impact"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "danielweeks",
+      "name": "Daniel Weeks",
+      "title": "Member of Technical Staff",
+      "company": "Databricks",
+      "bio_short": "Co-creator of Apache Iceberg and co-founder of Tabular; works on table formats and open storage at Databricks; previously led Big Data Compute at Netflix.",
+      "profile_url": "https://qconsf.com/speakers/danielweeks",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "iceberg-v4-next-chapter-table-formats"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "jeremycastile",
+      "name": "Jeremy Castile",
+      "title": "VP of Developer Research",
+      "company": "GitKraken",
+      "bio_short": "Leads research into GitKraken users' needs; previously at Docker and New Relic, with an engineering background.",
+      "profile_url": "https://qconsf.com/speakers/jeremycastile",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "feeling-faster-isnt-metric-measuring-ais-real-engineering-impact"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "adamhicksgroundcovercom",
+      "name": "Adam Hicks",
+      "title": "Senior Solutions Architect",
+      "company": "Groundcover",
+      "bio_short": "Works on unified observability and AI workloads at Groundcover; previously led platform engineering at Trace3 and helped scale observability at Honeycomb.",
+      "profile_url": "https://qconsf.com/speakers/adamhicksgroundcovercom",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "notes-300-installs-inside-someone-elses-cloud"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "pavitterjosannutrientio",
+      "name": "Pavitter Josan",
+      "title": "Solutions Engineer",
+      "company": "Nutrient",
+      "bio_short": "Advises customers on complex deployments across web, Salesforce/.NET platforms and generative AI; 3+ years in industry.",
+      "profile_url": "https://qconsf.com/speakers/pavitterjosannutrientio",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "why-your-document-ai-fails-production-and-how-fix-infrastructure-underneath-it"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "adrianhatchantithesiscom",
+      "name": "Adrian Hatch",
+      "title": "Solutions Engineer",
+      "company": "Antithesis",
+      "bio_short": "Helps teams find out whether their software really works at Antithesis; previously built analytical databases at the VA; Syracuse CS.",
+      "profile_url": "https://qconsf.com/speakers/adrianhatchantithesiscom",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "trust-verify-delivering-quality-agentic-workflows"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "hsunder",
+      "name": "Hari Sunder",
+      "title": "Architect",
+      "company": "YugabyteDB",
+      "bio_short": "10+ years in databases (early Azure SQL DB and Synapse); helped build parts of YugabyteDB and Meko, a memory layer for multi-agent AI; DocumentDB TSC member.",
+      "profile_url": "https://qconsf.com/speakers/hsunder",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "your-agents-have-amnesia-lessons-building-memory-layer-multi-agent-systems"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "sunilmurthy",
+      "name": "Sunil Murthy",
+      "title": "AI Field CTO",
+      "company": "IBM",
+      "bio_short": "Leads AI strategy, data readiness, governance and operating-model work for IBM enterprise clients; 25+ years across product, architecture and advisory.",
+      "profile_url": "https://qconsf.com/speakers/sunilmurthy",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sunilmurthy/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "you-steer-agents-execute-developer-led-modernization-agentic-ai"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "apatil",
+      "name": "Aditya Patil",
+      "title": "Product Lead",
+      "company": "Endor Labs",
+      "bio_short": "Leads go-to-market and technical storytelling at Endor Labs; co-founded an enterprise search startup, founded B2B SaaS Nilai, began as a data-products PM.",
+      "profile_url": "https://qconsf.com/speakers/apatil",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "architecting-security-agentic-sdlc"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "chriskelly",
+      "name": "Chris Kelly",
+      "title": "Product Lead",
+      "company": "Harness",
+      "bio_short": "Leads product for Cosmos at Harness; ~15 years on developer productivity at New Relic, GitHub, FireHydrant and Augment Code.",
+      "profile_url": "https://qconsf.com/speakers/chriskelly",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "drawing-rest-owl-blueprint-your-software-factory"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "anirbanchatterjee",
+      "name": "Anirban Chatterjee",
+      "title": "Product Marketing Leader",
+      "company": "Sonar",
+      "bio_short": "Leads product marketing at Sonar; began as an IBM developer 20+ years ago; focuses on ROI of AI coding via verification and governance.",
+      "profile_url": "https://qconsf.com/speakers/anirbanchatterjee",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "code-abundant-confidence-scarce-what-1k-devs-say-about-coding-agents"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "markkhuzam",
+      "name": "Mark Khuzam",
+      "title": "Senior Software Engineer",
+      "company": "Netflix",
+      "bio_short": "On Netflix Commerce Experience Capabilities, building the CLCS server-driven UI framework and getting AI coding tools to follow team standards by default; ex-OpenTable consumer web platform lead.",
+      "profile_url": "https://qconsf.com/speakers/markkhuzam",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "how-netflix-retrofitted-its-sdlc-ai-coding-agents"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "lizfong-jones",
+      "name": "Liz Fong-Jones",
+      "title": "Technical Fellow",
+      "company": "Honeycomb",
+      "bio_short": "Developer advocate, labor/ethics organizer and SRE with 20+ years; Technical Fellow at Honeycomb; previously Google SRE on Cloud Load Balancer and Flights.",
+      "profile_url": "https://qconsf.com/speakers/lizfong-jones",
+      "links": {
+        "github": "https://github.com/lizthegrey",
+        "linkedin": "https://www.linkedin.com/in/efong/",
+        "x": null,
+        "website": "https://www.lizthegrey.com/"
+      },
+      "session_ids": [
+        "making-production-legible-agents-lessons-building-observability-mcp"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "bensegal",
+      "name": "Ben Segal",
+      "title": "Software Engineer",
+      "company": "Parasail",
+      "bio_short": "Works on inference performance at Parasail (measurement, automation, safe experiments on real GPUs); ~8 years at Swift Navigation leading Skylark GPS corrections; ex-CTO of Navmatic.",
+      "profile_url": "https://qconsf.com/speakers/bensegal",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/benjaminsegal/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "efficient-gpu-agents-infra-autonomous-llm-perf-optimization"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "meghanamadhyastha",
+      "name": "Meghana Madhyastha",
+      "title": "Performance Engineer",
+      "company": "Parasail",
+      "bio_short": "Makes LLM serving faster at Parasail, from CUDA kernels to distributed KV cache; previously wrote CUDA kernels at Meta FAIR; PhD (Johns Hopkins) on data movement/I-O bottlenecks. Not on the speakers index.",
+      "profile_url": "https://qconsf.com/speakers/meghanamadhyastha",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "efficient-gpu-agents-infra-autonomous-llm-perf-optimization"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "briandouglas",
+      "name": "Brian Douglas",
+      "title": "Co-Founder & CEO",
+      "company": "Paper Compute Co.",
+      "bio_short": "Builds agent infrastructure (telemetry, portable on-prem compute) at Paper Compute; founded Open Sauced (joined Linux Foundation 2024); led developer advocacy at GitHub.",
+      "profile_url": "https://qconsf.com/speakers/briandouglas",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": "https://twitter.com/bdougieyo",
+        "website": null
+      },
+      "session_ids": [
+        "dreams-paper-how-agents-learn-experience"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "drewbreunig",
+      "name": "Drew Breunig",
+      "title": "CEO & Cofounder",
+      "company": "CMPND",
+      "bio_short": "Leads CMPND (team behind DSPy), helping companies program rather than prompt LLMs; edits an O'Reilly context engineering handbook; ex-PlaceIQ data science/product lead.",
+      "profile_url": "https://qconsf.com/speakers/drewbreunig",
+      "links": {
+        "github": "https://github.com/dbreunig",
+        "linkedin": "https://www.linkedin.com/in/drewbreunig/",
+        "x": "https://x.com/dbreunig",
+        "website": "https://www.dbreunig.com"
+      },
+      "session_ids": [
+        "avoiding-prompt-debt-other-context-failures"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "kentbeck",
+      "name": "Kent Beck",
+      "title": "Programmer",
+      "company": "Studio Beck",
+      "bio_short": "Creator of Extreme Programming and JUnit, rediscoverer of TDD and first signer of the Agile Manifesto; runs Studio Beck in San Francisco teaching skills that help technical people feel secure.",
+      "profile_url": "https://qconsf.com/speakers/kentbeck",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/kentbeck/",
+        "x": "https://twitter.com/KentBeck",
+        "website": null
+      },
+      "session_ids": [
+        "features-futures"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "adambender",
+      "name": "Adam Bender",
+      "title": "Technical Lead, Enterprise Engineering",
+      "company": "Google",
+      "bio_short": "Leads enterprise engineering and is editor-in-chief of Google's engineering best practices; wrote the Testing Overview chapter of Software Engineering at Google.",
+      "profile_url": "https://qconsf.com/speakers/adambender",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/theadambender/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "no-more-small-systems-how-ai-may-bring-large-system-problems-everyone"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "adamberry",
+      "name": "Adam Berry",
+      "title": "Staff Engineer",
+      "company": "Netflix",
+      "bio_short": "DevEx/platform engineer building an agentic engineering platform for Netflix's next-gen paved road; co-leads Netflix's GenAI champions program.",
+      "profile_url": "https://qconsf.com/speakers/adamberry",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "growing-engineers-era-agentic-coding"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "margaret-annestorey",
+      "name": "Margaret-Anne Storey",
+      "title": "Professor of Computer Science; Canada Research Chair",
+      "company": "University of Victoria",
+      "bio_short": "Researches how developers and teams understand complex software and how GenAI changes that; co-creator of the SPACE framework and the Triple Debt Model.",
+      "profile_url": "https://qconsf.com/speakers/margaret-annestorey",
+      "links": {
+        "github": "https://github.com/margaretstorey",
+        "linkedin": "https://www.linkedin.com/in/margaret-anne-storey/",
+        "x": "https://x.com/margaretstorey",
+        "website": "https://margaretstorey.com/"
+      },
+      "session_ids": [
+        "shipping-faster-understanding-less"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "tarahernandez",
+      "name": "Tara Hernandez",
+      "title": "Vice President",
+      "company": "MongoDB",
+      "bio_short": "~30 years helping companies build and ship software; helped launch Mozilla.org; open-source advocate who argues diverse teams are a business advantage, especially for AI; UCSC lecturer.",
+      "profile_url": "https://qconsf.com/speakers/tarahernandez",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/tara-hernandez",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "diary-ai-adopter-how-i-went-skeptical-enthusiastic-our-organizations-ai"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "smrutipatel",
+      "name": "Smruti Patel",
+      "title": "SVP of Engineering",
+      "company": "Apollo Graph",
+      "bio_short": "Led and scaled engineering at Stripe and VMware, then SVP Engineering at Apollo GraphQL; enjoys mentoring and coaching.",
+      "profile_url": "https://qconsf.com/speakers/smrutipatel",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/smrutirp/",
+        "x": "https://twitter.com/smrutirp",
+        "website": "https://smruti.dev/"
+      },
+      "session_ids": [
+        "platform-engineerings-second-act-vending-machine-passport-control"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "alexmann",
+      "name": "Alex Mann",
+      "title": "Senior Engineering Manager",
+      "company": "Apollo GraphQL",
+      "bio_short": "Leads the team keeping Apollo's fleet running and developer operations routine: CI/CD, HA, distributed systems, DevEx, OpenTelemetry.",
+      "profile_url": "https://qconsf.com/speakers/alexmann",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/alexandermann1/",
+        "x": null,
+        "website": "https://alxmnn.com/"
+      },
+      "session_ids": [
+        "platform-engineerings-second-act-vending-machine-passport-control"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "ronaknathani",
+      "name": "Ronak Nathani",
+      "title": "Principal Staff Software Engineer, Compute Infra",
+      "company": "LinkedIn",
+      "bio_short": "Leads LinkedIn's compute platform; drove the move to Kubernetes; building the next-gen multi-cluster platform for stateless and stateful workloads using AI agents.",
+      "profile_url": "https://qconsf.com/speakers/ronaknathani",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "beyond-kubernetes-api-building-linkedins-compute-platform"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "rachaelwonnacott",
+      "name": "Rachael Wonnacott",
+      "title": "Machine Learning & Applied AI Engineering",
+      "company": "Capital Group",
+      "bio_short": "No bio published. Company appears on the schedule page only, not on her speaker page.",
+      "profile_url": "https://qconsf.com/speakers/rachaelwonnacott",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "observability-missing-control-plane-agentic-engineering"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "shwetavohra",
+      "name": "Shweta Vohra",
+      "title": "Architecture Leader",
+      "company": "Booking.com",
+      "bio_short": "24+ years in cloud, platform and AI systems across travel, healthcare, telecom, auto and banking; author of Decoding Platform Engineering Patterns; writes on platform strategy.",
+      "profile_url": "https://qconsf.com/speakers/shwetavohra",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "why-most-platform-teams-fail-adoption-problem-nobody-wants-own"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "ammarkhaku",
+      "name": "Ammar Khaku",
+      "title": "Staff Engineer",
+      "company": "Netflix",
+      "bio_short": "Leads technical strategy for Netflix's distributed online datastores: matching workloads to datastores, resilient clients, safe data movement.",
+      "profile_url": "https://qconsf.com/speakers/ammarkhaku",
+      "links": {
+        "github": "https://github.com/akhaku",
+        "linkedin": "https://www.linkedin.com/in/akhaku/",
+        "x": "https://x.com/akhaku",
+        "website": null
+      },
+      "session_ids": [
+        "building-migration-platform-moving-100-netflix-rdbms-workloads-aurora"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "kshitijgupta",
+      "name": "Kshitij Gupta",
+      "title": "Software Engineer",
+      "company": "Netflix",
+      "bio_short": "On Netflix Online Datastores, building infra for relational and document databases; background in distributed DBs, sharding and large-scale data movement.",
+      "profile_url": "https://qconsf.com/speakers/kshitijgupta",
+      "links": {
+        "github": "https://github.com/kshitijng",
+        "linkedin": "https://linkedin.com/in/kshitijng",
+        "x": "https://x.com/oh_kshitij",
+        "website": null
+      },
+      "session_ids": [
+        "building-migration-platform-moving-100-netflix-rdbms-workloads-aurora"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "jyothinookula",
+      "name": "Jyothi Nookula",
+      "title": "Product Leader / Director",
+      "company": "DataRobot",
+      "bio_short": "13+ years leading AI product/platform work (ex-Netflix, Meta, AWS, Etsy); 12 ML/AI patents; founded NextGen Product Manager and mentored 1,500+ PMs into AI. Company from schedule only.",
+      "profile_url": "https://qconsf.com/speakers/jyothinookula",
+      "links": {
+        "github": "https://github.com/fibbonnaci",
+        "linkedin": "https://www.linkedin.com/in/jyothinookula/",
+        "x": null,
+        "website": "https://www.nextgenproductmanager.com/"
+      },
+      "session_ids": [
+        "builder-driven-development-rebuilding-organization-around-builder"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "shinegarg",
+      "name": "Shine Garg",
+      "title": "Founder (former Staff Software Engineer)",
+      "company": "Uncharted Path Breakthroughs",
+      "bio_short": "Former staff engineer with 15+ years in backend, data, ML and platform systems; now coaches senior/staff/principal engineers on ambiguity, scope and influence.",
+      "profile_url": "https://qconsf.com/speakers/shinegarg",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/shinegarg/",
+        "x": null,
+        "website": "https://www.unchartedpathbreakthroughs.com/"
+      },
+      "session_ids": [
+        "legacy-leverage-how-brownfield-work-builds-technical-judgment"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "laurievoss",
+      "name": "Laurie Voss",
+      "title": "Head of Developer Relations",
+      "company": "Arize AI",
+      "bio_short": "30+ years programming; co-founded npm, Inc.; leads DevRel at Arize AI (AI observability/evals); advocates for an open, accessible web.",
+      "profile_url": "https://qconsf.com/speakers/laurievoss",
+      "links": {
+        "github": "https://github.com/seldo",
+        "linkedin": "https://www.linkedin.com/in/seldo/",
+        "x": null,
+        "website": "https://seldo.com"
+      },
+      "session_ids": [
+        "product-engineering-when-code-costs-nothing-whats-next"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "omervankloeten",
+      "name": "Omer van Kloeten",
+      "title": "Principal Engineer",
+      "company": "Forter",
+      "bio_short": "Principal engineer at Forter (fraud prevention) on knowledge-sharing and architecture strategy; building Telem, applying 25+ years of judgment to AI-assisted development of legacy systems.",
+      "profile_url": "https://qconsf.com/speakers/omervankloeten",
+      "links": {
+        "github": "https://github.com/omervk",
+        "linkedin": "https://www.linkedin.com/in/omervk/",
+        "x": "https://x.com/omervk",
+        "website": "https://omervk.com"
+      },
+      "session_ids": [
+        "you-cant-read-code-anymore-verifying-software-age-ai"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "sanjaysingh",
+      "name": "Sanjay Singh",
+      "title": "Staff Software Engineer",
+      "company": "LinkedIn",
+      "bio_short": "Builds and runs large-scale traffic management, service discovery and Zero Trust security at LinkedIn, keeping infra reliable at millions of RPS.",
+      "profile_url": "https://qconsf.com/speakers/sanjaysingh",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/singhsanjay12/",
+        "x": null,
+        "website": "https://www.singh-sanjay.com/"
+      },
+      "session_ids": [
+        "when-everyone-can-code-who-owns-production"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "andyliang",
+      "name": "Andy Liang",
+      "title": "Founder & CTO",
+      "company": "Lucidic AI",
+      "bio_short": "Founded Lucidic AI; previously HFT systems at Citadel and mobile ad SDKs at AppLovin; built GrocerCheck (used by 200K+ shoppers during COVID).",
+      "profile_url": "https://qconsf.com/speakers/andyliang",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "simulating-universe-100-times-over-engineering-highly-concurrent-agent-testing"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "anvit",
+      "name": "Anvit Sinha",
+      "title": "Founding Engineer",
+      "company": "Lucidic AI",
+      "bio_short": "Founding engineer at Lucidic AI; previously microservice infra at Salesforce and ML at CNX Resources; Purdue research on generative AI in education.",
+      "profile_url": "https://qconsf.com/speakers/anvit",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "simulating-universe-100-times-over-engineering-highly-concurrent-agent-testing"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "cdemars86gmailcom",
+      "name": "Chris DeMars",
+      "title": "Senior Developer Advocate",
+      "company": "TuxCare",
+      "bio_short": "20+ years in tech; international frontend speaker; Microsoft MVP and Progress Champion.",
+      "profile_url": "https://qconsf.com/speakers/cdemars86gmailcom",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "men-black-know-whats-your-javascript-and-how-fix-it"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "christianweber",
+      "name": "Christian Weber",
+      "title": null,
+      "company": "Harness",
+      "bio_short": "Long financial-services career across the delivery pipeline (support to release orchestration); now vendor-side in dev tooling helping enterprises modernize. Company from schedule only.",
+      "profile_url": "https://qconsf.com/speakers/christianweber",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "fast-furious-and-fatigued"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "evelynhur",
+      "name": "Evelyn Hur",
+      "title": "Product Manager",
+      "company": "Databricks",
+      "bio_short": "Works on Omnigent, Databricks' meta-harness for coding agents; previously AI product work at Atlassian and Intuitive Surgical; Stanford BS/MS in CS and product design.",
+      "profile_url": "https://qconsf.com/speakers/evelynhur",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "multi-agent-coding-omnigent"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "dennylee",
+      "name": "Denny Lee",
+      "title": "Head of Startups",
+      "company": "Databricks",
+      "bio_short": "Leads Databricks' startup efforts; contributor to Spark, MLflow, Unity Catalog, Delta Lake and Omnigent; previously Microsoft (Cosmos DB, HDInsight, SQL Server) and SAP Concur.",
+      "profile_url": "https://qconsf.com/speakers/dennylee",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "multi-agent-coding-omnigent"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "lucamezzalira",
+      "name": "Luca Mezzalira",
+      "title": "Director",
+      "company": "50 Cents Media",
+      "bio_short": "Architect, author and speaker with ~20 years from frontend to cloud; former AWS and DAZN; QCon cohort facilitator. His speaker page doesn't yet list the 2026 program.",
+      "profile_url": "https://qconsf.com/speakers/lucamezzalira",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/lucamezzalira/",
+        "x": "https://twitter.com/lucamezzalira",
+        "website": "https://www.deararchitects.xyz/"
+      },
+      "session_ids": [
+        "infoq-certified-architect-program-qcon-san-francisco"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "hienluu",
+      "name": "Hien Luu",
+      "title": "AI/ML Leader, Advisor, Speaker, Author",
+      "company": null,
+      "bio_short": "Builds scalable AI/ML infrastructure; author of MLOps with Ray and Beginning Apache Spark 3; frequent QCon, MLOps World and Data+AI Summit speaker; QCon SF program committee.",
+      "profile_url": "https://qconsf.com/pc-chairs/hienluu",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/hienluu",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "building-ai-agents-practical-framework-choosing-right-sdk"
+      ],
+      "roles": [
+        "speaker",
+        "program_committee"
+      ]
+    },
+    {
+      "id": "danvega",
+      "name": "Dan Vega",
+      "title": "Java Champion & Spring Developer Advocate",
+      "company": "Broadcom",
+      "bio_short": "23+ years building web software; teaches via blog, YouTube, courses, a podcast and talks.",
+      "profile_url": "https://qconsf.com/speakers/danvega",
+      "links": {
+        "github": "https://github.com/danvega/",
+        "linkedin": "https://www.linkedin.com/in/danvega/",
+        "x": "https://twitter.com/therealdanvega",
+        "website": "https://www.danvega.dev/"
+      },
+      "session_ids": [
+        "ai-java-developers",
+        "fundamentals-software-engineering-age-ai"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "nateschutta",
+      "name": "Nate Schutta",
+      "title": "Software Architect",
+      "company": "Thoughtworks",
+      "bio_short": "Architect and Java Champion focused on cloud, developer happiness and usable apps; adjunct professor; author of Thinking Architecturally and Responsible Microservices.",
+      "profile_url": "https://qconsf.com/speakers/nateschutta",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "ai-java-developers",
+        "fundamentals-software-engineering-age-ai"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "greynewell",
+      "name": "Grey Newell",
+      "title": "Principal AI Engineer",
+      "company": null,
+      "bio_short": "Former CTO of Supermodel (AI dev-productivity tools) and ex-AWS strategic-accounts solutions architect; open-source creator of mcpbr and the MIST stack. Current employer unnamed.",
+      "profile_url": "https://qconsf.com/speakers/greynewell",
+      "links": {
+        "github": "https://github.com/greynewell",
+        "linkedin": "https://www.linkedin.com/in/greynewell",
+        "x": null,
+        "website": "https://greynewell.com"
+      },
+      "session_ids": [
+        "measuring-what-matters-building-developer-productivity-program-engineers-can-trust"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "khawajashams",
+      "name": "Khawaja Shams",
+      "title": "Co-Founder & CEO",
+      "company": "Momento",
+      "bio_short": "Leads Momento (serverless caching/pub-sub); previously ran DynamoDB and AWS Elemental engineering; NASA Early Career Medal for Mars rover work; QCon SF program committee.",
+      "profile_url": "https://qconsf.com/pc-chairs/khawajashams",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "supercharge-your-work-claude-code-and-codex"
+      ],
+      "roles": [
+        "speaker",
+        "program_committee"
+      ]
+    },
+    {
+      "id": "baruchsadogursky",
+      "name": "Baruch Sadogursky",
+      "title": null,
+      "company": "Port.io",
+      "bio_short": "No bio published yet on QCon. Company appears on the schedule page only.",
+      "profile_url": "https://qconsf.com/speakers/baruchsadogursky",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "how-write-skills-actually-work"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "sepehrkhosravi",
+      "name": "Sepehr Khosravi",
+      "title": "Software Engineer, ML Infrastructure",
+      "company": "Coinbase",
+      "bio_short": "ML infra engineer at Coinbase and UC Berkeley instructor in GenAI/rapid product development; founded AI Scouts. (Speakers index lists him as Founder, OneKit.)",
+      "profile_url": "https://qconsf.com/speakers/sepehrkhosravi",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sepehrkhosravi/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "ai-assisted-coding-master-class-build-your-mission-control"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "devbali",
+      "name": "Dev Bali",
+      "title": "ML Systems PhD Student",
+      "company": "UC Berkeley",
+      "bio_short": "Third-year Berkeley PhD (advised by Matei Zaharia and Scott Shenker) on AI systems; published at OSDI, SIGCOMM, ASPLOS; working on fair LLM-inference scheduling and verifying LLM-generated code.",
+      "profile_url": "https://qconsf.com/speakers/devbali",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "ai-assisted-coding-master-class-build-your-mission-control"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "courtneynash",
+      "name": "Courtney Nash",
+      "title": "Principal Analyst",
+      "company": "Forrester Research",
+      "bio_short": "Researcher on system safety and failure in sociotechnical systems; co-founded The VOID; former cognitive neuroscientist with roles at Verica, Fastly and Amazon.",
+      "profile_url": "https://qconsf.com/speakers/courtneynash",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/nashcourtney/",
+        "x": "https://twitter.com/courtneynash",
+        "website": null
+      },
+      "session_ids": [
+        "incident-lab-responding-and-learning-production-failures"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "ericdobbs",
+      "name": "Eric Dobbs",
+      "title": "Resilience & Cognitive Systems Engineering",
+      "company": null,
+      "bio_short": "Self-taught programmer bringing resilience and cognitive systems engineering into software practice; former principal incident analyst (Oracle); studied incidents via SNAFUcatchers since 2018.",
+      "profile_url": "https://qconsf.com/speakers/ericdobbs",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/dobbse/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "incident-lab-responding-and-learning-production-failures"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "alexelman",
+      "name": "Alex Elman",
+      "title": "Staff Software Engineer",
+      "company": "Slack",
+      "bio_short": "Works on incident management in Slack's reliability org (since 2024); 13 years at Indeed where he co-founded the SRE team; focuses on learning from incidents.",
+      "profile_url": "https://qconsf.com/speakers/alexelman",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/pkill/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "incident-lab-responding-and-learning-production-failures"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "stuartrimell",
+      "name": "Stuart Rimell",
+      "title": "CPO",
+      "company": "Uptime Labs",
+      "bio_short": "20+ years in software, mostly real-time trading platforms in finance; now leads product at Uptime Labs (incident response simulation).",
+      "profile_url": "https://qconsf.com/speakers/stuartrimell",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "incident-lab-responding-and-learning-production-failures"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "zichuanxiong",
+      "name": "Zichuan Xiong",
+      "title": "Head of AIOps",
+      "company": "Thoughtworks",
+      "bio_short": "Thoughtworks principal since 2008 leading AI in Managed Services and agentic systems for software operations; expertise in DDD, Data Mesh and org transformation.",
+      "profile_url": "https://qconsf.com/speakers/zichuanxiong",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "effective-ai-native-development-harness-engineering"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "premanandchandrasekaran",
+      "name": "Premanand Chandrasekaran",
+      "title": "Head of Technology",
+      "company": "Thoughtworks",
+      "bio_short": "Two decades leading large engineering teams in finance, retail, education and healthcare; focuses on architecture, continuous delivery, agile transformation and growing people.",
+      "profile_url": "https://qconsf.com/speakers/premanandchandrasekaran",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/premanandc/",
+        "x": "https://twitter.com/premanandc",
+        "website": null
+      },
+      "session_ids": [
+        "effective-ai-native-development-harness-engineering"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "davidparry",
+      "name": "David Parry",
+      "title": "Principal Architect",
+      "company": "Qodo",
+      "bio_short": "20+ years in software (Java since 1996 applets), including CMS and Android TV streaming systems; now leads architecture planning and Java expertise at Qodo.",
+      "profile_url": "https://qconsf.com/speakers/davidparry",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [
+        "agent-mcp-workshop-building-your-own-java-based-mcp-server"
+      ],
+      "roles": [
+        "speaker"
+      ]
+    },
+    {
+      "id": "danielamiao",
+      "name": "Daniela Miao",
+      "title": "Co-Founder & CTO",
+      "company": "Momento",
+      "bio_short": "Co-founded Momento; previously led platform engineering at Lightstep (launched its metrics product) and was a tech lead on AWS DynamoDB cross-region replication.",
+      "profile_url": "https://qconsf.com/track-hosts/danielamiao",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/danielamiao/",
+        "x": "https://twitter.com/dymxzvf",
+        "website": null
+      },
+      "session_ids": [],
+      "roles": [
+        "track_host"
+      ]
+    },
+    {
+      "id": "tanyareilly",
+      "name": "Tanya Reilly",
+      "title": "Principal Engineer",
+      "company": "Datadog",
+      "bio_short": "Former sysadmin/SRE, now principal engineer at Datadog after senior roles at Squarespace and Google; author of The Staff Engineer's Path.",
+      "profile_url": "https://qconsf.com/track-hosts/tanyareilly",
+      "links": {
+        "github": "https://github.com/whereistanya",
+        "linkedin": "https://www.linkedin.com/in/tanyareilly/",
+        "x": null,
+        "website": "https://www.noidea.dog/"
+      },
+      "session_ids": [],
+      "roles": [
+        "track_host"
+      ]
+    },
+    {
+      "id": "krysflores",
+      "name": "Krys Flores",
+      "title": "Staff Software Engineer",
+      "company": "Crunchyroll",
+      "bio_short": "Self-taught staff engineer on Crunchyroll's search and recommendations team; mentors/sponsors underrepresented engineers; hosts O'Reilly's Staff Engineer's Career Roadmap.",
+      "profile_url": "https://qconsf.com/track-hosts/krysflores",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/krystalflores/",
+        "x": "https://twitter.com/kflotechyo",
+        "website": "https://krysflores.com/"
+      },
+      "session_ids": [],
+      "roles": [
+        "track_host"
+      ]
+    },
+    {
+      "id": "vidhyaarvind",
+      "name": "Vidhya Arvind",
+      "title": "Tech Lead & Founding Architect, Data Abstraction Platform",
+      "company": "Netflix",
+      "bio_short": "Founding architect of Netflix's data abstraction platform, known for scalable abstractions and API design; previously Box and Verizon.",
+      "profile_url": "https://qconsf.com/track-hosts/vidhyaarvind",
+      "links": {
+        "github": "https://github.com/vidhyaarvind",
+        "linkedin": "https://www.linkedin.com/in/vidhya-arvind-11908723/",
+        "x": "https://x.com/vidhyaarvind",
+        "website": null
+      },
+      "session_ids": [],
+      "roles": [
+        "track_host"
+      ]
+    },
+    {
+      "id": "melaniezhao",
+      "name": "Melanie Zhao",
+      "title": "Vice President, Engineering Lead",
+      "company": "BlackRock",
+      "bio_short": "CFA and engineer leading AI adoption across BlackRock's investment process (Portfolio Management Group); previously ML and cloud-native work at NCR.",
+      "profile_url": "https://qconsf.com/track-hosts/melaniezhao",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/melanie-zhao-cfa-13174113a/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [],
+      "roles": [
+        "track_host"
+      ]
+    },
+    {
+      "id": "javierfernandezivern",
+      "name": "Javier Fernandez-Ivern",
+      "title": "Staff Software Engineer",
+      "company": "Netflix",
+      "bio_short": "On Netflix's DRM and Manifest team ensuring best video/audio/subtitle choices across devices; earlier startup and consulting work and management at Capital One; 24+ years in software.",
+      "profile_url": "https://qconsf.com/track-hosts/javierfernandezivern",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/ivern/",
+        "x": null,
+        "website": null
+      },
+      "session_ids": [],
+      "roles": [
+        "track_host"
+      ]
+    },
+    {
+      "id": "adipolak",
+      "name": "Adi Polak",
+      "title": "Director, Advocacy and Developer Experience Engineering",
+      "company": "Confluent",
+      "bio_short": "10+ years in data and ML (large distributed systems, streaming); people manager; author of books on scaling ML and on Spark.",
+      "profile_url": "https://qconsf.com/track-hosts/adipolak",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [],
+      "roles": [
+        "track_host"
+      ]
+    },
+    {
+      "id": "julieamundson",
+      "name": "Julie Amundson",
+      "title": "Senior AI Infrastructure Consultant",
+      "company": "Independent",
+      "bio_short": "AI infra since 2018, from accelerator orchestration on Kubernetes to Metaflow data-science tooling; ex-Google Cloud and Netflix; focuses on taking research systems to production.",
+      "profile_url": "https://qconsf.com/track-hosts/julieamundson",
+      "links": {
+        "github": null,
+        "linkedin": null,
+        "x": null,
+        "website": null
+      },
+      "session_ids": [],
+      "roles": [
+        "track_host"
+      ]
+    },
+    {
+      "id": "ankitjain",
+      "name": "Ankit Jain",
+      "title": "Co-Founder & CEO",
+      "company": "Aviator",
+      "bio_short": "Runs Aviator, a dev productivity platform for shipping AI-generated code reliably; leads The Hangar DevEx community and the Xoogler network.",
+      "profile_url": "https://qconsf.com/track-hosts/ankitjain",
+      "links": {
+        "github": "https://github.com/jainankit",
+        "linkedin": "https://www.linkedin.com/in/ankitjaindce/",
+        "x": "https://x.com/ankitxg",
+        "website": null
+      },
+      "session_ids": [],
+      "roles": [
+        "track_host"
+      ]
+    },
+    {
+      "id": "danielbryant",
+      "name": "Daniel Bryant",
+      "title": "Platform Engineer",
+      "company": "Syntasso",
+      "bio_short": "Builds platforms-as-products at Syntasso; InfoQ news manager and QCon London emeritus chair; co-author of Mastering API Architecture; Java Champion.",
+      "profile_url": "https://qconsf.com/track-hosts/danielbryant",
+      "links": {
+        "github": "https://github.com/danielbryantuk",
+        "linkedin": "https://www.linkedin.com/in/danielbryantuk",
+        "x": "https://twitter.com/danielbryantuk",
+        "website": null
+      },
+      "session_ids": [],
+      "roles": [
+        "track_host"
+      ]
+    },
+    {
+      "id": "suhailpatel",
+      "name": "Suhail Patel",
+      "title": "Member of Technical Staff",
+      "company": "OpenAI",
+      "bio_short": "Works on infrastructure, reliability and agentic systems at OpenAI; previously built platform infra and DevEx at Monzo. QCon SF program committee.",
+      "profile_url": "https://qconsf.com/pc-chairs/suhailpatel",
+      "links": {
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/suhailpatel",
+        "x": "https://twitter.com/suhailpatel",
+        "website": "https://suhailpatel.com/"
+      },
+      "session_ids": [],
+      "roles": [
+        "track_host",
+        "program_committee"
+      ]
+    }
+  ]
+}
